@@ -2,7 +2,6 @@ import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
 import { Container } from 'react-bootstrap'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-// import { Link } from 'gatsby'
 import { Link } from 'react-scroll'
 import { Link as Link2 } from 'gatsby'
 
@@ -241,7 +240,8 @@ const Header = ({ isDark }) => {
   })
 
   let menu_items
-  if (window.location.pathname === '/') {
+  // window.location.pathname
+  if (document.location.pathname === '/') {
     menu_items = (
       <>
         <li className="nav-item">
