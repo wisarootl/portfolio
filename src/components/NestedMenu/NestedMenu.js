@@ -178,7 +178,13 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
   const gContext = useContext(GlobalContext)
 
   let menu_items
-  if (window.location.pathname === '/') {
+  if (gContext.isHomepage === false) {
+    menu_items = (
+      <>
+        <ListGroup.Item>{<Link2 to="/">Home</Link2>}</ListGroup.Item>
+      </>
+    )
+  } else {
     menu_items = (
       <>
         <ListGroup.Item>
@@ -224,12 +230,6 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
             </Link>
           }
         </ListGroup.Item>
-      </>
-    )
-  } else {
-    menu_items = (
-      <>
-        <ListGroup.Item>{<Link2 to="/">Home</Link2>}</ListGroup.Item>
       </>
     )
   }

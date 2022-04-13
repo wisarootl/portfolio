@@ -240,8 +240,17 @@ const Header = ({ isDark }) => {
   })
 
   let menu_items
-  // window.location.pathname
-  if (document.location.pathname === '/') {
+  if (gContext.isHomepage === false) {
+    menu_items = (
+      <>
+        <li className="nav-item">
+          <Link2 to="/" className="nav-link">
+            Home
+          </Link2>
+        </li>
+      </>
+    )
+  } else {
     menu_items = (
       <>
         <li className="nav-item">
@@ -321,16 +330,6 @@ const Header = ({ isDark }) => {
           >
             awards
           </Link>
-        </li>
-      </>
-    )
-  } else {
-    menu_items = (
-      <>
-        <li className="nav-item">
-          <Link2 to="/" className="nav-link">
-            Home
-          </Link2>
         </li>
       </>
     )

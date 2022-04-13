@@ -56,13 +56,11 @@ function copy_email_contact() {
   navigator.clipboard.writeText(copyText)
 
   /* Alert the copied text */
-  console.log('click')
   var tooltip = document.getElementById('email-contact')
   tooltip.innerHTML = 'Copied!'
 }
 
 function mouse_leave_email_contact() {
-  console.log('out')
   var tooltip = document.getElementById('email-contact')
   tooltip.innerHTML = 'L.Wisaroot@gmail.com'
 }

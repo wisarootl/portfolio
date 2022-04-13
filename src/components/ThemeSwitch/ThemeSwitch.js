@@ -167,36 +167,6 @@ const ThemeSwitch = (props) => {
   const [active, setActive] = useState(false)
   const gContext = useContext(GlobalContext)
 
-  // return (
-  //   <>
-  //     <ButtonGroup>
-  //       <Button
-  //         className={!gContext.theme.bodyDark ? 'active' : ''}
-  //         onClick={() =>
-  //           gContext.changeTheme({
-  //             bodyDark: false,
-  //             headerDark: false,
-  //             footerDark: false
-  //           })
-  //         }
-  //       >
-  //         <HiSun />
-  //       </Button>
-  //       <Button
-  //         className={gContext.theme.bodyDark ? 'active' : ''}
-  //         onClick={() =>
-  //           gContext.changeTheme({
-  //             bodyDark: true,
-  //             headerDark: true,
-  //             footerDark: true
-  //           })
-  //         }
-  //       >
-  //         <HiMoon />
-  //       </Button>
-  //     </ButtonGroup>
-  //   </>
-  // )
   return (
     <>
       <Div>
@@ -207,7 +177,6 @@ const ThemeSwitch = (props) => {
             id="night-mode"
             onClick={() => {
               var checkBox = document.getElementById('night-mode')
-              // console.log(checkBox.checked)
               if (checkBox.checked === true) {
                 gContext.changeTheme({
                   bodyDark: true,
@@ -229,13 +198,6 @@ const ThemeSwitch = (props) => {
             <div className="blob"></div>
           </label>
         </div>
-        {/* <script type="text/javascript">
-          document.querySelector('.checkbox').addEventListener('change',()=>
-          {document.querySelectorAll('.night-mode-available').forEach((ele) => {
-            ele.classList.toggle('night')
-          })}
-          );
-        </script> */}
       </Div>
     </>
   )

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
+import GlobalContext from '../context/GlobalContext'
 import { Link } from 'gatsby'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Element } from 'react-scroll'
@@ -13,6 +14,9 @@ import { BiDollar } from 'react-icons/bi'
 import { FaTrophy, FaThumbsUp } from 'react-icons/fa'
 
 const WorkSingle = () => {
+  const gContext = useContext(GlobalContext)
+  gContext.isHomepage = false
+
   return (
     <>
       <Section
