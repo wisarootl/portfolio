@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import { Modal, Container } from "react-bootstrap";
+import React, { useContext } from 'react'
+import styled from 'styled-components'
+import { Modal, Container } from 'react-bootstrap'
 
-import GlobalContext from "../../context/GlobalContext";
-import Logo from "../Logo";
-import About from "../../sections/others/About";
+import GlobalContext from '../../context/GlobalContext'
+import Logo from '../Logo'
+import About from '../../sections/others/About'
 
-import { device } from "../../utils";
+import { device } from '../../utils'
 
 const ModalStyled = styled(Modal)`
   &.modal {
@@ -32,7 +32,7 @@ const ModalStyled = styled(Modal)`
     }
     position: relative;
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -43,7 +43,7 @@ const ModalStyled = styled(Modal)`
       z-index: -1;
     }
   }
-`;
+`
 
 const CloseWrapper = styled.div`
   cursor: pointer;
@@ -54,7 +54,7 @@ const CloseWrapper = styled.div`
   justify-content: center;
   z-index: 10;
   color: ${({ theme }) => theme.colors.light};
-`;
+`
 
 const CloseButton = (props) => (
   <CloseWrapper {...props}>
@@ -76,10 +76,10 @@ const CloseButton = (props) => (
       ></path>
     </svg>
   </CloseWrapper>
-);
+)
 
 const AboutModal = (props) => {
-  const gContext = useContext(GlobalContext);
+  const gContext = useContext(GlobalContext)
 
   return (
     <ModalStyled
@@ -99,7 +99,7 @@ const AboutModal = (props) => {
         <About hero={false} bg="primary" />
       </Modal.Body>
     </ModalStyled>
-  );
-};
+  )
+}
 
-export default AboutModal;
+export default AboutModal

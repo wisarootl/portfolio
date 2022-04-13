@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import { Modal, Container } from "react-bootstrap";
+import React, { useContext } from 'react'
+import styled from 'styled-components'
+import { Modal, Container } from 'react-bootstrap'
 
-import GlobalContext from "../../context/GlobalContext";
-import Contact from "../../sections/others/Contact";
-import Logo from "../Logo";
+import GlobalContext from '../../context/GlobalContext'
+import Contact from '../../sections/others/Contact'
+import Logo from '../Logo'
 
-import { device } from "../../utils";
+import { device } from '../../utils'
 
 const ModalStyled = styled(Modal)`
   &.modal {
@@ -44,7 +44,7 @@ const ModalStyled = styled(Modal)`
       z-index: -1;
     }
   }
-`;
+`
 
 const CloseWrapper = styled.div`
   cursor: pointer;
@@ -55,7 +55,7 @@ const CloseWrapper = styled.div`
   justify-content: center;
   z-index: 10;
   color: ${({ theme }) => theme.colors.light};
-`;
+`
 
 const CloseButton = (props) => (
   <CloseWrapper {...props}>
@@ -77,10 +77,10 @@ const CloseButton = (props) => (
       ></path>
     </svg>
   </CloseWrapper>
-);
+)
 
 const ContactModal = (props) => {
-  const gContext = useContext(GlobalContext);
+  const gContext = useContext(GlobalContext)
 
   return (
     <ModalStyled
@@ -100,7 +100,7 @@ const ContactModal = (props) => {
         <Contact hero={false} />
       </Modal.Body>
     </ModalStyled>
-  );
-};
+  )
+}
 
-export default ContactModal;
+export default ContactModal

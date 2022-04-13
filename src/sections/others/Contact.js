@@ -1,11 +1,11 @@
-import React from "react";
-import { rgba } from "polished";
-import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react'
+import { rgba } from 'polished'
+import styled from 'styled-components'
+import { Container, Row, Col } from 'react-bootstrap'
 
-import { Section, Title, Text, Span, Box } from "../../components/Core";
-import ContactForm from "../../components/ContactForm";
-import { device } from "../../utils";
+import { Section, Title, Text, Span, Box } from '../../components/Core'
+import ContactForm from '../../components/ContactForm'
+import { device } from '../../utils'
 
 const ContactCard = styled.div`
   border-radius: 10px;
@@ -14,9 +14,9 @@ const ContactCard = styled.div`
   @media ${device.lg} {
     margin-top: 250px;
   }
-`;
+`
 
-const Contact = ({ hero = true, bg = "dark", ...rest }) => {
+const Contact = ({ hero = true, bg = 'dark', ...rest }) => {
   return (
     <>
       <Section hero={hero} bg={bg} {...rest}>
@@ -28,8 +28,7 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
                   Contact now
                 </Title>
                 <Text color="light" mb="2.75rem">
-                  Have a project or question? Send me a message. I will reply
-                  within 48 hours.
+                  Have a project or question? Send me a message. I will reply within 48 hours.
                 </Text>
                 <ContactForm theme="dark" />
               </Box>
@@ -58,7 +57,7 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
         </Container>
       </Section>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

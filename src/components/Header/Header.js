@@ -1,15 +1,18 @@
-import React, { useState, useContext } from "react";
-import styled from "styled-components";
-import { Container } from "react-bootstrap";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
-import { Link } from "gatsby";
+import React, { useState, useContext } from 'react'
+import styled from 'styled-components'
+import { Container } from 'react-bootstrap'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+// import { Link } from 'gatsby'
+import { Link } from 'react-scroll'
+import { Link as Link2 } from 'gatsby'
 
-import GlobalContext from "../../context/GlobalContext";
-import Offcanvas from "../Offcanvas";
-import NestedMenu from "../NestedMenu";
-import { device } from "../../utils";
-import Logo from "../Logo";
-import { menuItems } from "./menuItems";
+import GlobalContext from '../../context/GlobalContext'
+import Offcanvas from '../Offcanvas'
+import NestedMenu from '../NestedMenu'
+import { device } from '../../utils'
+import Logo from '../Logo'
+import { menuItems } from './menuItems'
+import ThemeSwitch from '../ThemeSwitch'
 
 const SiteHeader = styled.header`
   padding: 0;
@@ -18,26 +21,39 @@ const SiteHeader = styled.header`
   right: 0;
   width: 100%;
   z-index: 999;
-  @media ${device.lg} {
-    position: fixed !important;
+  // @media ${device.lg} {
+  position: fixed !important;
+  transition: 0.4s;
+  &.scrolling {
+    transform: translateY(-100%);
     transition: 0.4s;
-    &.scrolling {
-      transform: translateY(-100%);
-      transition: 0.4s;
-    }
-    &.reveal-header {
-      transform: translateY(0%);
-      box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
-      z-index: 9999;
-      background: ${({ dark, theme }) => theme.colors.bg};
-    }
   }
-`;
+  &.reveal-header {
+    transform: translateY(0%);
+    box-shadow: 0 12px 34px -11px rgba(65, 62, 101, 0.1);
+    z-index: 9999;
+    background: ${({ dark, theme }) => theme.colors.bg};
+  }
+  // }
+`
 
 const ToggleButton = styled.button`
   color: ${({ dark, theme }) => theme.colors.front}!important;
   border-color: ${({ dark, theme }) => theme.colors.front}!important;
-`;
+`
+
+const DarkModeButton = styled.div`
+  margin-left: auto;
+  margin-right: 0px;
+  .nav-night-mode {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  ul {
+    margin-bottom: 0px;
+  }
+`
 
 const Menu = styled.ul`
   @media ${device.lg} {
@@ -69,9 +85,9 @@ const Menu = styled.ul`
           position: relative;
           transform: rotate(90deg);
           top: 1px;
-          content: "\\ea06";
+          content: '\\ea06';
           border: none;
-          font-family: "Grayic";
+          font-family: 'Grayic';
           font-size: 24px;
           transition: 0.4s;
           font-weight: 900;
@@ -103,7 +119,7 @@ const Menu = styled.ul`
       }
     }
   }
-`;
+`
 
 const MenuDropdown = styled.ul`
   list-style: none;
@@ -148,9 +164,9 @@ const MenuDropdown = styled.ul`
         margin-left: 10px;
         position: relative;
         top: 1px;
-        content: "\\ea06";
+        content: '\\ea06';
         border: none;
-        font-family: "Grayic";
+        font-family: 'Grayic';
         font-size: 24px;
         transition: 0.4s;
         font-weight: 900;
@@ -204,31 +220,127 @@ const MenuDropdown = styled.ul`
     left: auto;
     right: -90%;
   }
-`;
+`
 
 const Header = ({ isDark }) => {
-  const gContext = useContext(GlobalContext);
-  const [showScrolling, setShowScrolling] = useState(false);
-  const [showReveal, setShowReveal] = useState(false);
+  const gContext = useContext(GlobalContext)
+  const [showScrolling, setShowScrolling] = useState(false)
+  const [showReveal, setShowReveal] = useState(false)
 
   useScrollPosition(({ prevPos, currPos }) => {
     if (currPos.y < 0) {
-      setShowScrolling(true);
+      setShowScrolling(true)
     } else {
-      setShowScrolling(false);
+      setShowScrolling(false)
     }
     if (currPos.y < -300) {
-      setShowReveal(true);
+      setShowReveal(true)
     } else {
-      setShowReveal(false);
+      setShowReveal(false)
     }
-  });
+  })
+
+  let menu_items
+  if (window.location.pathname === '/') {
+    menu_items = (
+      <>
+        <li className="nav-item">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+            className="nav-link"
+            href="#"
+          >
+            about
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+            className="nav-link"
+            href="#"
+          >
+            portfolio
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+            className="nav-link"
+            href="#"
+          >
+            experience
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="education"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+            className="nav-link"
+            href="#"
+          >
+            education
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+            className="nav-link"
+            href="#"
+          >
+            skills
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link
+            to="awards"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={1000}
+            className="nav-link"
+            href="#"
+          >
+            awards
+          </Link>
+        </li>
+      </>
+    )
+  } else {
+    menu_items = (
+      <>
+        <li className="nav-item">
+          <Link2 to="/" className="nav-link">
+            Home
+          </Link2>
+        </li>
+      </>
+    )
+  }
 
   return (
     <>
       <SiteHeader
-        className={`sticky-header ${showScrolling ? "scrolling" : ""} ${
-          showReveal ? "reveal-header" : ""
+        className={`sticky-header ${showScrolling ? 'scrolling' : ''} ${
+          showReveal ? 'reveal-header' : ''
         }`}
         dark={isDark ? 1 : 0}
       >
@@ -236,246 +348,198 @@ const Header = ({ isDark }) => {
           <nav className="navbar px-0 px-md-3 site-navbar offcanvas-active navbar-expand-lg navbar-light">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
-              <Logo color={isDark ? "light" : "dark"} />
+              <Logo color={isDark ? 'light' : 'dark'} />
             </div>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">
-                <Menu
-                  className="navbar-nav d-none d-lg-flex"
-                  dark={isDark ? 1 : 0}
-                >
-                  {menuItems.map(
-                    (
-                      { label, isExternal = false, name, items, ...rest },
-                      index
-                    ) => {
-                      const hasSubItems = Array.isArray(items);
-                      return (
-                        <React.Fragment key={name + index}>
-                          {hasSubItems ? (
-                            <li className="nav-item dropdown" {...rest}>
-                              <a
-                                className="nav-link dropdown-toggle"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-expanded="false"
-                                href="/#"
-                                onClick={(e) => e.preventDefault()}
-                              >
-                                {label}
-                              </a>
-                              <MenuDropdown
-                                className="menu-dropdown dropdown-right"
-                                dark={isDark ? 1 : 0}
-                              >
-                                {items.map((subItem, indexSub) => {
-                                  const hasInnerSubItems = Array.isArray(
-                                    subItem.items
-                                  );
-                                  return (
-                                    <React.Fragment
-                                      key={subItem.name + indexSub}
-                                    >
-                                      {hasInnerSubItems ? (
-                                        <li className="drop-menu-item dropdown">
+                <Menu className="navbar-nav d-none d-lg-flex" dark={isDark ? 1 : 0}>
+                  {menuItems.map(({ label, isExternal = false, name, items, ...rest }, index) => {
+                    const hasSubItems = Array.isArray(items)
+                    return (
+                      <React.Fragment key={name + index}>
+                        {hasSubItems ? (
+                          <li className="nav-item dropdown" {...rest}>
+                            <a
+                              className="nav-link dropdown-toggle"
+                              role="button"
+                              data-toggle="dropdown"
+                              aria-expanded="false"
+                              href="/#"
+                              onClick={(e) => e.preventDefault()}
+                            >
+                              {label}
+                            </a>
+                            <MenuDropdown
+                              className="menu-dropdown dropdown-right"
+                              dark={isDark ? 1 : 0}
+                            >
+                              {items.map((subItem, indexSub) => {
+                                const hasInnerSubItems = Array.isArray(subItem.items)
+                                return (
+                                  <React.Fragment key={subItem.name + indexSub}>
+                                    {hasInnerSubItems ? (
+                                      <li className="drop-menu-item dropdown">
+                                        <a
+                                          className="dropdown-toggle"
+                                          role="button"
+                                          data-toggle="dropdown"
+                                          aria-expanded="false"
+                                          href="/#"
+                                          onClick={(e) => e.preventDefault()}
+                                        >
+                                          {subItem.label}
+                                        </a>
+                                        <MenuDropdown
+                                          className="menu-dropdown dropdown-right"
+                                          dark={isDark ? 1 : 0}
+                                        >
+                                          {subItem.items.map((itemSubInner, indexSubInner) => {
+                                            const hasInnerMostItems = Array.isArray(
+                                              itemSubInner.items
+                                            )
+                                            return (
+                                              <React.Fragment
+                                                key={itemSubInner.name + indexSubInner}
+                                              >
+                                                {hasInnerMostItems ? (
+                                                  <li className="drop-menu-item dropdown">
+                                                    <a
+                                                      className="dropdown-toggle"
+                                                      role="button"
+                                                      data-toggle="dropdown"
+                                                      aria-expanded="false"
+                                                      href="/#"
+                                                      onClick={(e) => e.preventDefault()}
+                                                    >
+                                                      {itemSubInner.label}
+                                                    </a>
+                                                    <MenuDropdown
+                                                      className="menu-dropdown dropdown-right"
+                                                      dark={isDark ? 1 : 0}
+                                                    >
+                                                      {itemSubInner.items.map(
+                                                        (itemLast, indexLast) => (
+                                                          <li
+                                                            className="drop-menu-item"
+                                                            key={itemLast.name + indexLast}
+                                                          >
+                                                            {itemLast.isExternal ? (
+                                                              <a
+                                                                href={`${itemLast.name}`}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                              >
+                                                                {itemLast.label}
+                                                              </a>
+                                                            ) : (
+                                                              <Link to={`/${itemLast.name}`}>
+                                                                {itemLast.label}
+                                                              </Link>
+                                                            )}
+                                                          </li>
+                                                        )
+                                                      )}
+                                                    </MenuDropdown>
+                                                  </li>
+                                                ) : (
+                                                  <li className="drop-menu-item">
+                                                    {itemSubInner.isExternal ? (
+                                                      <a
+                                                        href={`${itemSubInner.name}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                      >
+                                                        {itemSubInner.label}
+                                                      </a>
+                                                    ) : (
+                                                      <Link to={`/${itemSubInner.name}`}>
+                                                        {itemSubInner.label}
+                                                      </Link>
+                                                    )}
+                                                  </li>
+                                                )}
+                                              </React.Fragment>
+                                            )
+                                          })}
+                                        </MenuDropdown>
+                                      </li>
+                                    ) : (
+                                      <li className="drop-menu-item">
+                                        {subItem.isExternal ? (
                                           <a
-                                            className="dropdown-toggle"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-expanded="false"
-                                            href="/#"
-                                            onClick={(e) => e.preventDefault()}
+                                            href={`${subItem.name}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
                                           >
                                             {subItem.label}
                                           </a>
-                                          <MenuDropdown
-                                            className="menu-dropdown dropdown-right"
-                                            dark={isDark ? 1 : 0}
-                                          >
-                                            {subItem.items.map(
-                                              (itemSubInner, indexSubInner) => {
-                                                const hasInnerMostItems = Array.isArray(
-                                                  itemSubInner.items
-                                                );
-                                                return (
-                                                  <React.Fragment
-                                                    key={
-                                                      itemSubInner.name +
-                                                      indexSubInner
-                                                    }
-                                                  >
-                                                    {hasInnerMostItems ? (
-                                                      <li className="drop-menu-item dropdown">
-                                                        <a
-                                                          className="dropdown-toggle"
-                                                          role="button"
-                                                          data-toggle="dropdown"
-                                                          aria-expanded="false"
-                                                          href="/#"
-                                                          onClick={(e) =>
-                                                            e.preventDefault()
-                                                          }
-                                                        >
-                                                          {itemSubInner.label}
-                                                        </a>
-                                                        <MenuDropdown
-                                                          className="menu-dropdown dropdown-right"
-                                                          dark={isDark ? 1 : 0}
-                                                        >
-                                                          {itemSubInner.items.map(
-                                                            (
-                                                              itemLast,
-                                                              indexLast
-                                                            ) => (
-                                                              <li
-                                                                className="drop-menu-item"
-                                                                key={
-                                                                  itemLast.name +
-                                                                  indexLast
-                                                                }
-                                                              >
-                                                                {itemLast.isExternal ? (
-                                                                  <a
-                                                                    href={`${itemLast.name}`}
-                                                                    target="_blank"
-                                                                    rel="noopener noreferrer"
-                                                                  >
-                                                                    {
-                                                                      itemLast.label
-                                                                    }
-                                                                  </a>
-                                                                ) : (
-                                                                  <Link
-                                                                    to={`/${itemLast.name}`}
-                                                                  >
-                                                                    {
-                                                                      itemLast.label
-                                                                    }
-                                                                  </Link>
-                                                                )}
-                                                              </li>
-                                                            )
-                                                          )}
-                                                        </MenuDropdown>
-                                                      </li>
-                                                    ) : (
-                                                      <li className="drop-menu-item">
-                                                        {itemSubInner.isExternal ? (
-                                                          <a
-                                                            href={`${itemSubInner.name}`}
-                                                            target="_blank"
-                                                            rel="noopener noreferrer"
-                                                          >
-                                                            {itemSubInner.label}
-                                                          </a>
-                                                        ) : (
-                                                          <Link
-                                                            to={`/${itemSubInner.name}`}
-                                                          >
-                                                            {itemSubInner.label}
-                                                          </Link>
-                                                        )}
-                                                      </li>
-                                                    )}
-                                                  </React.Fragment>
-                                                );
-                                              }
-                                            )}
-                                          </MenuDropdown>
-                                        </li>
-                                      ) : (
-                                        <li className="drop-menu-item">
-                                          {subItem.isExternal ? (
-                                            <a
-                                              href={`${subItem.name}`}
-                                              target="_blank"
-                                              rel="noopener noreferrer"
-                                            >
-                                              {subItem.label}
-                                            </a>
-                                          ) : (
-                                            <Link to={`/${subItem.name}`}>
-                                              {subItem.label}
-                                            </Link>
-                                          )}
-                                        </li>
-                                      )}
-                                    </React.Fragment>
-                                  );
-                                })}
-                              </MenuDropdown>
-                            </li>
-                          ) : (
-                            <li className="nav-item" {...rest}>
-                              {isExternal ? (
-                                <a
-                                  className="nav-link"
-                                  href={`${name}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  {label}
-                                </a>
-                              ) : (
-                                <Link
-                                  className="nav-link"
-                                  to={`/${name}`}
-                                  role="button"
-                                  aria-expanded="false"
-                                >
-                                  {label}
-                                </Link>
-                              )}
-                            </li>
-                          )}
-                        </React.Fragment>
-                      );
-                    }
-                  )}
-
-                  {/* Open about modal */}
+                                        ) : (
+                                          <Link to={`/${subItem.name}`}>{subItem.label}</Link>
+                                        )}
+                                      </li>
+                                    )}
+                                  </React.Fragment>
+                                )
+                              })}
+                            </MenuDropdown>
+                          </li>
+                        ) : (
+                          <li className="nav-item" {...rest}>
+                            {isExternal ? (
+                              <a
+                                className="nav-link"
+                                href={`${name}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {label}
+                              </a>
+                            ) : (
+                              <Link
+                                className="nav-link"
+                                to={`/${name}`}
+                                role="button"
+                                aria-expanded="false"
+                              >
+                                {label}
+                              </Link>
+                            )}
+                          </li>
+                        )}
+                      </React.Fragment>
+                    )
+                  })}
+                  {menu_items}
                   <li className="nav-item">
-                    <a
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={-50}
+                      duration={1000}
                       className="nav-link"
-                      href="/#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        gContext.toggleAbout();
-                      }}
+                      href="#"
                     >
-                      about me.
-                    </a>
-                  </li>
-
-                  {/* Open contact modal */}
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="/#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        gContext.toggleContact();
-                      }}
-                    >
-                      contact.
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link"
-                      href="https://uxtheme.net/theme-support"
-                      target="_blank"
-                    >
-                      support
-                    </a>
+                      contact
+                    </Link>
                   </li>
                 </Menu>
               </div>
             </div>
 
+            <DarkModeButton>
+              <ul>
+                <li className="nav-item d-flex align-items-center">
+                  <div className="nav-link nav-night-mode">
+                    <ThemeSwitch />
+                  </div>
+                </li>
+              </ul>
+            </DarkModeButton>
+
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
-                gContext.visibleOffCanvas ? "collapsed" : ""
+                gContext.visibleOffCanvas ? 'collapsed' : ''
               }`}
               type="button"
               data-toggle="collapse"
@@ -486,19 +550,15 @@ const Header = ({ isDark }) => {
               onClick={gContext.toggleOffCanvas}
               dark={isDark ? 1 : 0}
             >
-              {/* <i className="icon icon-simple-remove icon-close"></i> */}
               <i className="icon icon-menu-34 icon-burger d-block"></i>
             </ToggleButton>
           </nav>
         </Container>
       </SiteHeader>
-      <Offcanvas
-        show={gContext.visibleOffCanvas}
-        onHideOffcanvas={gContext.toggleOffCanvas}
-      >
+      <Offcanvas show={gContext.visibleOffCanvas} onHideOffcanvas={gContext.toggleOffCanvas}>
         <NestedMenu menuItems={menuItems} />
       </Offcanvas>
     </>
-  );
-};
-export default Header;
+  )
+}
+export default Header

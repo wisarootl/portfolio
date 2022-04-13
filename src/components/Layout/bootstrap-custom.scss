@@ -11,15 +11,15 @@ $black: $heading;
 $body-color: $text;
 $headings-color: $text;
 $body-bg: $bg;
-$font-family-base: "Inter", sans-serif;
+$font-family-base: 'Inter', sans-serif;
 $headings-font-family: $font-family-base;
 $headings-font-weight: 700;
 
 //Import font
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 // Import Bootstrap and its default variables
-@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap/scss/bootstrap.scss';
 
 .has-offcanvas {
   width: 100%;

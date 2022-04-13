@@ -5,18 +5,23 @@ import PageWrapper from '../components/PageWrapper'
 import Hero from '../sections/landing1/Hero'
 import Works from '../sections/landing1/Works'
 import Contact from '../sections/landing1/Contact'
+import Profile from '../sections/landing1/Profile'
 
 const IndexPage = () => {
   return (
     <>
-      <PageWrapper>
+      {/* <PageWrapper> */}
+      <Element name="about">
         <Hero />
-        <Element name="works">
-          <Works />
-        </Element>
-
+      </Element>
+      <Element name="portfolio">
+        <Works />
+      </Element>
+      <Profile />
+      <Element name="contact">
         <Contact />
-      </PageWrapper>
+      </Element>
+      {/* </PageWrapper> */}
     </>
   )
 }

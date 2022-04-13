@@ -6,11 +6,10 @@ import AOS from 'aos'
 
 import Header from '../Header'
 import Footer from '../Footer'
-import ThemeSwitch from '../ThemeSwitch'
 
-import ModalVideo from '../ModalVideo'
-import ContactModal from '../ContactModal'
-import AboutModal from '../AboutModal'
+// import ModalVideo from '../ModalVideo'
+// import ContactModal from '../ContactModal'
+// import AboutModal from '../AboutModal'
 
 import GlobalContext from '../../context/GlobalContext'
 
@@ -62,7 +61,7 @@ const getTheme = (mode) =>
   })
 
 const Layout = ({ children, pageContext }) => {
-  const title = 'Wisaroot | Software Engineer'
+  const title = 'Wisaroot | Software Engineer, AI, ML, Python, Javascript'
   const gContext = useContext(GlobalContext)
 
   const [visibleLoader, setVisibleLoader] = useState(true)
@@ -101,7 +100,6 @@ const Layout = ({ children, pageContext }) => {
   if (pageContext.layout === 'bare') {
     return (
       <ThemeProvider theme={gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)}>
-        <ThemeSwitch />
         <GlobalStyle />
         <Helmet>
           <title>{title}</title>
@@ -115,8 +113,6 @@ const Layout = ({ children, pageContext }) => {
         <div className="site-wrapper overflow-hidden" ref={eleRef}>
           {children}
         </div>
-
-        <ModalVideo />
       </ThemeProvider>
     )
   }
@@ -124,7 +120,7 @@ const Layout = ({ children, pageContext }) => {
   return (
     <>
       <ThemeProvider theme={gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)}>
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <GlobalStyle />
         <Helmet>
           <title>{title}</title>
@@ -141,9 +137,9 @@ const Layout = ({ children, pageContext }) => {
 
           <Footer isDark={gContext.theme.footerDark} />
         </div>
-        <AboutModal />
-        <ContactModal />
-        <ModalVideo />
+        {/* <AboutModal /> */}
+        {/* <ContactModal /> */}
+        {/* <ModalVideo /> */}
       </ThemeProvider>
     </>
   )

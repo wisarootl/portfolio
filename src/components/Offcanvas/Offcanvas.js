@@ -1,7 +1,7 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import styled from "styled-components";
-import Logo from "../Logo";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import styled from 'styled-components'
+import Logo from '../Logo'
 
 const Overlay = styled.div`
   position: fixed;
@@ -19,7 +19,7 @@ const Overlay = styled.div`
     opacity: 0;
     visibility: hidden;
   }
-`;
+`
 
 const Drawer = styled.div`
   position: fixed;
@@ -30,7 +30,8 @@ const Drawer = styled.div`
   bottom: 0;
   height: 100%;
   z-index: 999999;
-  background: #fff;
+  // background: #fff;
+  background: ${({ theme }) => theme.colors.bg};
   overflow-y: auto;
   transform: translateX(0);
   transition: all 0.3s ease-out;
@@ -43,12 +44,12 @@ const Drawer = styled.div`
     transform: initial !important;
     float: none !important;
   }
-`;
+`
 
 const LogoContainer = styled.div`
   font-weight: 600;
   font-size: 1.25rem;
-`;
+`
 
 const CloseWrapper = styled.div`
   cursor: pointer;
@@ -58,8 +59,8 @@ const CloseWrapper = styled.div`
   display: inline-flex;
   justify-content: center;
   z-index: 10;
-  color: ${({ theme }) => theme.colors.dark};
-`;
+  color: ${({ theme }) => theme.colors.front};
+`
 
 const CloseButton = (props) => (
   <CloseWrapper {...props}>
@@ -67,7 +68,7 @@ const CloseButton = (props) => (
       role="img"
       viewBox="0 0 24 24"
       css={`
-        fill: ${({ theme }) => theme.colors.dark};
+        fill: ${({ theme }) => theme.colors.front};
         vertical-align: middle;
         height: 1rem;
         width: 1rem;
@@ -76,28 +77,28 @@ const CloseButton = (props) => (
       <path
         d="M9.82 12L0 2.18 2.18 0 12 9.82 21.82 0 24 2.18 14.18 12 24 21.82 21.82 24 12 14.18 2.18 24 0 21.82z"
         css={`
-          fill: ${({ theme }) => theme.colors.dark};
+          fill: ${({ theme }) => theme.colors.front};
         `}
       ></path>
     </svg>
   </CloseWrapper>
-);
+)
 
 const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
-  if (typeof document !== "undefined") {
+  if (typeof document !== 'undefined') {
     if (show) {
-      document.querySelector("html").classList.add("has-offcanvas");
-      document.body.classList.add("has-offcanvas");
+      document.querySelector('html').classList.add('has-offcanvas')
+      document.body.classList.add('has-offcanvas')
     } else {
-      document.querySelector("html").classList.remove("has-offcanvas");
-      document.body.classList.remove("has-offcanvas");
+      document.querySelector('html').classList.remove('has-offcanvas')
+      document.body.classList.remove('has-offcanvas')
     }
   }
 
   return (
     <div {...rest}>
-      <Overlay className={show ? "" : "hidden"} onClick={onHideOffcanvas} />
-      <Drawer className={show ? "" : "hidden"}>
+      <Overlay className={show ? '' : 'hidden'} onClick={onHideOffcanvas} />
+      <Drawer className={show ? '' : 'hidden'}>
         <Container>
           <div className="p-3">
             <div className="mb-3 d-flex align-items-center justify-content-between">
@@ -112,7 +113,7 @@ const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
         </Container>
       </Drawer>
     </div>
-  );
-};
+  )
+}
 
-export default Offcanvas;
+export default Offcanvas

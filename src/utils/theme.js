@@ -1,17 +1,18 @@
-import { rgba } from "polished";
-import { breakpoints } from "./breakpoints";
+import { rgba } from 'polished'
+import { breakpoints } from './breakpoints'
 
 const defaultColors = {
-  primary: "#495fef",
-  secondary: "#f5f5f7",
-  white: "#ffffff",
-  dark: "#161c2d",
-  ash: "#413e65",
-  black: "#000000",
-  warning: "#fedc5a",
-  success: "#56b381",
-  info: "#482EC3",
-};
+  primary: '#495fef',
+  secondary: '#f5f5f7',
+  white: '#ffffff',
+  dark: '#161c2d',
+  ash: '#413e65',
+  black: '#000000',
+  warning: '#fedc5a',
+  success: '#56b381',
+  info: '#482EC3',
+  red: '#dc3545'
+}
 
 const colors = {
   primary: defaultColors.primary,
@@ -26,12 +27,16 @@ const colors = {
   front: defaultColors.dark,
   frontShade: rgba(defaultColors.dark, 0.5),
   border: rgba(defaultColors.ash, 0.115),
-  shadow: rgba(defaultColors.ash, 0.175),
+  shadow: rgba(defaultColors.ash, 0.03),
   heading: defaultColors.dark,
   text: rgba(defaultColors.dark, 0.7),
   warning: defaultColors.warning,
   success: defaultColors.success,
   info: defaultColors.info,
+  red: defaultColors.red,
+  codeText: '#eb5757',
+  codeBg: rgba(135, 131, 120, 0.15),
+  frontShade2: rgba(defaultColors.dark, 0.1),
 
   modes: {
     dark: {
@@ -47,26 +52,30 @@ const colors = {
       front: defaultColors.white,
       frontShade: rgba(defaultColors.white, 0.5),
       border: rgba(defaultColors.ash, 0.115),
-      shadow: rgba(defaultColors.ash, 0.175),
+      shadow: rgba(defaultColors.ash, 0.1),
       heading: defaultColors.white,
       text: rgba(defaultColors.white, 0.7),
       warning: defaultColors.warning,
       success: defaultColors.success,
       info: defaultColors.info,
-    },
-  },
-};
+      red: defaultColors.red,
+      codeText: '#eb5757',
+      codeBg: rgba(135, 131, 120, 0.15),
+      frontShade2: rgba(defaultColors.white, 0.1)
+    }
+  }
+}
 
 const theme = {
-  initialColorModeName: "light",
+  initialColorModeName: 'light',
   colors: colors,
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   breakpoints: [
     `${breakpoints.sm}px`,
     `${breakpoints.md}px`,
     `${breakpoints.lg}px`,
-    `${breakpoints.xl}px`,
-  ],
-};
+    `${breakpoints.xl}px`
+  ]
+}
 
-export default theme;
+export default theme

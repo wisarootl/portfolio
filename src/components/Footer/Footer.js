@@ -1,19 +1,21 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import { Box, Title } from "../Core";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import { Box, Title, Span } from '../Core'
+import { BsHeartFill } from 'react-icons/bs'
 
 const Footer = ({ isDark = true }) => {
+  const d = new Date()
+  let year = d.getFullYear()
   return (
     <>
       {/* <!-- Footer section --> */}
       <Box
         bg="bg"
-        pt={[0, null, null, "3.75rem"]}
+        pt={['3.75rem', null, null, '3.75rem']}
         pb="3.75rem"
         css={`
           z-index: -50;
         `}
-        className="position-relative"
       >
         <Container>
           <div className="text-center">
@@ -22,15 +24,24 @@ const Footer = ({ isDark = true }) => {
               css={`
                 font-size: 0.8125rem;
               `}
-              className="text-uppercase"
             >
-              © 2020 All right reseved
+              © 2021 - {year} All Right Reseved. Made with{' '}
+              <Span
+                color="red"
+                css={`
+                  padding: 0 1px;
+                `}
+              >
+                {' '}
+                <BsHeartFill />{' '}
+              </Span>{' '}
+              by <a href="https://www.google.com/">Wisaroot</a>
             </Title>
           </div>
         </Container>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
