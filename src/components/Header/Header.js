@@ -245,10 +245,16 @@ const Header = ({ isDark }) => {
   // console.log(global.location.pathname)
   console.log(2)
   // console.log(req.protocol)
+  var pathname = undefined
+  if (global.location) {
+    pathname = global.location.pathname
+  } else {
+    pathname = undefined
+  }
 
   let menu_items
   // ! if (gContext.isHomepage === false) {
-  if ('global.location.pathname' !== '/') {
+  if (pathname !== '/') {
     menu_items = (
       <>
         <li className="nav-item">
