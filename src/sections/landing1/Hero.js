@@ -65,9 +65,9 @@ const Hero = () => {
                     web development, game development and gaming bot until I begin my career as a
                     petroleum engineer at Chevron. While I work there, I utilized my programming
                     skills to develop various in-house softwares for data-driven decisions in the
-                    business resulting in more profit of 66.4M USD for the company. Then, I realize
-                    that I would like to strengthen my programming and explore more knowledge of
-                    computer science.
+                    business resulting in more profit of 65.1 million USD for the company. Then, I
+                    realize that I would like to strengthen my programming and explore more
+                    knowledge of computer science.
                   </p>
                   <p>
                     Therefore, I pursued a 🎓{' '}
