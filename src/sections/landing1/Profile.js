@@ -16,6 +16,8 @@ import GlobalContext from '../../context/GlobalContext'
 import algoexpertCert from '../../assets/cert/algoexpert.pdf'
 import datasciDatacampCert from '../../assets/cert/data_scientist_python.pdf'
 import theCompleteWebDevZTMCert from '../../assets/cert/complete_web_dev_ztm.pdf'
+import toefl from '../../assets/cert/TOEFL_2020.pdf'
+import toeic from '../../assets/cert/TOEIC_2020.pdf'
 import { device } from '../../utils'
 
 const ProfileCard = styled(Box)`
@@ -111,6 +113,8 @@ const ProfileCard = styled(Box)`
   .link-icon {
     font-size: 10px;
     color: ${({ theme }) => theme.colors.frontShade};
+    position: relative;
+    bottom: 1px;
   }
 `
 
@@ -363,7 +367,17 @@ const Profile = () => {
                       <code>Tree-based model</code>, <code>NLP</code> and <code>Time Series</code>
                     </p>
                     <p>
-                      • Fluent in <code>English</code> (TOEFL ITP: 560/677, TOEIC: 925/990)
+                      • Fluent in <code>English</code> (
+                      <a href={toefl} target="_blank">
+                        <span className="emphasize-text">TOEFL ITP: 560/677</span>{' '}
+                        <FaExternalLinkAlt className="link-icon" />
+                      </a>
+                      ,{' '}
+                      <a href={toeic} target="_blank">
+                        <span className="emphasize-text">TOEIC: 925/990</span>{' '}
+                        <FaExternalLinkAlt className="link-icon" />
+                      </a>
+                      )
                     </p>
                     <p>
                       • Good <code>project management</code> and <code>team working</code> skills
