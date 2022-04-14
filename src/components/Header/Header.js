@@ -248,7 +248,7 @@ const Header = ({ isDark }) => {
 
   let menu_items
   // ! if (gContext.isHomepage === false) {
-  if (global.location.pathname !== '/') {
+  if ('global.location.pathname' !== '/') {
     menu_items = (
       <>
         <li className="nav-item">

@@ -180,7 +180,7 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
   let menu_items
   // ! if (gContext.isHomepage === false) {
   // console.log(global.location)
-  if (global.location.pathname !== '/') {
+  if ('global.location.pathname' !== '/') {
     menu_items = (
       <>
         <ListGroup.Item>{<Link2 to="/">Home</Link2>}</ListGroup.Item>
