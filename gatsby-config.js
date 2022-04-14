@@ -4,7 +4,6 @@ const current_date = new Date()
 module.exports = {
   siteMetadata: {
     title: `Omega Gatsby`,
-    // siteUrl: `https://wisaroot.herokuapp.com/`
     siteUrl: siteUrl
   },
   plugins: [
@@ -27,19 +26,8 @@ module.exports = {
         }
       `,
         resolveSiteUrl: () => siteUrl,
-        resolvePages: ({
-          allSitePage: { nodes: allPages }
-          // allWpContentNode: { nodes: allWpNodes }
-        }) => {
-          // const wpNodeMap = allWpNodes.reduce((acc, node) => {
-          //   const { uri } = node
-          //   acc[uri] = node
-
-          //   return acc
-          // }, {})
-
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
           return allPages.map((page) => {
-            // return { ...page, ...wpNodeMap[page.path] }
             return { ...page }
           })
         },
