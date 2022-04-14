@@ -79,7 +79,7 @@ const Hero = () => {
                     <code>Artificial Intelligence</code>, <code>Machine Learning</code>,{' '}
                     <code>Data Science</code> for <code>Time Series</code>, and <code>NLP</code>. I
                     also have skills in software development, web development and other technology
-                    skills including <code>JavaScript</code>, <code>SQL</code>, <code>CSS</code>,{' '}
+                    skills including <code>Javascript</code>, <code>SQL</code>, <code>CSS</code>,{' '}
                     <code>HTML</code>, <code>Frontend</code>, <code>backend</code>,{' '}
                     <code>Database</code>, <code>Node.JS</code>, <code>React</code>,{' '}
                     <code>MongoDB</code>.

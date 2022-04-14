@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { Box, Title, Text, Span } from '../Core'
 import { FaTags, FaExternalLinkAlt } from 'react-icons/fa'
+import { device } from '../../utils'
 
 const WorkBox = styled(Box)`
   transition: 0.4s;
@@ -14,7 +15,11 @@ const TextBox = styled(Box)`
   bottom: 0px;
   left: 20px;
   right: 20px;
-  padding: 1.25rem 1.875rem;
+  padding: 1.25rem 15px;
+  @media ${device.sm} {
+    padding: 1.25rem 1.875rem;
+  }
+
   transition: 0.4s;
   background: ${({ theme }) => theme.colors.shadow};
 

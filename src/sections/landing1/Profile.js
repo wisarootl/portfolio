@@ -12,13 +12,11 @@ import chulaLogo from '../../assets/img/profile/chula.png'
 import chevronLogoDark from '../../assets/img/profile/chevron-dark.png'
 import pttgcLogoDark from '../../assets/img/profile/pttgc-dark.png'
 import chulaLogoDark from '../../assets/img/profile/chula-dark.png'
-
 import GlobalContext from '../../context/GlobalContext'
-
 import algoexpertCert from '../../assets/cert/algoexpert.pdf'
 import datasciDatacampCert from '../../assets/cert/data_scientist_python.pdf'
-
-// import { device } from '../utils'
+import theCompleteWebDevZTMCert from '../../assets/cert/complete_web_dev_ztm.pdf'
+import { device } from '../../utils'
 
 const ProfileCard = styled(Box)`
   margin-top: 0.5rem;
@@ -27,12 +25,62 @@ const ProfileCard = styled(Box)`
   margin-right: 0rem !important;
 
   .logo {
-    flex: 0 0 72px;
+    flex: 0 0 52px;
+    padding-right: 5px;
+    padding-left: 5px;
+    @media ${device.md} {
+      flex: 0 0 72px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .padding-dynamic {
+    padding: 0px;
+    @media ${device.md} {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .profile-card-title {
+    margin-bottom: 0.3rem;
+  }
+
+  .logo-position-row {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0.5rem;
+  }
+
+  .description-row {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    // margin-bottom: 1rem;
+  }
+
+  .logo-bottom {
+    flex: 0 0 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    @media ${device.md} {
+      flex: 0 0 72px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .description-col {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   .profile-card-organization {
     font-size: 0.9rem;
-    margin-bottom: 1rem;
   }
 
   .profile-card-heading {
@@ -41,7 +89,11 @@ const ProfileCard = styled(Box)`
   }
 
   .profile-card-date p {
-    text-align: right;
+    text-align: left;
+
+    @media (min-width: 576px) {
+      text-align: right;
+    }
   }
 
   p {
@@ -66,8 +118,10 @@ const Board = styled(Col)`
   border-color: ${({ theme }) => theme.colors.shadow};
   background-color: ${({ theme }) => theme.colors.shadow};
   border-radius: 10px;
-  // padding: 2rem !important;
-  padding: 1.25rem 1.875rem !important;
+  padding: 1.25rem 15px !important;
+  @media ${device.md} {
+    padding: 1.25rem 1.875rem !important;
+  }
 
   hr {
     border-top-color: ${({ theme }) => theme.colors.frontShade2};
@@ -86,34 +140,39 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4">
+                  <div className="col-12 mb-4 padding-dynamic">
                     <Title variant="cardLg">Experience</Title>
                   </div>
                 </ProfileCard>
                 <ProfileCard className="row">
-                  <div className="col logo">
-                    <img
-                      src={!gContext.theme.bodyDark ? chevronLogo : chevronLogoDark}
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col p-0">
-                    <div className="row">
-                      <div className="col-8 profile-card-heading">
-                        <Title variant="cardSm" className="profile-card-title">
-                          Petroleum Engineer
-                        </Title>
-                        <Text variant="small" color="text" className="profile-card-organization">
-                          <span className="emphasize-text">Chevron</span> : a world leading oil and
-                          gas company
-                        </Text>
-                      </div>
-                      <div className="col-4 profile-card-date">
-                        <p>2017 – present</p>
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? chevronLogo : chevronLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            Petroleum Engineer
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">Chevron</span> : a world leading oil
+                            and gas company
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2017 – presen test</p>
+                        </div>
                       </div>
                     </div>
-                    <Box color="text">
+                  </div>
+                  <div className="row description-row w-100">
+                    <div className="col logo-bottom"></div>
+                    <Box className="col description-col" color="text">
                       <p>
                         • Served as a <span className="emphasize-text">software developer</span> for
                         various software development side-projects to create automation in the
@@ -136,53 +195,57 @@ const Profile = () => {
                     </Box>
                   </div>
                 </ProfileCard>
-                <hr></hr>
+                <hr />
                 <ProfileCard className="row">
-                  <div className="col logo">
-                    <img
-                      src={!gContext.theme.bodyDark ? chevronLogo : chevronLogoDark}
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col p-0">
-                    <div className="row">
-                      <div className="col-8 profile-card-heading">
-                        <Title variant="cardSm" className="profile-card-title">
-                          Petroleum Engineer Intern
-                        </Title>
-                        <Text variant="small" color="text" className="profile-card-organization">
-                          <span className="emphasize-text">Chevron</span>
-                        </Text>
-                      </div>
-                      <div className="col-4 profile-card-date">
-                        <p>2015 – 2016</p>
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? chevronLogo : chevronLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            Petroleum Engineer Intern
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">Chevron</span>
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2015 – 2016</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </ProfileCard>
-                <hr></hr>
+                <hr />
                 <ProfileCard className="row">
-                  <div className="col logo">
-                    <img
-                      src={!gContext.theme.bodyDark ? pttgcLogo : pttgcLogoDark}
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col p-0">
-                    <div className="row">
-                      <div className="col-8 profile-card-heading">
-                        <Title variant="cardSm" className="profile-card-title">
-                          Research Assistant
-                        </Title>
-                        <Text variant="small" color="text" className="profile-card-organization">
-                          <span className="emphasize-text">PTT Global Chemical</span> : a Thailand
-                          leading petrochemical company
-                        </Text>
-                      </div>
-                      <div className="col-4 profile-card-date">
-                        <p>2012 – 2014</p>
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? pttgcLogo : pttgcLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            Research Assistant
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">PTT Global Chemical</span> : a Thailand
+                            leading petrochemical company
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2012 – 2014</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -194,81 +257,87 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4">
+                  <div className="col-12 mb-4 padding-dynamic">
                     <Title variant="cardLg">Education</Title>
                   </div>
                 </ProfileCard>
                 <ProfileCard className="row">
-                  <div className="col logo">
-                    <img
-                      src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col p-0">
-                    <div className="row">
-                      <div className="col-8 profile-card-heading">
-                        <Title variant="cardSm" className="profile-card-title">
-                          M.Sc. in Computer Science
-                        </Title>
-                        <Text variant="small" color="text" className="profile-card-organization">
-                          <span className="emphasize-text">Chulalongkorn University</span>
-                        </Text>
-                      </div>
-                      <div className="col-4 profile-card-date">
-                        <p>2020 – 2022</p>
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            M.Sc. in Computer Science
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">Chulalongkorn Univerisity</span>
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2020 – 2022</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </ProfileCard>
-                <hr></hr>
+                <hr />
                 <ProfileCard className="row">
-                  <div className="col logo">
-                    <img
-                      src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col p-0">
-                    <div className="row">
-                      <div className="col-8 profile-card-heading">
-                        <Title variant="cardSm" className="profile-card-title">
-                          M.Eng. in Petrolrum Engineering
-                        </Title>
-                        <Text variant="small" color="text" className="profile-card-organization">
-                          <span className="emphasize-text">Chulalongkorn Univerisity</span>
-                        </Text>
-                      </div>
-                      <div className="col-4 profile-card-date">
-                        <p>2014 – 2016</p>
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            M.Eng. in Petrolrum Engineering
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">Chulalongkorn Univerisity</span>
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2014 – 2016</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </ProfileCard>
-                <hr></hr>
+                <hr />
                 <ProfileCard className="row">
-                  <div className="col logo">
-                    <img
-                      src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
-                      alt=""
-                      className="w-100"
-                    />
-                  </div>
-                  <div className="col p-0">
-                    <div className="row">
-                      <div className="col-8 profile-card-heading">
-                        <Title variant="cardSm" className="profile-card-title">
-                          B.Sc. in Chemical Engineering
-                        </Title>
-                        <Text variant="small" color="text" className="profile-card-organization">
-                          <span className="emphasize-text">Chulalongkorn University</span> (1
-                          <sup>st</sup> Hons, Top 1 in the class)
-                        </Text>
-                      </div>
-                      <div className="col-4 profile-card-date">
-                        <p>2008 – 2012</p>
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            B.Sc. in Chemical Engineering
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">Chulalongkorn University</span> (1
+                            <sup>st</sup> Hons, Top 1 in the class)
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2008 – 2012</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -280,12 +349,12 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4">
+                  <div className="col-12 mb-4 padding-dynamic">
                     <Title variant="cardLg">Skills</Title>
                   </div>
                 </ProfileCard>
                 <ProfileCard className="row">
-                  <div className="col">
+                  <div className="col padding-dynamic">
                     <p>
                       • Proficient in <code>Python</code> (<code>Tensorflow</code>,{' '}
                       <code>Keras</code>, <code>Scikit-Learn</code>, <code>Pandas</code>,{' '}
@@ -303,7 +372,7 @@ const Profile = () => {
                       resources management.
                     </p>
                     <p>
-                      • Other computer skills e.g. <code>JavaScript</code>, <code>SQL</code>,{' '}
+                      • Other computer skills e.g. <code>Javascript</code>, <code>SQL</code>,{' '}
                       <code>React</code>, <code>Node.js</code>, <code>HTML</code>, <code>CSS</code>,{' '}
                       <code>VBA</code> and <code>R</code>
                     </p>
@@ -316,12 +385,26 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4">
+                  <div className="col-12 mb-4 padding-dynamic">
                     <Title variant="cardLg">Awards / Certifications</Title>
                   </div>
                 </ProfileCard>
                 <ProfileCard className="row">
-                  <div className="col">
+                  <div className="col padding-dynamic">
+                    <p>
+                      •{' '}
+                      <a href={theCompleteWebDevZTMCert} target="_blank">
+                        <span className="emphasize-text">The Complete Web Developer</span>{' '}
+                        <FaExternalLinkAlt className="link-icon" />
+                      </a>{' '}
+                      (2022) from <span className="emphasize-text">Zero to Mastery</span> : 38 hrs.
+                      practical traning for <code>Full Stack</code> web development including{' '}
+                      <code>HTML</code>,<code>CSS</code>, <code>Responsive Design</code>,{' '}
+                      <code>Javascript</code>, <code>React</code>, <code>Git</code>,{' '}
+                      <code>Node.js</code>, <code>Express.js</code>, <code>NPM</code>,{' '}
+                      <code>PostgresSQL</code>, <code>SQL</code>, <code>Security</code>,{' '}
+                      <code>Deployment</code>
+                    </p>
                     <p>
                       •{' '}
                       <a href={algoexpertCert} target="_blank">
@@ -340,9 +423,11 @@ const Profile = () => {
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
                       (2021) : Chartered Financial Analyst I program is exam that test the
-                      fundamentals finace including Statistics, Quantitative Finance, Economics,
-                      Portfolio Manangement, Equity Investment, Bond Investment, Derivatives
-                      Investment, Financial Reporting and Analysis
+                      fundamentals finace including <code>Statistics</code>,{' '}
+                      <code>Quantitative Finance</code>, <code>Economics</code>,
+                      <code>Portfolio Manangement</code>, <code>Equity Investment</code>,{' '}
+                      <code>Bond Investment</code>, <code>Derivatives</code>
+                      <code>Investment</code>, <code>Financial Reporting and Analysis</code>
                     </p>
                     <p>
                       •{' '}
