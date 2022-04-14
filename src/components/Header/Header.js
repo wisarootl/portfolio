@@ -242,7 +242,7 @@ const Header = ({ isDark }) => {
   console.log(1)
   console.log(global)
   console.log(global.location)
-  console.log(global.location.pathname)
+  // console.log(global.location.pathname)
   console.log(2)
   // console.log(req.protocol)
 
