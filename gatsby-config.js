@@ -21,7 +21,7 @@ module.exports = {
         path: './src/pages/'
       }
     },
-    // `gatsby-transformer-gitinfo`,
+    `gatsby-transformer-gitinfo`,
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
