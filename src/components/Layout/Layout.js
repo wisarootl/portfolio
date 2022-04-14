@@ -123,6 +123,10 @@ const Layout = ({ children, pageContext }) => {
         <StyleWrapper>
           <GlobalStyle />
           <Helmet>
+            <meta
+              name="google-site-verification"
+              content="-TcdlDhf3gzhH8NKj9wU8rDBt6QjuqFAML_ooIUv9Sk"
+            />
             <title>{title}</title>
             <link rel="icon" type="image/png" href={imgFavicon} />
           </Helmet>
@@ -146,6 +150,10 @@ const Layout = ({ children, pageContext }) => {
         <StyleWrapper>
           <GlobalStyle />
           <Helmet>
+            <meta
+              name="google-site-verification"
+              content="-TcdlDhf3gzhH8NKj9wU8rDBt6QjuqFAML_ooIUv9Sk"
+            />
             <title>{title}</title>
             <link rel="icon" type="image/png" href={imgFavicon} />
           </Helmet>
