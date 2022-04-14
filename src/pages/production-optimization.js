@@ -14,9 +14,6 @@ import { BiDollar } from 'react-icons/bi'
 import { FaTrophy, FaSmileBeam } from 'react-icons/fa'
 
 const WorkSingle = () => {
-  // ! const gContext = useContext(GlobalContext)
-  // ! gContext.isHomepage = false
-
   return (
     <>
       <Section

@@ -16,9 +16,6 @@ import { device } from '../utils'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 
 const WorkSingle = () => {
-  // ! const gContext = useContext(GlobalContext)
-  // ! gContext.isHomepage = false
-
   return (
     <>
       <Section

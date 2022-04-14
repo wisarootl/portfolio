@@ -238,13 +238,7 @@ const Header = ({ isDark }) => {
       setShowReveal(false)
     }
   })
-  // var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl
-  console.log(1)
-  console.log(global)
-  console.log(global.location)
-  // console.log(global.location.pathname)
-  console.log(2)
-  // console.log(req.protocol)
+
   var pathname = undefined
   if (global.location) {
     pathname = global.location.pathname
@@ -253,7 +247,6 @@ const Header = ({ isDark }) => {
   }
 
   let menu_items
-  // ! if (gContext.isHomepage === false) {
   if (pathname !== '/') {
     menu_items = (
       <>

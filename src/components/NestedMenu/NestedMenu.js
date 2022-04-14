@@ -175,11 +175,7 @@ const MenuItem = ({
 }
 
 const NestedMenu = ({ menuItems = defaultMenuItems }) => {
-  // ! const gContext = useContext(GlobalContext)
-
   let menu_items
-  // ! if (gContext.isHomepage === false) {
-  // console.log(global.location)
   var pathname = undefined
   if (global.location) {
     pathname = global.location.pathname

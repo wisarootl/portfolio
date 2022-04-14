@@ -14,9 +14,6 @@ import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { RiStockFill } from 'react-icons/ri'
 
 const WorkSingle = () => {
-  // ! const gContext = useContext(GlobalContext)
-  // ! gContext.isHomepage = false
-
   return (
     <>
       <Section
