@@ -560,7 +560,7 @@ const Header = ({ isDark }) => {
         </Container>
       </SiteHeader>
       <Offcanvas show={gContext.visibleOffCanvas} onHideOffcanvas={gContext.toggleOffCanvas}>
-        <NestedMenu menuItems={menuItems} />
+        <NestedMenu menuItems={menuItems} onHideOffcanvas={gContext.toggleOffCanvas} />
       </Offcanvas>
     </>
   )

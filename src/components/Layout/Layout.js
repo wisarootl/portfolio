@@ -64,6 +64,7 @@ const StyleWrapper = styled.div`
     padding-left: 0.4em;
     padding-right: 0.4em;
     padding-bottom: 0.2em;
+    padding-top: 0.1em;
     position: relative;
     top: -1px;
   }

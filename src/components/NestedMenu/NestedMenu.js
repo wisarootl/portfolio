@@ -174,7 +174,7 @@ const MenuItem = ({
   )
 }
 
-const NestedMenu = ({ menuItems = defaultMenuItems }) => {
+const NestedMenu = ({ menuItems = defaultMenuItems, onHideOffcanvas }) => {
   let menu_items
   var pathname = undefined
   if (global.location) {
@@ -184,7 +184,13 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
   if (pathname !== '/') {
     menu_items = (
       <>
-        <ListGroup.Item>{<Link2 to="/">Home</Link2>}</ListGroup.Item>
+        <ListGroup.Item>
+          {
+            <Link2 to="/" onClick={onHideOffcanvas}>
+              Home
+            </Link2>
+          }
+        </ListGroup.Item>
       </>
     )
   } else {
@@ -192,35 +198,75 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
       <>
         <ListGroup.Item>
           {
-            <Link to="about" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               about
             </Link>
           }
         </ListGroup.Item>
         <ListGroup.Item>
           {
-            <Link to="portfolio" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               portfolio
             </Link>
           }
         </ListGroup.Item>
         <ListGroup.Item>
           {
-            <Link to="experience" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               experience
             </Link>
           }
         </ListGroup.Item>
         <ListGroup.Item>
           {
-            <Link to="education" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="education"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               education
             </Link>
           }
         </ListGroup.Item>
         <ListGroup.Item>
           {
-            <Link to="skills" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               skills
             </Link>
           }
@@ -228,7 +274,15 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
 
         <ListGroup.Item>
           {
-            <Link to="awards" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="awards"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               awards
             </Link>
           }
@@ -248,7 +302,15 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
 
         <ListGroup.Item>
           {
-            <Link to="contact" spy={true} smooth={true} offset={-50} duration={1000} href="#">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              href="#"
+              onClick={onHideOffcanvas}
+            >
               contact
             </Link>
           }
