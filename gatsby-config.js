@@ -1,9 +1,10 @@
-const siteUrl = process.env.URL || `https://wisaroot.herokuapp.com/`
+// const siteUrl = process.env.URL || `https://wisaroot.herokuapp.com/`
 
 module.exports = {
   siteMetadata: {
     title: `Omega Gatsby`,
-    siteUrl: siteUrl
+    siteUrl: `https://wisaroot.herokuapp.com/`
+    // siteUrl: siteUrl
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
