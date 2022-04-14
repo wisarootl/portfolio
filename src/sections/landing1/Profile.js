@@ -397,7 +397,7 @@ const Profile = () => {
                         <span className="emphasize-text">The Complete Web Developer</span>{' '}
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
-                      (2022) from <span className="emphasize-text">Zero to Mastery</span> : 38 hrs.
+                      from <span className="emphasize-text">Zero to Mastery</span> (2022) : 38 hrs.
                       practical traning for <code>Full Stack</code> web development including{' '}
                       <code>HTML</code>,<code>CSS</code>, <code>Responsive Design</code>,{' '}
                       <code>Javascript</code>, <code>React</code>, <code>Git</code>,{' '}
