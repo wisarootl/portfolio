@@ -426,9 +426,10 @@ const Profile = () => {
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
                       (2022) : solved problem related to <code>Algorithms</code> and{' '}
-                      <code>Data Struces</code> for 200+ questions. In addition, I continuously
-                      these kind of questions on leetcode.com to sharpen my <code>Algorithms</code>,{' '}
-                      <code>Data Struces</code> and <code>Coding</code> skills.
+                      <code>Data Struces</code> for 200+ questions. In addition, I am continuously
+                      solving these kind of questions on leetcode.com to sharpen my{' '}
+                      <code>Algorithms</code>, <code>Data Struces</code>,{' '}
+                      <code>Problem Solving</code> and <code>Coding</code> skills.
                     </p>
                     <p>
                       • Passed{' '}

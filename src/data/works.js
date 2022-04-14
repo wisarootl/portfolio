@@ -59,7 +59,15 @@ export const works = [
   },
   {
     title: `Leetcode Practice`,
-    categories: [`Training`, `Algorithm`, `Data Sturcture`, `Python`, `Coding`, `Comminication`],
+    categories: [
+      `Training`,
+      `Algorithm`,
+      `Data Sturcture`,
+      `Python`,
+      `Coding`,
+      `Problem Solving`,
+      `Comminication`
+    ],
     thumbnail: imgT5,
     link: 'https://github.com/wisarootl/leetcode',
     description: (
