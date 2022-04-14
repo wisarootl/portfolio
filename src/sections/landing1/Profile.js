@@ -182,7 +182,7 @@ const Profile = () => {
                         </Text>
                       </div>
                       <div className="col-4 profile-card-date">
-                        <p>2008 – 2012</p>
+                        <p>2012 – 2014</p>
                       </div>
                     </div>
                   </div>
@@ -268,7 +268,7 @@ const Profile = () => {
                         </Text>
                       </div>
                       <div className="col-4 profile-card-date">
-                        <p>2012 – 2014</p>
+                        <p>2008 – 2012</p>
                       </div>
                     </div>
                   </div>

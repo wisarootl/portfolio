@@ -242,8 +242,6 @@ const Header = ({ isDark }) => {
   var pathname = undefined
   if (global.location) {
     pathname = global.location.pathname
-  } else {
-    pathname = undefined
   }
 
   let menu_items

@@ -179,8 +179,6 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
   var pathname = undefined
   if (global.location) {
     pathname = global.location.pathname
-  } else {
-    pathname = undefined
   }
 
   if (pathname !== '/') {
