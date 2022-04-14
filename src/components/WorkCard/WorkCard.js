@@ -25,21 +25,6 @@ const TextBox = styled(Box)`
   .port-more {
     font-size: 0.85rem;
   }
-
-  .emphasize-text {
-    font-weight: 400;
-    color: ${({ theme }) => theme.colors.heading};
-  }
-
-  code {
-    font-size: 85%;
-    color: ${({ theme }) => theme.colors.codeText};
-    background: ${({ theme }) => theme.colors.codeBg};
-    border-radius: 3px;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    padding-bottom: 0.2em;
-  }
 `
 
 const WorkCard = ({ workItem, link, ...rest }) => (

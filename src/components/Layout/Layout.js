@@ -50,6 +50,25 @@ const Loader = styled.div`
   }
 `
 
+const StyleWrapper = styled.div`
+  .emphasize-text {
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.heading};
+  }
+
+  code {
+    font-size: 85%;
+    color: ${({ theme }) => theme.colors.codeText};
+    background: ${({ theme }) => theme.colors.codeBg};
+    border-radius: 3px;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-bottom: 0.2em;
+    position: relative;
+    top: -1px;
+  }
+`
+
 // options for different color modes
 const modes = { light: 'light', dark: 'dark' }
 
@@ -100,19 +119,21 @@ const Layout = ({ children, pageContext }) => {
   if (pageContext.layout === 'bare') {
     return (
       <ThemeProvider theme={gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)}>
-        <GlobalStyle />
-        <Helmet>
-          <title>{title}</title>
-          <link rel="icon" type="image/png" href={imgFavicon} />
-        </Helmet>
-        <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
-          <div className="load-circle">
-            <span className="one"></span>
+        <StyleWrapper>
+          <GlobalStyle />
+          <Helmet>
+            <title>{title}</title>
+            <link rel="icon" type="image/png" href={imgFavicon} />
+          </Helmet>
+          <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
+            <div className="load-circle">
+              <span className="one"></span>
+            </div>
+          </Loader>
+          <div className="site-wrapper overflow-hidden" ref={eleRef}>
+            {children}
           </div>
-        </Loader>
-        <div className="site-wrapper overflow-hidden" ref={eleRef}>
-          {children}
-        </div>
+        </StyleWrapper>
       </ThemeProvider>
     )
   }
@@ -121,25 +142,27 @@ const Layout = ({ children, pageContext }) => {
     <>
       <ThemeProvider theme={gContext.theme.bodyDark ? getTheme(modes.dark) : getTheme(modes.light)}>
         {/* <ThemeSwitch /> */}
-        <GlobalStyle />
-        <Helmet>
-          <title>{title}</title>
-          <link rel="icon" type="image/png" href={imgFavicon} />
-        </Helmet>
-        <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
-          <div className="load-circle">
-            <span className="one"></span>
-          </div>
-        </Loader>
-        <div className="site-wrapper overflow-hidden" ref={eleRef}>
-          <Header isDark={gContext.theme.headerDark} />
-          {children}
+        <StyleWrapper>
+          <GlobalStyle />
+          <Helmet>
+            <title>{title}</title>
+            <link rel="icon" type="image/png" href={imgFavicon} />
+          </Helmet>
+          <Loader id="loading" className={visibleLoader ? '' : 'inActive'}>
+            <div className="load-circle">
+              <span className="one"></span>
+            </div>
+          </Loader>
+          <div className="site-wrapper overflow-hidden" ref={eleRef}>
+            <Header isDark={gContext.theme.headerDark} />
+            {children}
 
-          <Footer isDark={gContext.theme.footerDark} />
-        </div>
-        {/* <AboutModal /> */}
-        {/* <ContactModal /> */}
-        {/* <ModalVideo /> */}
+            <Footer isDark={gContext.theme.footerDark} />
+          </div>
+          {/* <AboutModal /> */}
+          {/* <ContactModal /> */}
+          {/* <ModalVideo /> */}
+        </StyleWrapper>
       </ThemeProvider>
     </>
   )

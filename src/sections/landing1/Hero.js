@@ -57,21 +57,6 @@ const Hero = () => {
                       text-align: justify;
                       text-indent: 20px;
                     }
-
-                    .emphasize-text {
-                      font-weight: 400;
-                      color: ${({ theme }) => theme.colors.heading};
-                    }
-
-                    code {
-                      font-size: 85%;
-                      color: ${({ theme }) => theme.colors.codeText};
-                      background: ${({ theme }) => theme.colors.codeBg};
-                      border-radius: 3px;
-                      padding-left: 0.4em;
-                      padding-right: 0.4em;
-                      padding-bottom: 0.2em;
-                    }
                   `}
                   mb="2.5rem"
                 >

@@ -238,9 +238,15 @@ const Header = ({ isDark }) => {
       setShowReveal(false)
     }
   })
+  // var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl
+  console.log(1)
+  console.log(global.location.pathname)
+  console.log(2)
+  // console.log(req.protocol)
 
   let menu_items
-  if (gContext.isHomepage === false) {
+  // ! if (gContext.isHomepage === false) {
+  if (global.location.pathname !== '/') {
     menu_items = (
       <>
         <li className="nav-item">

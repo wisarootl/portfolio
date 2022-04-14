@@ -175,10 +175,11 @@ const MenuItem = ({
 }
 
 const NestedMenu = ({ menuItems = defaultMenuItems }) => {
-  const gContext = useContext(GlobalContext)
+  // ! const gContext = useContext(GlobalContext)
 
   let menu_items
-  if (gContext.isHomepage === false) {
+  // ! if (gContext.isHomepage === false) {
+  if (global.location.pathname !== '/') {
     menu_items = (
       <>
         <ListGroup.Item>{<Link2 to="/">Home</Link2>}</ListGroup.Item>

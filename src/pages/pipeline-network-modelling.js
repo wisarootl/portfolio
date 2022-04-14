@@ -14,29 +14,14 @@ import { BiDollar } from 'react-icons/bi'
 import { FaTrophy, FaThumbsUp } from 'react-icons/fa'
 
 const WorkSingle = () => {
-  const gContext = useContext(GlobalContext)
-  gContext.isHomepage = false
+  // ! const gContext = useContext(GlobalContext)
+  // ! gContext.isHomepage = false
 
   return (
     <>
       <Section
         className="mt-lg-5 mt-3"
         css={`
-          .emphasize-text {
-            font-weight: 400;
-            color: ${({ theme }) => theme.colors.heading};
-          }
-
-          code {
-            font-size: 85%;
-            color: ${({ theme }) => theme.colors.codeText};
-            background: ${({ theme }) => theme.colors.codeBg};
-            border-radius: 3px;
-            padding-left: 0.4em;
-            padding-right: 0.4em;
-            padding-bottom: 0.2em;
-          }
-
           p {
             text-align: justify;
             font-size: 1rem;

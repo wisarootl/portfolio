@@ -9,8 +9,8 @@ import Profile from '../sections/landing1/Profile'
 import GlobalContext from '../context/GlobalContext'
 
 const IndexPage = () => {
-  const gContext = useContext(GlobalContext)
-  gContext.isHomepage = true
+  // ! const gContext = useContext(GlobalContext)
+  // ! gContext.isHomepage = true
 
   return (
     <>

@@ -14,29 +14,14 @@ import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { RiStockFill } from 'react-icons/ri'
 
 const WorkSingle = () => {
-  const gContext = useContext(GlobalContext)
-  gContext.isHomepage = false
+  // ! const gContext = useContext(GlobalContext)
+  // ! gContext.isHomepage = false
 
   return (
     <>
       <Section
         className="mt-lg-5 mt-3"
         css={`
-          .emphasize-text {
-            font-weight: 400;
-            color: ${({ theme }) => theme.colors.heading};
-          }
-
-          code {
-            font-size: 85%;
-            color: ${({ theme }) => theme.colors.codeText};
-            background: ${({ theme }) => theme.colors.codeBg};
-            border-radius: 3px;
-            padding-left: 0.4em;
-            padding-right: 0.4em;
-            padding-bottom: 0.2em;
-          }
-
           p {
             text-align: justify;
             font-size: 1rem;
@@ -193,17 +178,10 @@ const WorkSingle = () => {
               </p>
             </Col>
           </Row>
-          <Row
-            className="justify-content-center align-items-center d-flex mt-5 mb-4"
-            css={`
-              p {
-                text-align: center;
-              }
-            `}
-          >
+          <Row className="justify-content-center align-items-center d-flex mt-5 mb-4">
             <Col lg="6" className="mb-5">
               <img src={imgResult} alt="" className="img-fluid w-100" />
-              <p>
+              <p className="text-center">
                 Figure 1 Trading backtest results from strategy by <code>LSTM-CNN</code> model and
                 other traditional strategies
               </p>

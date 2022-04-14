@@ -56,21 +56,6 @@ const ProfileCard = styled(Box)`
     display: block;
   }
 
-  .emphasize-text {
-    font-weight: 400;
-    color: ${({ theme }) => theme.colors.heading};
-  }
-
-  code {
-    font-size: 85%;
-    color: ${({ theme }) => theme.colors.codeText};
-    background: ${({ theme }) => theme.colors.codeBg};
-    border-radius: 3px;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    padding-bottom: 0.2em;
-  }
-
   .link-icon {
     font-size: 10px;
     color: ${({ theme }) => theme.colors.frontShade};

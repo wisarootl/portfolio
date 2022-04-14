@@ -16,29 +16,14 @@ import { device } from '../utils'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 
 const WorkSingle = () => {
-  const gContext = useContext(GlobalContext)
-  gContext.isHomepage = false
+  // ! const gContext = useContext(GlobalContext)
+  // ! gContext.isHomepage = false
 
   return (
     <>
       <Section
         className="mt-lg-5 mt-3"
         css={`
-          .emphasize-text {
-            font-weight: 400;
-            color: ${({ theme }) => theme.colors.heading};
-          }
-
-          code {
-            font-size: 85%;
-            color: ${({ theme }) => theme.colors.codeText};
-            background: ${({ theme }) => theme.colors.codeBg};
-            border-radius: 3px;
-            padding-left: 0.4em;
-            padding-right: 0.4em;
-            padding-bottom: 0.2em;
-          }
-
           p {
             text-align: justify;
             font-size: 1rem;
@@ -190,32 +175,18 @@ const WorkSingle = () => {
               </p>
             </Col>
           </Row>
-          <Row
-            className="justify-content-center align-items-center d-flex mt-5 mb-4"
-            css={`
-              p {
-                text-align: center;
-              }
-            `}
-          >
+          <Row className="justify-content-center align-items-center d-flex mt-5 mb-4">
             <Col lg="6" className="mb-5">
               <img src={imgModel1} alt="" className="img-fluid w-100" />
-              <p>
+              <p className="text-center">
                 Figure 1 Architecture of <code>LSTM-CNN</code> model
               </p>
             </Col>
           </Row>
-          <Row
-            className="justify-content-center align-items-center d-flex mt-5 mb-4"
-            css={`
-              p {
-                text-align: center;
-              }
-            `}
-          >
+          <Row className="justify-content-center align-items-center d-flex mt-5 mb-4">
             <Col lg="6" className="mb-5">
               <img src={imgModel2} alt="" className="img-fluid w-100" />
-              <p>
+              <p className="text-center">
                 Figure 2 Architecture of <code>Multi-CNN</code> model
               </p>
             </Col>
@@ -236,17 +207,10 @@ const WorkSingle = () => {
               </p>
             </Col>
           </Row>
-          <Row
-            className="justify-content-center align-items-center d-flex mt-5 mb-4"
-            css={`
-              p {
-                text-align: center;
-              }
-            `}
-          >
+          <Row className="justify-content-center align-items-center d-flex mt-5 mb-4">
             <Col lg="9" className="mb-5">
               <img src={imgResult} alt="" className="img-fluid w-100" />
-              <p>Figure 3 Example presiction results from both models</p>
+              <p className="text-center">Figure 3 Example prediction results from both models</p>
             </Col>
           </Row>
           <Row className="justify-content-center mt-5 mb-4">
