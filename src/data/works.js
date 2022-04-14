@@ -126,20 +126,31 @@ export const works = [
       `Node.js`
     ],
     thumbnail: imgT6,
-    link: 'https://smart-brain-frontend-16.herokuapp.com/',
+    link: 'https://face-recognition-ai-frontend.herokuapp.com/',
     description: (
       <>
         <p>
-          • Developed a demo website for face recognition. The relevant skills including{' '}
+          Developed a demo website for face recognition. The relevant skills including{' '}
           <code>Frontend</code>, <code>React</code>, <code>Javascript</code>, <code>HTML</code>,{' '}
           <code>CSS</code>, <code>Backend</code>, <code>Node.js</code>, <code>Express.js</code>,{' '}
           <code>Clarifai (ML API)</code>, <code>Database</code>, <code>SQL</code>,{' '}
           <code>PostgeSQL</code>
           <br />
-          <span className="emphasize-text">Demo Test</span>
-          <br />
-          email : <code>demo@demo.com</code>
-          <br /> password : <code>demo</code>
+        </p>
+        <p className="text-center port-tag">
+          [
+          <a href="https://face-recognition-ai-frontend.herokuapp.com/" target="_blank">
+            See Live
+          </a>
+          ] &nbsp;&nbsp;[
+          <a href="https://github.com/wisarootl/face-recognition-ai-frontend" target="_blank">
+            Source Code : Frontend
+          </a>
+          ] &nbsp;&nbsp;[
+          <a href="https://github.com/wisarootl/face-recognition-ai-backend" target="_blank">
+            Source Code : Backend
+          </a>
+          ]
         </p>
       </>
     )
