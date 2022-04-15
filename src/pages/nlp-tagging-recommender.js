@@ -59,8 +59,8 @@ const WorkSingle = () => {
               <p>
                 <code>Data Science</code>, <code>Python</code>,{' '}
                 <code>Natural Language Procession (NLP)</code>, <code>Machine Learning</code>,{' '}
-                <code>Deep Leraning</code>, <code>Neural Network</code>,{' '}
-                <code>Aritificial Intelligent</code>, <code>Web Scraping</code>,{' '}
+                <code>Deep Learning</code>, <code>Neural Network</code>,{' '}
+                <code>Artificial Intelligent</code>, <code>Web Scraping</code>,{' '}
                 <code>Beautiful Soup</code>, <code>HTML</code>, <code>Tensorflow</code>,{' '}
                 <code>Keras</code>, <code>PythaiNLP</code>, <code>SKlearn</code>, <code>LSTM</code>,{' '}
                 <code>CNN</code>

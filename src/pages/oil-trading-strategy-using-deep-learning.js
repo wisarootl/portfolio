@@ -46,9 +46,9 @@ const WorkSingle = () => {
                 • Researched focus on <span className="emphasize-text">time series</span>{' '}
                 forecasting using deep learning model for crude oil trading strategy. <br />•
                 Proposed model can get the highest ROI which is{' '}
-                <span className="emphasize-text">10% annualized return</span> during 2015 to 2020
-                with minimal drawdown along the test periods. While other strategies including Buy &
-                Hold and traditional technical indicator gives ann. ROI between -100% to 2.8% only.
+                <span className="emphasize-text">10% annualized return</span> from 2015 to 2020 with
+                minimal drawdown along the test periods. While other strategies including Buy & Hold
+                and traditional technical indicator gives ann. ROI between -100% to 2.8% only.
               </p>
             </Col>
           </Row>
@@ -58,8 +58,8 @@ const WorkSingle = () => {
               <p>
                 <code>Data Science</code>, <code>Python</code>,{' '}
                 <code>Natural Language Procession (NLP)</code>, <code>Machine Learning</code>,{' '}
-                <code>Deep Leraning</code>, <code>Neural Network</code>,{' '}
-                <code>Aritificial Intelligent</code>, <code>Web Scraping</code>,{' '}
+                <code>Deep Learning</code>, <code>Neural Network</code>,{' '}
+                <code>Artificial Intelligent</code>, <code>Web Scraping</code>,{' '}
                 <code>Beautiful Soup</code>, <code>HTML</code>, <code>Tensorflow</code>,{' '}
                 <code>Keras</code>, <code>PythaiNLP</code>, <code>SKlearn</code>, <code>LSTM</code>,{' '}
                 <code>CNN</code>
@@ -141,11 +141,11 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-9 achievements-desc">
                     <Title variant="cardSm" className="mt-3">
-                      10% Annulualized ROI
+                      10% Annualized ROI
                     </Title>
                     <Text variant="small">
                       <code>CNN-LSTM</code> could enhance ROI for crude oil trading to 10 %
-                      annualized ROI which is the highest comparing to traditional stratigies.
+                      annualized ROI which is the highest comparing to traditional strategies.
                     </Text>
                   </Col>
                 </Row>
@@ -189,9 +189,9 @@ const WorkSingle = () => {
               <Title variant="cardLg">06. Results</Title>
               <p>
                 • <code>CNN-LSTM</code> could achieve the highest ROI which is 10% annualized return
-                during 2015 to 2020. Also, the model can maintain the portfolio value at the top
-                rank with minimal drawdown along the test period. In the meanwhile, the Buy&Hold
-                strategy gets only -1.4% ann. ROI. The other strategy from the traditional technical
+                from 2015 to 2020. Also, the model can maintain the portfolio value at the top rank
+                with minimal drawdown along the test period. In the meanwhile, the Buy&Hold strategy
+                gets only -1.4% ann. ROI. The other strategy from the traditional technical
                 indicators including RSI, MA, Stochastics, MACD gets ann. ROI between -100% to 2.8%
               </p>
             </Col>

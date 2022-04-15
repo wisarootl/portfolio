@@ -166,7 +166,7 @@ const WorkSingle = () => {
                       15.3 MUSD More Revenue
                     </Title>
                     <Text variant="small">
-                      Operation at optmized condition creating 15.2% more oil production (more
+                      Operation at optimized condition creating 15.2% more oil production (more
                       profit of 15.3 million USD yearly)
                     </Text>
                   </Col>
@@ -211,9 +211,9 @@ const WorkSingle = () => {
                 Production, Low Reserves loss, Gas Specification
                 <br />
                 <span className="sub-bullet">
-                  • Well Depletion/Low Reserves loss Target: We must produce from well that nearly
-                  deplete and these wells have a low production rate. This will conflict with Oil
-                  and Gas production target
+                  • Well Depletion/Low Reserves loss Target: We must produce from wells that are
+                  nearly depleted and these wells have a low production rate. This will conflict
+                  with Oil and Gas production target
                 </span>
                 <span className="sub-bullet">
                   • Gas specification: some gas specification needs to maintain in a range. Not too
@@ -223,13 +223,13 @@ const WorkSingle = () => {
               </p>
               <p>
                 • The field contains many dynamic factors such as the wells' production rate, the
-                wells' condition, activities in the field that will affect wells' operation,
+                wells' condition, activities in the field that will affect wells' operation and
                 day-to-day operation issues in the field. they all are dynamic and challenging for
                 operators to actively select the wells for the operation to maintain optimized
                 conditions all the time.{' '}
               </p>
               <p>
-                • We use humans to manually operate the wells, select the wells to open or close.
+                • We use humans to manually operate the wells and select the wells to open or close.
                 This results in sub- optimization. Lower production. Not achieve depletion target.
                 Workload to the operator, human error, inconsistent operation due to different
                 operators, inadequate adaptation with condition change.
@@ -241,7 +241,7 @@ const WorkSingle = () => {
               <Title variant="cardLg">05. Actions</Title>
               <p>
                 • Develop an in-house application that has algorithms to rank the wells to operate
-                with different situation
+                in different situations
               </p>
               <p>
                 • Discuss with Petroleum Engineer team/team lead to assess all the goals we have to
@@ -259,10 +259,10 @@ const WorkSingle = () => {
                 develop applications to serve their needs.
               </p>
               <p>
-                • Actively communicate with petroleum engineering team who will plan for long term
-                and big picture in the field and operator team who solve the day-to-day issues.
-                Balance their need to maximize profit/reputation for the company and achieve all the
-                goals in both the short-term and long-term.
+                • Actively communicate with the petroleum engineering team who will plan for long
+                term and big picture in the field and the operator team who solve the day-to-day
+                issues. Balance their need to maximize profit/reputation for the company and achieve
+                all the goals in both the short-term and long-term.
               </p>
             </Col>
           </Row>

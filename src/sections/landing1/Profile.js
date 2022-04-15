@@ -413,7 +413,7 @@ const Profile = () => {
                       </a>{' '}
                       from <span className="emphasize-text">Zero to Mastery</span> (2022) : 38 hrs.
                       practical training for <code>Full Stack</code> web development including{' '}
-                      <code>HTML</code>,<code>CSS</code>, <code>Responsive Design</code>,{' '}
+                      <code>HTML</code>, <code>CSS</code>, <code>Responsive Design</code>,{' '}
                       <code>Javascript</code>, <code>React</code>, <code>Git</code>,{' '}
                       <code>Node.js</code>, <code>Express.js</code>, <code>NPM</code>,{' '}
                       <code>PostgresSQL</code>, <code>SQL</code>, <code>Security</code>,{' '}
@@ -438,7 +438,7 @@ const Profile = () => {
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
                       (2021) : Chartered Financial Analyst I program is exam that tests the
-                      knowledge in finance including <code>Statistics</code>,{' '}
+                      knowledge in <code>Finance</code> including <code>Statistics</code>,{' '}
                       <code>Quantitative Finance</code>, <code>Economics</code>,{' '}
                       <code>Portfolio Management</code>, <code>Equity Investment</code>,{' '}
                       <code>Bond Investment</code>, <code>Derivatives Investment</code>,{' '}

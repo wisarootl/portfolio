@@ -25,7 +25,7 @@ const Footer = ({ isDark = true }) => {
                 font-size: 0.8125rem;
               `}
             >
-              © 2021 - {year} All Right Reseved. Made with{' '}
+              © 2021 - {year} All Right Reserved. Made with{' '}
               <Span
                 color="red"
                 css={`

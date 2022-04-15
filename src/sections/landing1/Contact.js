@@ -12,8 +12,7 @@ import { Link } from 'gatsby'
 
 const ContactCard = styled.div`
   border-radius: 10px;
-  background-color: ${({ theme }) => rgba(theme.colors.primary, 0.1)};
-  color: ${({ theme }) => theme.colors.light};
+  background-color: ${({ theme }) => rgba(theme.colors.ash, 0.2)};
 `
 
 const SocialContainer = styled.div`
@@ -23,6 +22,8 @@ const SocialContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.lightShade};
   border-radius: 10px;
   cursor: pointer;
+  // max-width: 300px;
+  width: 270px;
   :hover {
     transform: translateY(-5px);
   }
@@ -34,7 +35,6 @@ const SocialContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    // border-radius: 5%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-right: 0.65rem;
@@ -80,9 +80,9 @@ const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
             `}
           >
             <Col lg="10">
-              <ContactCard className="p-5 ml-lg-5 mr-lg-5">
+              <ContactCard className="p-3 p-sm-5 ml-lg-5 mr-lg-5">
                 <Row>
-                  <Col md="6" className="mb-3">
+                  <Col md="6" className="mb-3 d-flex justify-content-center">
                     <a href="https://www.linkedin.com/in/wisaroot/" target="_blank">
                       <SocialContainer>
                         <Span className="social-icon">
@@ -95,7 +95,7 @@ const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
                       </SocialContainer>
                     </a>
                   </Col>
-                  <Col md="6" className="mb-3">
+                  <Col md="6" className="mb-3 d-flex justify-content-center">
                     <a href={undefined}>
                       <SocialContainer
                         onClick={copy_email_contact}
@@ -118,7 +118,7 @@ const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
                   </Col>
                 </Row>
                 <Row className="mb-3">
-                  <Col md="6" className="mb-3 mb-md-0">
+                  <Col md="6" className="mb-3 mb-md-0 d-flex justify-content-center">
                     <SocialContainer>
                       <Span className="social-icon">
                         <FaPhoneAlt />
@@ -128,7 +128,7 @@ const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
                       </Text>
                     </SocialContainer>
                   </Col>
-                  <Col md="6">
+                  <Col md="6" className="d-flex justify-content-center">
                     <SocialContainer>
                       <Span className="social-icon">
                         <FaMapMarkerAlt />

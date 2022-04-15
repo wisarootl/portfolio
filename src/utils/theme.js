@@ -52,7 +52,7 @@ const colors = {
       front: defaultColors.white,
       frontShade: rgba(defaultColors.white, 0.5),
       border: rgba(defaultColors.ash, 0.115),
-      shadow: rgba(defaultColors.ash, 0.1),
+      shadow: rgba(defaultColors.ash, 0.2),
       heading: defaultColors.white,
       text: rgba(defaultColors.white, 0.7),
       warning: defaultColors.warning,
