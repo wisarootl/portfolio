@@ -46,10 +46,10 @@ const WorkSingle = () => {
               <Title variant="cardLg">01. Brief</Title>
               <p>
                 • Researched focus on <code>NLP</code> to apply{' '}
-                <span className="emphasize-text">deep learning model in tagging recommender</span>
-                for Pantip.com, The most famous discussio website in Thailand. <br />• The model can
-                achieve <span className="emphasize-text">F1 scores of 0.55</span> for different 144
-                tags.
+                <span className="emphasize-text">deep learning model in tagging recommender</span>{' '}
+                for Pantip.com, The most famous discussion website in Thailand. <br />• The model
+                can achieve <span className="emphasize-text">F1 scores of 0.55</span> for different
+                144 tags.
               </p>
             </Col>
           </Row>

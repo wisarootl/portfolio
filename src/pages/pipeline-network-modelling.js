@@ -43,7 +43,7 @@ const WorkSingle = () => {
               <Title variant="cardLg">01. Brief</Title>
               <p>
                 • Developed an in-house <span className="emphasize-text">software application</span>{' '}
-                for Chevron, a world leading Oil & Gas company, to automatically generate a pipeline
+                for Chevron, a world-leading Oil & Gas company, to automatically generate a pipeline
                 network model for Gas field in the simulator.
                 <br />• Researched optimized pipeline network scenarios saving investment cost for{' '}
                 <span className="emphasize-text">49.8 million USD</span>.

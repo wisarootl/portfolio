@@ -44,7 +44,7 @@ const WorkSingle = () => {
               <Title variant="cardLg">01. Brief</Title>
               <p>
                 Developed an in-house <span className="emphasize-text">software application</span>{' '}
-                for Chevron, a world leading Oil & Gas company, to automatically optimize Gas and
+                for Chevron, a world-leading Oil & Gas company, to automatically optimize Gas and
                 Oil production with limited resources and constraints resulting in 15.2% higher oil
                 production, more revenue of{' '}
                 <span className="emphasize-text">15.3 million USD/year</span>.

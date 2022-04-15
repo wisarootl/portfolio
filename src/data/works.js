@@ -62,11 +62,11 @@ export const works = [
     categories: [
       `Training`,
       `Algorithm`,
-      `Data Sturcture`,
+      `Data Structure`,
       `Python`,
       `Coding`,
       `Problem Solving`,
-      `Comminication`
+      `Communication`
     ],
     thumbnail: imgT5,
     link: 'https://github.com/wisarootl/leetcode',
@@ -74,7 +74,7 @@ export const works = [
       <>
         <p>
           Continuously solving programming questions to sharpen my <code>Algorithms</code>,{' '}
-          <code>Data Strutre</code> and <code>Coding</code> skills.
+          <code>Data Structure</code> and <code>Coding</code> skills.
         </p>
       </>
     )
@@ -88,9 +88,9 @@ export const works = [
       <>
         <p>
           • Developed an in-house <span className="emphasize-text">software application</span> for
-          Chevron, a world leading Oil & Gas company, to automatically generate a pipeline network
-          model for Gas field in the simulator.
-          <br />• Researched optimized pipeline network scenarios saving investment cost for{' '}
+          Chevron, a world-leading Oil & Gas company, to automatically generate a pipeline network
+          model for gas fields in the simulator.
+          <br />• Researched optimized pipeline network scenarios saving investment costs for{' '}
           <span className="emphasize-text">49.8 million USD</span>.
         </p>
       </>
@@ -112,7 +112,7 @@ export const works = [
       <>
         <p>
           Developed an in-house <span className="emphasize-text">software application</span> for
-          Chevron, a world leading Oil & Gas company, to automatically optimize Gas and Oil
+          Chevron, a world-leading Oil & Gas company, to automatically optimize Gas and Oil
           production with limited resources and constraints resulting in 16.5% higher oil
           production, more revenue of <span className="emphasize-text">15.3 million USD/year</span>.
         </p>
@@ -171,7 +171,7 @@ export const works = [
     description: (
       <>
         <p>
-          • Developed this website to serves as a portfolio showcase.
+          • Developed this website to serve as a portfolio showcase.
           <br />• The relevant skills including <code>Frontend</code>, <code>React</code>,{' '}
           <code>Javascript</code>, <code>HTML</code>, <code>CSS</code>, <code>SCSS</code>,{' '}
           <code>UX/UI</code>

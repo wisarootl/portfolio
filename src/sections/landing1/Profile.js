@@ -169,7 +169,7 @@ const Profile = () => {
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
-                          <p>2017 – presen test</p>
+                          <p>2017 – present</p>
                         </div>
                       </div>
                     </div>
@@ -381,9 +381,9 @@ const Profile = () => {
                     </p>
                     <p>
                       • Good <code>project management</code> and <code>team working</code> skills
-                      with experiences to manage different kinds of projects in Oil & Gas operation
-                      including infill development projects, asset retirement projects, and
-                      resources management.
+                      with experience to manage different kinds of projects in Oil & Gas field
+                      operations including infill development projects, asset retirement projects,
+                      and resources management.
                     </p>
                     <p>
                       • Other computer skills e.g. <code>Javascript</code>, <code>SQL</code>,{' '}
@@ -422,13 +422,13 @@ const Profile = () => {
                     <p>
                       •{' '}
                       <a href={algoexpertCert} target="_blank">
-                        <span className="emphasize-text">Algoexpoert</span>{' '}
+                        <span className="emphasize-text">Algoexpert</span>{' '}
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
                       (2022) : solved problems related to <code>Algorithms</code> and{' '}
                       <code>Data Structure</code> for 200+ questions. In addition, I am continuously
-                      solving these kind of questions on leetcode.com to sharpen my{' '}
-                      <code>Algorithms</code>, <code>Data Struces</code>,{' '}
+                      solving this kind of questions on leetcode.com to sharpen my{' '}
+                      <code>Algorithms</code>, <code>Data Structure</code>,{' '}
                       <code>Problem Solving</code> and <code>Coding</code> skills.
                     </p>
                     <p>
@@ -439,7 +439,7 @@ const Profile = () => {
                       </a>{' '}
                       (2021) : Chartered Financial Analyst I program is exam that tests the
                       knowledge in finance including <code>Statistics</code>,{' '}
-                      <code>Quantitative Finance</code>, <code>Economics</code>,
+                      <code>Quantitative Finance</code>, <code>Economics</code>,{' '}
                       <code>Portfolio Management</code>, <code>Equity Investment</code>,{' '}
                       <code>Bond Investment</code>, <code>Derivatives Investment</code>,{' '}
                       <code>Financial Reporting and Analysis</code>
