@@ -64,7 +64,7 @@ const Hero = () => {
                     I am passionate about coding. I start coding as a hobby since 15 years old for
                     web development, game development and gaming bot until I begin my career as a
                     petroleum engineer at Chevron. While I work there, I utilized my programming
-                    skills to develop various in-house softwares for data-driven decisions in the
+                    skills to develop various in-house software for data-driven decisions in the
                     business resulting in more profit of 65.1 million USD for the company. Then, I
                     realize that I would like to strengthen my programming and explore more
                     knowledge of computer science.
@@ -80,8 +80,8 @@ const Hero = () => {
                     <code>Data Science</code> for <code>Time Series</code>, and <code>NLP</code>. I
                     also have skills in software development, web development and other technology
                     skills including <code>Javascript</code>, <code>SQL</code>, <code>CSS</code>,{' '}
-                    <code>HTML</code>, <code>Frontend</code>, <code>backend</code>,{' '}
-                    <code>Database</code>, <code>Node.JS</code>, <code>React</code>,{' '}
+                    <code>HTML</code>, <code>Frontend</code>, <code>Backend</code>,{' '}
+                    <code>Database</code>, <code>Node.js</code>, <code>React</code>,{' '}
                     <code>MongoDB</code>.
                   </p>
                 </Box>

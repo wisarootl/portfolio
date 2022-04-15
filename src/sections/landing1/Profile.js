@@ -183,18 +183,18 @@ const Profile = () => {
                         working process, data-driven decisions, and optimized profits
                       </p>
                       <p>
-                        • Maximize production, project management, manage working resources, and
-                        collaborate cross-functional teams
-                      </p>
-                      <p>
-                        • Managed different kinds of projects in operation e.g., well development /
-                        abandonment / intervention
-                        <br />
-                        <span className="sub-bullet">
+                        • Served as <span className="emphasize-text">project manager</span> for
+                        different kinds of projects in oil & gas field operation e.g., well
+                        development / abandonment / intervention
+                        {/* <span className="sub-bullet">
                           • Served as a project manager to coordinate cross-functional team together
                           and deliver the highest values results for the company in the aspect of
                           safety, reputation, and profit
-                        </span>
+                        </span> */}
+                      </p>
+                      <p>
+                        • Maximized production, managed project & working resources and coordinated
+                        cross-functional teams
                       </p>
                     </Box>
                   </div>
@@ -412,7 +412,7 @@ const Profile = () => {
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
                       from <span className="emphasize-text">Zero to Mastery</span> (2022) : 38 hrs.
-                      practical traning for <code>Full Stack</code> web development including{' '}
+                      practical training for <code>Full Stack</code> web development including{' '}
                       <code>HTML</code>,<code>CSS</code>, <code>Responsive Design</code>,{' '}
                       <code>Javascript</code>, <code>React</code>, <code>Git</code>,{' '}
                       <code>Node.js</code>, <code>Express.js</code>, <code>NPM</code>,{' '}
@@ -425,8 +425,8 @@ const Profile = () => {
                         <span className="emphasize-text">Algoexpoert</span>{' '}
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
-                      (2022) : solved problem related to <code>Algorithms</code> and{' '}
-                      <code>Data Struces</code> for 200+ questions. In addition, I am continuously
+                      (2022) : solved problems related to <code>Algorithms</code> and{' '}
+                      <code>Data Structure</code> for 200+ questions. In addition, I am continuously
                       solving these kind of questions on leetcode.com to sharpen my{' '}
                       <code>Algorithms</code>, <code>Data Struces</code>,{' '}
                       <code>Problem Solving</code> and <code>Coding</code> skills.
@@ -437,12 +437,12 @@ const Profile = () => {
                         <span className="emphasize-text">CFA I</span>{' '}
                         <FaExternalLinkAlt className="link-icon" />
                       </a>{' '}
-                      (2021) : Chartered Financial Analyst I program is exam that test the
-                      fundamentals finace including <code>Statistics</code>,{' '}
+                      (2021) : Chartered Financial Analyst I program is exam that tests the
+                      knowledge in finance including <code>Statistics</code>,{' '}
                       <code>Quantitative Finance</code>, <code>Economics</code>,
-                      <code>Portfolio Manangement</code>, <code>Equity Investment</code>,{' '}
-                      <code>Bond Investment</code>, <code>Derivatives</code>
-                      <code>Investment</code>, <code>Financial Reporting and Analysis</code>
+                      <code>Portfolio Management</code>, <code>Equity Investment</code>,{' '}
+                      <code>Bond Investment</code>, <code>Derivatives Investment</code>,{' '}
+                      <code>Financial Reporting and Analysis</code>
                     </p>
                     <p>
                       •{' '}
