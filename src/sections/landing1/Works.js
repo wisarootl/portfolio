@@ -5,6 +5,7 @@ import Masonry from 'react-masonry-component'
 import { Section, Box, ListNav, ButtonOutline } from '../../components/Core'
 import WorkCard from '../../components/WorkCard'
 import { works } from '../../data'
+import { device, breakpoints } from '../../utils'
 
 const Works = () => {
   const [items, setItems] = useState([])
@@ -104,10 +105,19 @@ const Works = () => {
           </Box>
         </Container>
 
-        <Container>
+        <Container
+          css={`
+            .filtr-item {
+              @media (max-width: ${breakpoints.sm}px) {
+                padding-left: 0px;
+                padding-right: 0px;
+              }
+            }
+          `}
+        >
           <Masonry options={masonryOptions} className={'masonry-grid row'}>
             {items.map((item, index) => (
-              <Col lg="6" md="12" sm="12" key={index} className="filtr-item">
+              <Col lg="6" sm="12" key={index} className="filtr-item">
                 <WorkCard workItem={item} mb="30px" link={item.link} />
               </Col>
             ))}

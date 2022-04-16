@@ -122,9 +122,9 @@ const Board = styled(Col)`
   border-color: ${({ theme }) => theme.colors.shadow};
   background-color: ${({ theme }) => theme.colors.shadow};
   border-radius: 10px;
-  padding: 1.25rem 15px 1.8rem 15px !important;
+  padding: 1.25rem 15px 2.2rem 15px !important;
   @media ${device.md} {
-    padding: 1.25rem 1.875rem 1.8rem 1.875rem !important;
+    padding: 1.25rem 1.875rem 2.2rem 1.875rem !important;
   }
 
   hr {
@@ -144,7 +144,8 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4 padding-dynamic">
+                  {/* <div className="col-12 mb-4 padding-dynamic"> */}
+                  <div className="col-12 padding-dynamic">
                     <Title variant="cardLg">Experience</Title>
                   </div>
                 </ProfileCard>
@@ -261,7 +262,8 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4 padding-dynamic">
+                  {/* <div className="col-12 mb-4 padding-dynamic"> */}
+                  <div className="col-12 padding-dynamic">
                     <Title variant="cardLg">Education</Title>
                   </div>
                 </ProfileCard>
@@ -359,7 +361,8 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4 padding-dynamic">
+                  {/* <div className="col-12 mb-4 padding-dynamic"> */}
+                  <div className="col-12 padding-dynamic">
                     <Title variant="cardLg">Skills</Title>
                   </div>
                 </ProfileCard>
@@ -405,7 +408,8 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center mb-5">
               <Board lg="9">
                 <ProfileCard className="row">
-                  <div className="col-12 mb-4 padding-dynamic">
+                  {/* <div className="col-12 mb-4 padding-dynamic"> */}
+                  <div className="col-12 padding-dynamic">
                     <Title variant="cardLg">Awards / Certifications</Title>
                   </div>
                 </ProfileCard>
