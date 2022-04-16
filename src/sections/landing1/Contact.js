@@ -79,7 +79,7 @@ const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
               }
             `}
           >
-            <Col lg="10">
+            <Col lg="10" className="px-0 px-sm-3">
               <ContactCard className="p-3 p-sm-5 ml-lg-5 mr-lg-5">
                 <Row>
                   <Col md="6" className="mb-3 d-flex justify-content-center">
@@ -119,24 +119,28 @@ const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
                 </Row>
                 <Row className="mb-3">
                   <Col md="6" className="mb-3 mb-md-0 d-flex justify-content-center">
-                    <SocialContainer>
-                      <Span className="social-icon">
-                        <FaPhoneAlt />
-                      </Span>
-                      <Text variant="small" className="social-text">
-                        (+66)97-162-4939
-                      </Text>
-                    </SocialContainer>
+                    <a href={undefined}>
+                      <SocialContainer>
+                        <Span className="social-icon">
+                          <FaPhoneAlt />
+                        </Span>
+                        <Text variant="small" className="social-text">
+                          (+66)97-162-4939
+                        </Text>
+                      </SocialContainer>
+                    </a>
                   </Col>
                   <Col md="6" className="d-flex justify-content-center">
-                    <SocialContainer>
-                      <Span className="social-icon">
-                        <FaMapMarkerAlt />
-                      </Span>
-                      <Text variant="small" className="social-text">
-                        Bangkok, Thailand
-                      </Text>
-                    </SocialContainer>
+                    <a href={undefined}>
+                      <SocialContainer>
+                        <Span className="social-icon">
+                          <FaMapMarkerAlt />
+                        </Span>
+                        <Text variant="small" className="social-text">
+                          Bangkok, Thailand
+                        </Text>
+                      </SocialContainer>
+                    </a>
                   </Col>
                 </Row>
               </ContactCard>
