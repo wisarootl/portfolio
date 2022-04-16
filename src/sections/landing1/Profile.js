@@ -123,7 +123,7 @@ const Board = styled(Col)`
   background-color: ${({ theme }) => theme.colors.shadow};
   border-radius: 10px;
   padding: 1.25rem 15px 2.2rem 15px !important;
-  @media ${device.md} {
+  @media ${device.sm} {
     padding: 1.25rem 1.875rem 2.2rem 1.875rem !important;
   }
 
