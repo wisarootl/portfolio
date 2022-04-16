@@ -61,12 +61,12 @@ const Hero = () => {
                   mb="2.5rem"
                 >
                   <p>
-                    I am passionate about coding. I start coding as a hobby at 15 years old for web
-                    development, game development and gaming bot until I begin my career as a
+                    I am passionate about coding. I started coding as a hobby at 15 years old for
+                    web development, game development and gaming bot until I began my career as a
                     petroleum engineer at Chevron. While I work there, I utilized my programming
                     skills to develop various in-house software for data-driven decisions in the
                     business resulting in more profit of 65.1 million USD for the company. Then, I
-                    realize that I would like to strengthen my programming and explore more
+                    realized that I would like to strengthen my programming skills and explore more
                     knowledge of computer science.
                   </p>
                   <p>

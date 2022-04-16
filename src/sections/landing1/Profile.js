@@ -164,7 +164,7 @@ const Profile = () => {
                             Petroleum Engineer
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chevron</span> : a world leading oil
+                            <span className="emphasize-text">Chevron</span> : a world-leading oil
                             and gas company
                           </Text>
                         </div>
@@ -243,8 +243,8 @@ const Profile = () => {
                             Research Assistant
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">PTT Global Chemical</span> : a Thailand
-                            leading petrochemical company
+                            <span className="emphasize-text">PTT Global Chemical</span> : a leading
+                            petrochemical company in Thailand
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
@@ -281,7 +281,9 @@ const Profile = () => {
                             M.Sc. in Computer Science
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chulalongkorn Univerisity</span>
+                            <span className="emphasize-text">Chulalongkorn Univerisity</span>{' '}
+                            <br className="d-flex d-md-none" />
+                            (Merit scholarship from Chevron)
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
@@ -308,7 +310,9 @@ const Profile = () => {
                             M.Eng. in Petrolrum Engineering
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chulalongkorn Univerisity</span>
+                            <span className="emphasize-text">Chulalongkorn Univerisity</span>{' '}
+                            <br className="d-flex d-md-none" />
+                            (Merit scholarship from Chevron)
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
@@ -335,8 +339,10 @@ const Profile = () => {
                             B.Sc. in Chemical Engineering
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chulalongkorn University</span> (1
-                            <sup>st</sup> Hons, Top 1 in the class)
+                            <span className="emphasize-text">Chulalongkorn University</span>{' '}
+                            <br className="d-flex d-md-none" />
+                            (1
+                            <sup>st</sup> Hons, Top 1 of the class)
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
