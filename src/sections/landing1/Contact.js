@@ -4,11 +4,8 @@ import styled from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Section, Title, Text, Span, Box } from '../../components/Core'
 import { device } from '../../utils'
-import Social from '../../components/Social'
-import { social_items } from '../../data'
 import { FaLinkedinIn, FaGithub, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
-// import { color, background } from 'styled-system'
-import { Link } from 'gatsby'
+import { Element } from 'react-scroll'
 
 const ContactCard = styled.div`
   border-radius: 10px;
@@ -68,86 +65,89 @@ function mouse_leave_email_contact() {
 const Contact = ({ hero = false, bg = 'dark', ...rest }) => {
   return (
     <>
-      <Section hero={hero} bg={bg} {...rest}>
-        <Container>
-          <Row
-            className="justify-content-center"
-            css={`
-              @media ${device.lg} {
-                margin-top: -20px;
-                margin-bottom: -20px;
-              }
-            `}
-          >
-            <Col lg="10" className="px-0 px-sm-3">
-              <ContactCard className="p-3 p-sm-5 ml-lg-5 mr-lg-5">
-                <Row>
-                  <Col md="6" className="mb-3 d-flex justify-content-center">
-                    <a href="https://www.linkedin.com/in/wisaroot/" target="_blank">
-                      <SocialContainer>
-                        <Span className="social-icon">
-                          <FaLinkedinIn />
-                        </Span>
+      <Element name="contact">
+        <Box mt={['50px', null, '65px', '85px']}></Box>
+        <Section hero={hero} bg={bg} {...rest}>
+          <Container>
+            <Row
+              className="justify-content-center"
+              css={`
+                @media ${device.lg} {
+                  margin-top: -20px;
+                  margin-bottom: -20px;
+                }
+              `}
+            >
+              <Col lg="10" className="px-0 px-sm-3">
+                <ContactCard className="p-3 p-sm-5 ml-lg-5 mr-lg-5">
+                  <Row>
+                    <Col md="6" className="mb-3 d-flex justify-content-center">
+                      <a href="https://www.linkedin.com/in/wisaroot/" target="_blank">
+                        <SocialContainer>
+                          <Span className="social-icon">
+                            <FaLinkedinIn />
+                          </Span>
 
-                        <Text variant="small" className="social-text">
-                          linkedin.com/in/wisaroot
-                        </Text>
-                      </SocialContainer>
-                    </a>
-                  </Col>
-                  <Col md="6" className="mb-3 d-flex justify-content-center">
-                    <a href={undefined}>
-                      <SocialContainer
-                        onClick={copy_email_contact}
-                        onMouseLeave={mouse_leave_email_contact}
-                      >
-                        <Span className="social-icon">
-                          <FaEnvelope />
-                        </Span>
-
-                        <Text
-                          variant="small"
-                          className="social-text"
-                          id="email-contact"
+                          <Text variant="small" className="social-text">
+                            linkedin.com/in/wisaroot
+                          </Text>
+                        </SocialContainer>
+                      </a>
+                    </Col>
+                    <Col md="6" className="mb-3 d-flex justify-content-center">
+                      <a href={undefined}>
+                        <SocialContainer
                           onClick={copy_email_contact}
+                          onMouseLeave={mouse_leave_email_contact}
                         >
-                          L.Wisaroot@gmail.com
-                        </Text>
-                      </SocialContainer>
-                    </a>
-                  </Col>
-                </Row>
-                <Row className="mb-3">
-                  <Col md="6" className="mb-3 mb-md-0 d-flex justify-content-center">
-                    <a href={undefined}>
-                      <SocialContainer>
-                        <Span className="social-icon">
-                          <FaPhoneAlt />
-                        </Span>
-                        <Text variant="small" className="social-text">
-                          (+66)97-162-4939
-                        </Text>
-                      </SocialContainer>
-                    </a>
-                  </Col>
-                  <Col md="6" className="d-flex justify-content-center">
-                    <a href={undefined}>
-                      <SocialContainer>
-                        <Span className="social-icon">
-                          <FaMapMarkerAlt />
-                        </Span>
-                        <Text variant="small" className="social-text">
-                          Bangkok, Thailand
-                        </Text>
-                      </SocialContainer>
-                    </a>
-                  </Col>
-                </Row>
-              </ContactCard>
-            </Col>
-          </Row>
-        </Container>
-      </Section>
+                          <Span className="social-icon">
+                            <FaEnvelope />
+                          </Span>
+
+                          <Text
+                            variant="small"
+                            className="social-text"
+                            id="email-contact"
+                            onClick={copy_email_contact}
+                          >
+                            L.Wisaroot@gmail.com
+                          </Text>
+                        </SocialContainer>
+                      </a>
+                    </Col>
+                  </Row>
+                  <Row className="mb-3">
+                    <Col md="6" className="mb-3 mb-md-0 d-flex justify-content-center">
+                      <a href={undefined}>
+                        <SocialContainer>
+                          <Span className="social-icon">
+                            <FaPhoneAlt />
+                          </Span>
+                          <Text variant="small" className="social-text">
+                            (+66)97-162-4939
+                          </Text>
+                        </SocialContainer>
+                      </a>
+                    </Col>
+                    <Col md="6" className="d-flex justify-content-center">
+                      <a href={undefined}>
+                        <SocialContainer>
+                          <Span className="social-icon">
+                            <FaMapMarkerAlt />
+                          </Span>
+                          <Text variant="small" className="social-text">
+                            Bangkok, Thailand
+                          </Text>
+                        </SocialContainer>
+                      </a>
+                    </Col>
+                  </Row>
+                </ContactCard>
+              </Col>
+            </Row>
+          </Container>
+        </Section>
+      </Element>
     </>
   )
 }

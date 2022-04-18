@@ -85,9 +85,8 @@ const ProfileCard = styled(Box)`
     font-size: 0.9rem;
   }
 
-  .profile-card-heading {
-    // padding-right: 0px;
-    // padding-left: 0px;
+  .profile-card-heading p {
+    text-align: left;
   }
 
   .profile-card-date p {
@@ -135,13 +134,14 @@ const Board = styled(Col)`
 const Profile = () => {
   const [active, setActive] = useState(false)
   const gContext = useContext(GlobalContext)
+  const py_section = ['30px', null, '35px', '40px']
 
   return (
     <>
-      <Section>
+      <Section py={py_section}>
         <Container>
           <Element name="experience">
-            <Row className="d-flex justify-content-center align-items-center mb-5">
+            <Row className="d-flex justify-content-center align-items-center">
               <Board lg="9">
                 <ProfileCard className="row">
                   {/* <div className="col-12 mb-4 padding-dynamic"> */}
@@ -187,11 +187,6 @@ const Profile = () => {
                         • Served as <span className="emphasize-text">project manager</span> for
                         different kinds of projects in oil & gas field operation e.g., well
                         development / abandonment / intervention
-                        {/* <span className="sub-bullet">
-                          • Served as a project manager to coordinate cross-functional team together
-                          and deliver the highest values results for the company in the aspect of
-                          safety, reputation, and profit
-                        </span> */}
                       </p>
                       <p>
                         • Maximized production, managed project & working resources and coordinated
@@ -258,8 +253,12 @@ const Profile = () => {
               </Board>
             </Row>
           </Element>
+        </Container>
+      </Section>
+      <Section py={py_section}>
+        <Container>
           <Element name="education">
-            <Row className="d-flex justify-content-center align-items-center mb-5">
+            <Row className="d-flex justify-content-center align-items-center">
               <Board lg="9">
                 <ProfileCard className="row">
                   {/* <div className="col-12 mb-4 padding-dynamic"> */}
@@ -357,8 +356,12 @@ const Profile = () => {
               </Board>
             </Row>
           </Element>
+        </Container>
+      </Section>
+      <Section py={py_section}>
+        <Container>
           <Element name="skills">
-            <Row className="d-flex justify-content-center align-items-center mb-5">
+            <Row className="d-flex justify-content-center align-items-center">
               <Board lg="9">
                 <ProfileCard className="row">
                   {/* <div className="col-12 mb-4 padding-dynamic"> */}
@@ -404,8 +407,12 @@ const Profile = () => {
               </Board>
             </Row>
           </Element>
+        </Container>
+      </Section>
+      <Section py={py_section}>
+        <Container>
           <Element name="awards">
-            <Row className="d-flex justify-content-center align-items-center mb-5">
+            <Row className="d-flex justify-content-center align-items-center">
               <Board lg="9">
                 <ProfileCard className="row">
                   {/* <div className="col-12 mb-4 padding-dynamic"> */}

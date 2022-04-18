@@ -281,9 +281,7 @@ const WorkSingle = () => {
           </Row>
         </Container>
       </Section>
-      <Element name="contact">
-        <Contact />
-      </Element>
+      <Contact />
     </>
   )
 }
