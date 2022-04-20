@@ -133,7 +133,7 @@ const WorkSingle = () => {
               }
             `}
           >
-            <Col lg="8" className="achievements-card">
+            <Col lg="6" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
                   <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
