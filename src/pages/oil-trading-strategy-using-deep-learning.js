@@ -8,7 +8,7 @@ import { Section, Button, Title, Text, Box } from '../components/Core'
 import Contact from '../sections/landing1/Contact'
 import imgWorkCover from '../assets/img/portfolio/deep-learning-for-trading.jpg'
 import imgResult from '../assets/img/portfolio/oil-trading-result.png'
-import { device } from '../utils'
+import { device, breakpoints } from '../utils'
 
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { RiStockFill } from 'react-icons/ri'
@@ -17,6 +17,7 @@ const WorkSingle = () => {
   return (
     <>
       <Section
+        py={['50px', null, '50px', '75px']}
         className="mt-lg-5 mt-3"
         css={`
           p {
@@ -56,13 +57,10 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">02. Skills</Title>
               <p>
-                <code>Data Science</code>, <code>Python</code>,{' '}
-                <code>Natural Language Procession (NLP)</code>, <code>Machine Learning</code>,{' '}
+                <code>Data Science</code>, <code>Python</code>, <code>Machine Learning</code>,{' '}
                 <code>Deep Learning</code>, <code>Neural Network</code>,{' '}
-                <code>Artificial Intelligent</code>, <code>Web Scraping</code>,{' '}
-                <code>Beautiful Soup</code>, <code>HTML</code>, <code>Tensorflow</code>,{' '}
-                <code>Keras</code>, <code>PythaiNLP</code>, <code>SKlearn</code>, <code>LSTM</code>,{' '}
-                <code>CNN</code>
+                <code>Artificial Intelligent</code>, <code>Finance</code>, <code>Publication</code>,{' '}
+                <code>Tensorflow</code>, <code>Keras</code>, <code>LSTM</code>, <code>CNN</code>
               </p>
             </Col>
           </Row>
@@ -84,16 +82,24 @@ const WorkSingle = () => {
                 justify-content: center;
                 align-items: center;
               }
+
               .achievements-desc {
                 text-align: center;
                 padding-left: 0px;
                 @media ${device.lg} {
                   padding-left: 15px;
                 }
+                @media (max-width: 576px) {
+                  padding-left: 15px;
+                }
               }
 
               .achievements-card {
                 margin-top: 15px;
+                @media (max-width: ${breakpoints.sm}px) {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
               }
 
               .achievements-card2 {
@@ -104,7 +110,6 @@ const WorkSingle = () => {
               }
 
               .achievements-icon2 {
-                min-width: 80px;
                 width: 80px;
                 height: 80px;
                 display: flex;
@@ -112,7 +117,6 @@ const WorkSingle = () => {
                 justify-content: center;
                 padding: 0.5rem;
                 border-radius: 50%;
-                margin-right: 0.65rem;
                 border: none;
                 transition: 0.4s;
                 font-size: 3rem;
@@ -128,7 +132,7 @@ const WorkSingle = () => {
             <Col lg="8" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
-                  <Col className="col-3 d-flex achievements-icon">
+                  <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
                     <div className="achievements-icon2">
                       <span
                         css={`
@@ -139,7 +143,7 @@ const WorkSingle = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col className="col-9 achievements-desc">
+                  <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
                       10% Annualized ROI
                     </Title>

@@ -7,7 +7,7 @@ import { Element } from 'react-scroll'
 import { Section, Button, Title, Text, Box } from '../components/Core'
 import Contact from '../sections/landing1/Contact'
 import imgWorkCover from '../assets/img/portfolio/well-list-production-optimization.png'
-import { device } from '../utils'
+import { device, breakpoints } from '../utils'
 
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { BiDollar } from 'react-icons/bi'
@@ -17,6 +17,7 @@ const WorkSingle = () => {
   return (
     <>
       <Section
+        py={['50px', null, '50px', '75px']}
         className="mt-lg-5 mt-3"
         css={`
           p {
@@ -79,16 +80,24 @@ const WorkSingle = () => {
                 justify-content: center;
                 align-items: center;
               }
+
               .achievements-desc {
                 text-align: center;
                 padding-left: 0px;
                 @media ${device.lg} {
                   padding-left: 15px;
                 }
+                @media (max-width: 576px) {
+                  padding-left: 15px;
+                }
               }
 
               .achievements-card {
                 margin-top: 15px;
+                @media (max-width: ${breakpoints.sm}px) {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
               }
 
               .achievements-card2 {
@@ -99,7 +108,6 @@ const WorkSingle = () => {
               }
 
               .achievements-icon2 {
-                min-width: 80px;
                 width: 80px;
                 height: 80px;
                 display: flex;
@@ -107,7 +115,6 @@ const WorkSingle = () => {
                 justify-content: center;
                 padding: 0.5rem;
                 border-radius: 50%;
-                margin-right: 0.65rem;
                 border: none;
                 transition: 0.4s;
                 font-size: 3rem;
@@ -123,7 +130,7 @@ const WorkSingle = () => {
             <Col lg="4" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
-                  <Col className="col-3 d-flex achievements-icon" lg="12">
+                  <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
                     <div className="achievements-icon2">
                       <span
                         css={`
@@ -134,7 +141,7 @@ const WorkSingle = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col className="col-9 achievements-desc" lg="12">
+                  <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
                       More Achievements
                     </Title>
@@ -150,7 +157,7 @@ const WorkSingle = () => {
             <Col lg="4" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
-                  <Col className="col-3 d-flex achievements-icon" lg="12">
+                  <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
                     <div className="achievements-icon2">
                       <span
                         css={`
@@ -161,7 +168,7 @@ const WorkSingle = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col className="col-9 achievements-desc" lg="12">
+                  <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
                       15.3 MUSD More Revenue
                     </Title>
@@ -176,7 +183,7 @@ const WorkSingle = () => {
             <Col lg="4" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
-                  <Col className="col-3 d-flex achievements-icon" lg="12">
+                  <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
                     <div className="achievements-icon2">
                       <span
                         css={`
@@ -187,7 +194,7 @@ const WorkSingle = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col className="col-9 achievements-desc" lg="12">
+                  <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
                       Happier Workforces
                     </Title>

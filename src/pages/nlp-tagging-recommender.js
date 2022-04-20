@@ -11,7 +11,7 @@ import imgModel1 from '../assets/img/portfolio/LSTM-CNN.png'
 import imgModel2 from '../assets/img/portfolio/Multi-CNN.png'
 import imgResult from '../assets/img/portfolio/nlp-result.png'
 import iconBot from '../assets/img/portfolio/bot.png'
-import { device } from '../utils'
+import { device, breakpoints } from '../utils'
 
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 
@@ -19,6 +19,7 @@ const WorkSingle = () => {
   return (
     <>
       <Section
+        py={['50px', null, '50px', '75px']}
         className="mt-lg-5 mt-3"
         css={`
           p {
@@ -85,16 +86,24 @@ const WorkSingle = () => {
                 justify-content: center;
                 align-items: center;
               }
+
               .achievements-desc {
                 text-align: center;
                 padding-left: 0px;
                 @media ${device.lg} {
                   padding-left: 15px;
                 }
+                @media (max-width: 576px) {
+                  padding-left: 15px;
+                }
               }
 
               .achievements-card {
                 margin-top: 15px;
+                @media (max-width: ${breakpoints.sm}px) {
+                  padding-left: 0px;
+                  padding-right: 0px;
+                }
               }
 
               .achievements-card2 {
@@ -105,7 +114,6 @@ const WorkSingle = () => {
               }
 
               .achievements-icon2 {
-                min-width: 80px;
                 width: 80px;
                 height: 80px;
                 display: flex;
@@ -113,7 +121,6 @@ const WorkSingle = () => {
                 justify-content: center;
                 padding: 0.5rem;
                 border-radius: 50%;
-                margin-right: 0.65rem;
                 border: none;
                 transition: 0.4s;
                 font-size: 3rem;
@@ -129,7 +136,7 @@ const WorkSingle = () => {
             <Col lg="8" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
-                  <Col className="col-3 d-flex achievements-icon">
+                  <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
                     <div className="achievements-icon2">
                       <span
                         css={`
@@ -140,7 +147,7 @@ const WorkSingle = () => {
                       </span>
                     </div>
                   </Col>
-                  <Col className="col-9 achievements-desc">
+                  <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
                       Beat 0.55 F1 Scores
                     </Title>
