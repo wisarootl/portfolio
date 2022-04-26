@@ -53,7 +53,7 @@ const Div = styled.div`
 
   .blob {
     position: absolute;
-    left: 60%;
+    left: 58%;
     width: 22px;
     height: 22px;
     background: ${({ theme }) => theme.colors.light};
