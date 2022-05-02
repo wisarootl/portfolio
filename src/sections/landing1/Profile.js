@@ -6,12 +6,16 @@ import { Section, Button, Title, Text, Box } from '../../components/Core'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { Element } from 'react-scroll'
 
+import qtftLogo from '../../assets/img/profile/qtft.png'
 import chevronLogo from '../../assets/img/profile/chevron.png'
 import pttgcLogo from '../../assets/img/profile/pttgc.png'
 import chulaLogo from '../../assets/img/profile/chula.png'
+
+import qtftLogoDark from '../../assets/img/profile/qtft-dark.png'
 import chevronLogoDark from '../../assets/img/profile/chevron-dark.png'
 import pttgcLogoDark from '../../assets/img/profile/pttgc-dark.png'
 import chulaLogoDark from '../../assets/img/profile/chula-dark.png'
+
 import GlobalContext from '../../context/GlobalContext'
 import algoexpertCert from '../../assets/cert/algoexpert.pdf'
 import datasciDatacampCert from '../../assets/cert/data_scientist_python.pdf'
@@ -144,11 +148,45 @@ const Profile = () => {
             <Row className="d-flex justify-content-center align-items-center">
               <Board lg="9">
                 <ProfileCard className="row">
-                  {/* <div className="col-12 mb-4 padding-dynamic"> */}
                   <div className="col-12 padding-dynamic">
                     <Title variant="cardLg">Experience</Title>
                   </div>
                 </ProfileCard>
+                <ProfileCard className="row">
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
+                        src={!gContext.theme.bodyDark ? qtftLogo : qtftLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            Software Engineer
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">
+                              Quantum Technology Foundation Thailand
+                            </span>
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2022 – present</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <div className="row description-row w-100">
+                    <div className="col logo-bottom"></div>
+                    <Box className="col description-col" color="text">
+                      <p>• something</p>
+                    </Box>
+                  </div> */}
+                </ProfileCard>
+                <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
                     <div className="col logo">
@@ -170,7 +208,7 @@ const Profile = () => {
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
-                          <p>2017 – present</p>
+                          <p>2017 – 2022</p>
                         </div>
                       </div>
                     </div>
