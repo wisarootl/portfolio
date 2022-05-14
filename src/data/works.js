@@ -6,8 +6,33 @@ import imgT4 from '../assets/img/portfolio/deep-learning-for-trading.jpg'
 import imgT5 from '../assets/img/portfolio/leetcode.png'
 import imgT6 from '../assets/img/portfolio/face-recognition.png'
 import imgT7 from '../assets/img/portfolio/portfolio-web-site.png'
+import imgT8 from '../assets/img/portfolio/jobfair-software-backend.jpg'
 
 export const works = [
+  {
+    title: `Online Job Fair Registration Software [Backend]`,
+    categories: [
+      `Software Development`,
+      `Backend`,
+      `Node.js`,
+      `Database`,
+      `API`,
+      `MongoDB`,
+      `SQL`,
+      `Cyber Security`
+    ],
+    thumbnail: imgT8,
+    link: 'https://github.com/wisarootl/online-job-fair-registration',
+    description: (
+      <>
+        <p>
+          • Demo backend project for online job fair registration. This project is an assignment of{' '}
+          <span className="emphasize-text">Software Development Practice Class</span> (2110503) at
+          department of Computer Engineering, Chulalongkorn University.
+        </p>
+      </>
+    )
+  },
   {
     title: `Oil Trading Strategy using Deep Learning`,
     categories: [
