@@ -6,17 +6,20 @@ import { Section, Button, Title, Text, Box } from '../../components/Core'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import { Element } from 'react-scroll'
 
+import honestLogo from '../../assets/img/profile/honest.png'
 import qtftLogo from '../../assets/img/profile/qtft.png'
 import chevronLogo from '../../assets/img/profile/chevron.png'
 import pttgcLogo from '../../assets/img/profile/pttgc.png'
 import chulaLogo from '../../assets/img/profile/chula.png'
 
+import honestLogoDark from '../../assets/img/profile/honest-dark.png'
 import qtftLogoDark from '../../assets/img/profile/qtft-dark.png'
 import chevronLogoDark from '../../assets/img/profile/chevron-dark.png'
 import pttgcLogoDark from '../../assets/img/profile/pttgc-dark.png'
 import chulaLogoDark from '../../assets/img/profile/chula-dark.png'
 
 import GlobalContext from '../../context/GlobalContext'
+import mlExpertCert from '../../assets/cert/mlexpert.pdf'
 import algoexpertCert from '../../assets/cert/algoexpert.pdf'
 import datasciDatacampCert from '../../assets/cert/data_scientist_python.pdf'
 import theCompleteWebDevZTMCert from '../../assets/cert/complete_web_dev_ztm.pdf'
@@ -156,6 +159,40 @@ const Profile = () => {
                   <div className="row logo-position-row w-100">
                     <div className="col logo">
                       <img
+                        src={!gContext.theme.bodyDark ? honestLogo : honestLogoDark}
+                        alt=""
+                        className="w-100"
+                      />
+                    </div>
+                    <div className="col p-0">
+                      <div className="row">
+                        <div className="col-12 col-sm-8 profile-card-heading">
+                          <Title variant="cardSm" className="profile-card-title">
+                            Software Engineer (Data Scientist)
+                          </Title>
+                          <Text variant="small" color="text" className="profile-card-organization">
+                            <span className="emphasize-text">Honest</span> : a fintech start-up in
+                            southeast asia
+                          </Text>
+                        </div>
+                        <div className="col-12 col-sm-4 profile-card-date">
+                          <p>2022 – present</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row description-row w-100">
+                    <div className="col logo-bottom"></div>
+                    <Box className="col description-col" color="text">
+                      <p>• Develope Data Science project for Credit Cards.</p>
+                    </Box>
+                  </div>
+                </ProfileCard>
+                <hr />
+                <ProfileCard className="row">
+                  <div className="row logo-position-row w-100">
+                    <div className="col logo">
+                      <img
                         src={!gContext.theme.bodyDark ? qtftLogo : qtftLogoDark}
                         alt=""
                         className="w-100"
@@ -174,17 +211,19 @@ const Profile = () => {
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
-                          <p>2022 – present</p>
+                          <p>2022 – 2022</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  {/* <div className="row description-row w-100">
+                  <div className="row description-row w-100">
                     <div className="col logo-bottom"></div>
                     <Box className="col description-col" color="text">
-                      <p>• something</p>
+                      <p>
+                        • Research on Aritifitial Intelligence and Mathematicl Optimization Model
+                      </p>
                     </Box>
-                  </div> */}
+                  </div>
                 </ProfileCard>
                 <hr />
                 <ProfileCard className="row">
@@ -460,6 +499,17 @@ const Profile = () => {
                 </ProfileCard>
                 <ProfileCard className="row">
                   <div className="col padding-dynamic">
+                    <p>
+                      •{' '}
+                      <a href={mlExpertCert} target="_blank">
+                        <span className="emphasize-text">Machine Learning Expert</span>{' '}
+                        <FaExternalLinkAlt className="link-icon" />
+                      </a>{' '}
+                      from <span className="emphasize-text">Algoexpert.io</span> (2022) : Machine
+                      Leraning Crash Course including <code>Supervised Learning</code>,{' '}
+                      <code>Unsupervised Learning</code>, <code>Deep Learning</code> and large-scale
+                      implementation
+                    </p>
                     <p>
                       •{' '}
                       <a href={theCompleteWebDevZTMCert} target="_blank">
