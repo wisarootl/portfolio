@@ -184,11 +184,11 @@ const Profile = () => {
                   <div className="row description-row w-100">
                     <div className="col logo-bottom"></div>
                     <Box className="col description-col" color="text">
-                      <p>• Develope Data Science project for Credit Cards.</p>
+                      <p>• Develop Data Science project for Credit Cards.</p>
                     </Box>
                   </div>
                 </ProfileCard>
-                <hr />
+                {/* <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
                     <div className="col logo">
@@ -224,7 +224,7 @@ const Profile = () => {
                       </p>
                     </Box>
                   </div>
-                </ProfileCard>
+                </ProfileCard> */}
                 <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
@@ -272,8 +272,9 @@ const Profile = () => {
                     </Box>
                   </div>
                 </ProfileCard>
-                <hr />
-                <ProfileCard className="row">
+                {/* todo */}
+                {/* <hr /> */}
+                {/* <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
                     <div className="col logo">
                       <img
@@ -299,8 +300,8 @@ const Profile = () => {
                     </div>
                   </div>
                 </ProfileCard>
-                <hr />
-                <ProfileCard className="row">
+                <hr /> */}
+                {/* <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
                     <div className="col logo">
                       <img
@@ -326,7 +327,7 @@ const Profile = () => {
                       </div>
                     </div>
                   </div>
-                </ProfileCard>
+                </ProfileCard> */}
               </Board>
             </Row>
           </Element>
@@ -364,14 +365,16 @@ const Profile = () => {
                             (Merit scholarship from Chevron)
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        {/* todo */}
+                        {/* <div className="col-12 col-sm-4 profile-card-date">
                           <p>2020 – 2022</p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
                 </ProfileCard>
-                <hr />
+                {/* todo */}
+                {/* <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
                     <div className="col logo">
@@ -399,7 +402,7 @@ const Profile = () => {
                       </div>
                     </div>
                   </div>
-                </ProfileCard>
+                </ProfileCard> */}
                 <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
@@ -423,9 +426,9 @@ const Profile = () => {
                             <sup>st</sup> Hons, Top 1 of the class)
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        {/* <div className="col-12 col-sm-4 profile-card-date">
                           <p>2008 – 2012</p>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

@@ -144,50 +144,51 @@ export const works = [
       </>
     )
   },
-  {
-    title: `Face Recognition AI`,
-    categories: [
-      `Web Development`,
-      `Frontend`,
-      `Backend`,
-      `Database`,
-      `Javascript`,
-      `SQL`,
-      `React`,
-      `HTML`,
-      `CSS`,
-      `Node.js`
-    ],
-    thumbnail: imgT6,
-    link: 'https://face-recognition-ai-frontend.herokuapp.com/',
-    description: (
-      <>
-        <p>
-          Developed a demo website for face recognition. The relevant skills including{' '}
-          <code>Frontend</code>, <code>React</code>, <code>Javascript</code>, <code>HTML</code>,{' '}
-          <code>CSS</code>, <code>Backend</code>, <code>Node.js</code>, <code>Express.js</code>,{' '}
-          <code>Clarifai (ML API)</code>, <code>Database</code>, <code>SQL</code>,{' '}
-          <code>PostgeSQL</code>
-          <br />
-        </p>
-        <p className="text-center port-tag">
-          [
-          <a href="https://face-recognition-ai-frontend.herokuapp.com/" target="_blank">
-            See Live
-          </a>
-          ] &nbsp;&nbsp;[
-          <a href="https://github.com/wisarootl/face-recognition-ai-frontend" target="_blank">
-            Source Code : Frontend
-          </a>
-          ] &nbsp;&nbsp;[
-          <a href="https://github.com/wisarootl/face-recognition-ai-backend" target="_blank">
-            Source Code : Backend
-          </a>
-          ]
-        </p>
-      </>
-    )
-  },
+  // todo
+  // {
+  //   title: `Face Recognition AI`,
+  //   categories: [
+  //     `Web Development`,
+  //     `Frontend`,
+  //     `Backend`,
+  //     `Database`,
+  //     `Javascript`,
+  //     `SQL`,
+  //     `React`,
+  //     `HTML`,
+  //     `CSS`,
+  //     `Node.js`
+  //   ],
+  //   thumbnail: imgT6,
+  //   link: 'https://face-recognition-ai-frontend.herokuapp.com/',
+  //   description: (
+  //     <>
+  //       <p>
+  //         Developed a demo website for face recognition. The relevant skills including{' '}
+  //         <code>Frontend</code>, <code>React</code>, <code>Javascript</code>, <code>HTML</code>,{' '}
+  //         <code>CSS</code>, <code>Backend</code>, <code>Node.js</code>, <code>Express.js</code>,{' '}
+  //         <code>Clarifai (ML API)</code>, <code>Database</code>, <code>SQL</code>,{' '}
+  //         <code>PostgeSQL</code>
+  //         <br />
+  //       </p>
+  //       <p className="text-center port-tag">
+  //         [
+  //         <a href="https://face-recognition-ai-frontend.herokuapp.com/" target="_blank">
+  //           See Live
+  //         </a>
+  //         ] &nbsp;&nbsp;[
+  //         <a href="https://github.com/wisarootl/face-recognition-ai-frontend" target="_blank">
+  //           Source Code : Frontend
+  //         </a>
+  //         ] &nbsp;&nbsp;[
+  //         <a href="https://github.com/wisarootl/face-recognition-ai-backend" target="_blank">
+  //           Source Code : Backend
+  //         </a>
+  //         ]
+  //       </p>
+  //     </>
+  //   )
+  // },
   {
     title: `This Portfolio Website`,
     categories: [`Web Development`, `Frontend`, `Javascript`, `React`, `HTML`, `CSS`, `SCSS`],
