@@ -1,4 +1,5 @@
-const siteUrl = process.env.URL || `https://wisaroot.herokuapp.com/`
+// change url
+const siteUrl = process.env.URL || `https://wisarootl.github.io/portfolio`
 const current_date = new Date()
 
 module.exports = {
@@ -39,5 +40,7 @@ module.exports = {
         }
       }
     }
-  ]
+  ],
+  // "change url"
+  pathPrefix: `/portfolio`
 }

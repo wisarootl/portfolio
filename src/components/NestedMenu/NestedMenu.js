@@ -181,7 +181,8 @@ const NestedMenu = ({ menuItems = defaultMenuItems, onHideOffcanvas }) => {
     pathname = global.location.pathname
   }
 
-  if (pathname !== '/') {
+  // change url
+  if (pathname !== '/' && pathname !== '/portfolio/') {
     menu_items = (
       <>
         <ListGroup.Item>

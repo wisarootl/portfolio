@@ -21,3 +21,9 @@ yarn build
 ```
 yarn start
 ```
+
+## Github Pages
+
+```
+yarn deploy
+```

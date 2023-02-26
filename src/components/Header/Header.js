@@ -245,7 +245,7 @@ const Header = ({ isDark }) => {
   }
 
   let menu_items
-  if (pathname !== '/') {
+  if (pathname !== '/' && pathname !== '/portfolio/') {
     menu_items = (
       <>
         <li className="nav-item">

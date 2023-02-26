@@ -12,6 +12,10 @@ import { device, breakpoints } from '../utils'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { BiDollar } from 'react-icons/bi'
 import { FaTrophy, FaSmileBeam } from 'react-icons/fa'
+import { FcFactory } from 'react-icons/fc'
+import { IoIosRocket } from 'react-icons/io'
+
+// import { TbRobot } from 'react-icons/tb'
 
 const WorkSingle = () => {
   return (
@@ -36,7 +40,7 @@ const WorkSingle = () => {
             <Col lg="9">
               <Text variant="tag">Software Development</Text>
               <Title variant="secSm" className="my-4">
-                Application for Production Optimization
+                Machine Learning Research Framework
               </Title>
             </Col>
           </Row>
@@ -44,11 +48,10 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                Developed an in-house <span className="emphasize-text">software application</span>{' '}
-                for Chevron, a world-leading Oil & Gas company, to automatically optimize Gas and
-                Oil production with limited resources and constraints resulting in 15.2% higher oil
-                production, more revenue of{' '}
-                <span className="emphasize-text">15.3 million USD/year</span>.
+                Constructed a Python-based research framework library on top of open-source machine
+                learning tools such as <code>Scikit-learn</code>, <code>Tensorflow</code>,{' '}
+                <code>Optuna</code>, <code>Imbalanced-learn</code>, <code>XGBoost</code>,{' '}
+                <code>Seaborn</code>, and <code>Matplotlib</code>. Developed an in-house
               </p>
             </Col>
           </Row>
@@ -56,9 +59,8 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">02. Skills</Title>
               <p>
-                <code>Software Development</code>, <code>Excel Macro VBA</code>,{' '}
-                <code>Database</code>, <code>UX/UI</code>, <code>Collaboration</code>,{' '}
-                <code>ETL</code>
+                <code>Software Development</code>, <code>Python</code>, <code>Database</code>,{' '}
+                <code>UX/UI</code>, <code>Collaboration</code>, <code>ETL</code>
               </p>
             </Col>
           </Row>
@@ -137,18 +139,17 @@ const WorkSingle = () => {
                           color: #e8ad11;
                         `}
                       >
-                        <FaTrophy />
+                        <IoIosRocket />
                       </span>
                     </div>
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      More Achievements
+                      Scalable ML framework
                     </Title>
                     <Text variant="small">
-                      Achieve all the goals in different aspects for gas field operation including
-                      well depletion target, oil production, gas production, low reserves loss and
-                      gas specification
+                      designed with composable software to streamline the research process and
+                      enable easy scaling of machine learning pipelines.
                     </Text>
                   </Col>
                 </Row>
@@ -170,11 +171,13 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      $15.3 Millions More Revenue
+                      Core ML components support
                     </Title>
                     <Text variant="small">
-                      Operation at optimized condition creating 15.2% more oil production (more
-                      profit of 15.3 million USD yearly)
+                      includes support for essential machine learning components such as train-test
+                      split, imputation, encoding, upsampling, resampling, cross-validation,
+                      supervised learning, unsupervised learning, deep learning, neural networks,
+                      recommendation systems, and natural language processing.
                     </Text>
                   </Col>
                 </Row>
@@ -196,12 +199,11 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      Happier Workforces
+                      Seamless pipeline deployment
                     </Title>
                     <Text variant="small">
-                      More automated framework, Less dependence on humans, Lower workload,
-                      Data-driven operation, Optimized production, Lower human error, Better company
-                      reputation
+                      facilitated deployment of replicated machine learning pipelines from research
+                      to production.
                     </Text>
                   </Col>
                 </Row>

@@ -81,7 +81,8 @@ const getTheme = (mode) =>
   })
 
 const Layout = ({ children, pageContext }) => {
-  const title = 'Wisaroot | Software Engineer, AI, ML, Python, Javascript'
+  const title =
+    'Wisaroot | Senior Data Scientist 👨‍💻 | Software Engineer 💻 | Python 🐍 | Machine Learning 🤖 | Driving data insights and building scalable solutions 🚀'
   const gContext = useContext(GlobalContext)
 
   const [visibleLoader, setVisibleLoader] = useState(true)

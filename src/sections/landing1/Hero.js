@@ -13,6 +13,8 @@ const ImgRight = styled.img`
 `
 
 const Hero = () => {
+  const d = new Date()
+  let year = d.getFullYear()
   return (
     <>
       {/* <!-- Hero Area --> */}
@@ -37,7 +39,7 @@ const Hero = () => {
                 <Text variant="tag" className="text-uppercase" color="heading" mb="25px">
                   Wisaroot Lertthaweedech
                 </Text>
-                <Title mb="0.5rem">Software Engineer</Title>
+                <Title mb="0.5rem">Senior Data Scientist</Title>
                 <Text
                   color="text"
                   css={`
@@ -46,7 +48,8 @@ const Hero = () => {
                   `}
                   mb="2.5rem"
                 >
-                  Data Scientist | Web Developer
+                  Software Engineer | Python | Machine Learning | Driving data insights and building
+                  scalable solutions <span className="emphasize-text">🚀</span>
                 </Text>
                 <Box
                   color="text"
@@ -61,28 +64,33 @@ const Hero = () => {
                   mb="2.5rem"
                 >
                   <p>
-                    I am passionate about coding. I started coding as a hobby at 15 years old for
-                    web development, game development and gaming bot until I began my career as a
-                    petroleum engineer at Chevron. While I work there, I utilized my programming
-                    skills to develop various in-house software for data-driven decisions in the
-                    business resulting in more profit of 65.1 million USD for the company. Then, I
-                    realized that I would like to strengthen my programming skills and explore more
-                    knowledge of computer science.
+                    I'm a <span className="emphasize-text">👨‍💻</span> technology enthusiast with{' '}
+                    {year - 2005} years of coding experience, including{' '}
+                    <span className="emphasize-text">{year - 2017} years of experience</span>{' '}
+                    specializing in <code>Python</code> <span className="emphasize-text">🐍</span>.
+                    I also specialize in <code>Machine Learning</code>{' '}
+                    <span className="emphasize-text">🤖</span>, and <code>Data Science</code> for{' '}
+                    <code>Time Series</code> and <code>NLP</code>. I hold a{' '}
+                    <span className="emphasize-text">🎓</span>{' '}
+                    <span className="emphasize-text">M.Sc. in Computer Science</span> from
+                    Chulalongkorn University and possess skills in software and web development,
+                    including technologies such as
+                    <code>Javascript</code>, <code>SQL</code>, <code>CSS</code>, <code>HTML</code>,
+                    <code>Frontend</code>, <code>Backend</code>, <code>Database</code>,{' '}
+                    <code>Node.js</code>, <code>React</code>, and <code>MongoDB</code>.
                   </p>
                   <p>
-                    Therefore, I pursued a 🎓{' '}
-                    <span className="emphasize-text">M.Sc. in Computer Science</span> from
-                    Chulalongkorn University and various online courses related to
-                    technology/programming. The more I learn about technology, the more I fall in
-                    love with the field. I have <span className="emphasize-text">4 years</span> of
-                    experience in <code>Python</code>. I specialize in{' '}
-                    <code>Artificial Intelligence</code>, <code>Machine Learning</code>,{' '}
-                    <code>Data Science</code> for <code>Time Series</code>, and <code>NLP</code>. I
-                    also have skills in software development, web development and other technology
-                    skills including <code>Javascript</code>, <code>SQL</code>, <code>CSS</code>,{' '}
-                    <code>HTML</code>, <code>Frontend</code>, <code>Backend</code>,{' '}
-                    <code>Database</code>, <code>Node.js</code>, <code>React</code>,{' '}
-                    <code>MongoDB</code>.
+                    Currently, I'm a{' '}
+                    <span className="emphasize-text">senior data scientist 👨‍🔬</span> at Honest
+                    Technology, where I've developed an{' '}
+                    <span className="emphasize-text">
+                      internal machine learning research framework 🚀
+                    </span>{' '}
+                    that is composable, scalable, and easily deployable to production. In addition
+                    to my expertise in Machine Learning, I've also gained skills in{' '}
+                    <code>DevOps</code> and <code>CI/CD</code>, working with modern tooling such as{' '}
+                    <code>Terraform Cloud</code> to build cloud infrastructure as code{' '}
+                    <span className="emphasize-text">🏗️</span>.
                   </p>
                 </Box>
                 <Box className="d-flex flex-column align-items-center text-center">
