@@ -15,7 +15,7 @@ import { FaTrophy, FaSmileBeam } from 'react-icons/fa'
 import { FcFactory } from 'react-icons/fc'
 import { IoIosRocket } from 'react-icons/io'
 
-// import { TbRobot } from 'react-icons/tb'
+import { TbRobot, TbPlugConnected } from 'react-icons/tb'
 
 const WorkSingle = () => {
   return (
@@ -51,7 +51,7 @@ const WorkSingle = () => {
                 Constructed a Python-based research framework library on top of open-source machine
                 learning tools such as <code>Scikit-learn</code>, <code>Tensorflow</code>,{' '}
                 <code>Optuna</code>, <code>Imbalanced-learn</code>, <code>XGBoost</code>,{' '}
-                <code>Seaborn</code>, and <code>Matplotlib</code>. Developed an in-house
+                <code>Seaborn</code>, and <code>Matplotlib</code>.
               </p>
             </Col>
           </Row>
@@ -59,8 +59,9 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">02. Skills</Title>
               <p>
-                <code>Software Development</code>, <code>Python</code>, <code>Database</code>,{' '}
-                <code>UX/UI</code>, <code>Collaboration</code>, <code>ETL</code>
+                <code>Software Development</code>, <code>Python</code>, <code>Design Pattern</code>,{' '}
+                <code>Software Design</code>, <code>Functional Programming</code>,{' '}
+                <code>Machine Learning</code>
               </p>
             </Col>
           </Row>
@@ -165,7 +166,7 @@ const WorkSingle = () => {
                           color: #7a996d;
                         `}
                       >
-                        <BiDollar />
+                        <TbRobot />
                       </span>
                     </div>
                   </Col>
@@ -193,7 +194,7 @@ const WorkSingle = () => {
                           color: #e4a8ae;
                         `}
                       >
-                        <FaSmileBeam />
+                        <TbPlugConnected />
                       </span>
                     </div>
                   </Col>
@@ -213,35 +214,11 @@ const WorkSingle = () => {
           <Row className="justify-content-center mt-5 mb-4">
             <Col lg="9">
               <Title variant="cardLg">04. Problems</Title>
-              <p>• There are approximately 1,000 wells in the field. </p>
               <p>
-                • Multiple goals both short-term and long-term need to achieve and most of them are
-                conflict with each other’s such as Well Depletion target, Oil Production, Gas
-                Production, Low Reserves loss, Gas Specification
-                <br />
-                <span className="sub-bullet">
-                  • Well Depletion/Low Reserves loss Target: We must produce from wells that are
-                  nearly depleted and these wells have a low production rate. This will conflict
-                  with Oil and Gas production target
-                </span>
-                <span className="sub-bullet">
-                  • Gas specification: some gas specification needs to maintain in a range. Not too
-                  high/low. Thus, we need to produce with some specific well that may not be proper
-                  to maximize production
-                </span>
-              </p>
-              <p>
-                • The field contains many dynamic factors such as the wells' production rate, the
-                wells' condition, activities in the field that will affect wells' operation and
-                day-to-day operation issues in the field. they all are dynamic and challenging for
-                operators to actively select the wells for the operation to maintain optimized
-                conditions all the time.{' '}
-              </p>
-              <p>
-                • We use humans to manually operate the wells and select the wells to open or close.
-                This results in sub- optimization. Lower production. Not achieve depletion target.
-                Workload to the operator, human error, inconsistent operation due to different
-                operators, inadequate adaptation with condition change.
+                In typical machine learning processes, developers may need to use several different
+                libraries and tools, such as Scikit-learn, Imbalanced-learn, XGBoost, and
+                Tensorflow, to complete various tasks. This can make the development process
+                time-consuming and complex.
               </p>
             </Col>
           </Row>
@@ -249,29 +226,25 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">05. Actions</Title>
               <p>
-                • Develop an in-house application that has algorithms to rank the wells to operate
-                in different situations
+                • Implemented a composable software design to streamline the research process and
+                enable easy scaling of machine learning pipelines.
               </p>
               <p>
-                • Discuss with Petroleum Engineer team/team lead to assess all the goals we have to
-                achieve. Design optimization algorithm to rank priority for all the wells with
-                different situations such as high-water situation, lacking gas production, maximize
-                oil production.
+                • Facilitated deployment of replicated machine learning pipelines from research
+                toward production.
+              </p>
+              <p>• Delivered outstanding results with a user-friendly and efficient framework.</p>
+              <p>
+                • Included a wide range of components for core machine-learning tasks, including
+                train-test split, imputation, encoding, upsampling, resampling, and
+                cross-validation, as well as components for supervised learning, unsupervised
+                learning, deep learning, neural networks, recommendation systems, and natural
+                language processing.
               </p>
               <p>
-                • Design database and ETL (Extract-Transform-Load) to ensure that the application
-                can handle data streams seamlessly with good UI/UX. The application is also designed
-                to be a dashboard for wells monitoring.
-              </p>
-              <p>
-                • Discuss with operators as they are the main users to understand pain points and
-                develop applications to serve their needs.
-              </p>
-              <p>
-                • Actively communicate with the petroleum engineering team who will plan for long
-                term and big picture in the field and the operator team who solve the day-to-day
-                issues. Balance their need to maximize profit/reputation for the company and achieve
-                all the goals in both the short-term and long-term.
+                • Composed the framework with specially crafted components to handle potential
+                production errors, such as data with incorrect types or schema, without causing
+                explicit errors and ensuring uninterrupted operation.
               </p>
             </Col>
           </Row>
