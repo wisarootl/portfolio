@@ -168,15 +168,15 @@ const Profile = () => {
                       <div className="row">
                         <div className="col-12 col-sm-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
-                            Software Engineer (Data Scientist)
+                            Senior Data Scientist
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Honest</span> : a fintech start-up in
-                            southeast asia
+                            <span className="emphasize-text">Honest Technology</span> : a
+                            data-driven fintech start-up
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
-                          <p>2022 – present</p>
+                          <p>Jul 2022 – present</p>
                         </div>
                       </div>
                     </div>
@@ -184,7 +184,19 @@ const Profile = () => {
                   <div className="row description-row w-100">
                     <div className="col logo-bottom"></div>
                     <Box className="col description-col" color="text">
-                      <p>• Develop Data Science project for Credit Cards.</p>
+                      <p>
+                        • Developed a <span className="emphasize-text">highly scalable</span> and{' '}
+                        <span className="emphasize-text">easily deployable</span>{' '}
+                        <code>Python</code> framework for <code>machine learning</code> research,
+                        abstracting various tools, including <code>Scikit-learn</code>,{' '}
+                        <code>TensorFlow</code>, <code>Optuna</code>,<code>Imbalanced-learn</code>,{' '}
+                        <code>XGBoost</code>, <code>Seaborn</code>, <code>Matplotlib</code>, and
+                        others. Includes <span className="emphasize-text">composable</span> core ML
+                        components for <code>preprocessing</code>,
+                        <code>(un)supervised learning</code>, <code>deep learning</code>, and{' '}
+                        <code>recommendation systems</code>, plus robust error handling capabilities
+                        in production.
+                      </p>
                     </Box>
                   </div>
                 </ProfileCard>
@@ -247,7 +259,7 @@ const Profile = () => {
                           </Text>
                         </div>
                         <div className="col-12 col-sm-4 profile-card-date">
-                          <p>2017 – 2022</p>
+                          <p>Jul 2017 – Apr 2022</p>
                         </div>
                       </div>
                     </div>
@@ -256,18 +268,32 @@ const Profile = () => {
                     <div className="col logo-bottom"></div>
                     <Box className="col description-col" color="text">
                       <p>
-                        • Served as a <span className="emphasize-text">software developer</span> for
-                        various software development side-projects to create automation in the
-                        working process, data-driven decisions, and optimized profits
+                        • Led the design and development of{' '}
+                        <span className="emphasize-text">algorithm-driven software </span> for
+                        production <code>optimization</code> using <code>Python</code> and{' '}
+                        <code>VBA</code>, resulting in{' '}
+                        <span className="emphasize-text">15.2% higher oil production</span>,{' '}
+                        <span className="emphasize-text">
+                          $15.3 million/year additional revenue
+                        </span>
+                        , and improved workforce efficiency with reduced human error.
                       </p>
                       <p>
-                        • Served as <span className="emphasize-text">project manager</span> for
-                        different kinds of projects in oil & gas field operation e.g., well
-                        development / abandonment / intervention
+                        • Led the development of a{' '}
+                        <span className="emphasize-text">software application </span> using{' '}
+                        <code>Python</code> and <code>VBA</code> that automated pipeline network
+                        modeling,{' '}
+                        <span className="emphasize-text">
+                          cutting investment costs by $49.8 million
+                        </span>
+                        .
                       </p>
                       <p>
-                        • Maximized production, managed project & working resources and coordinated
-                        cross-functional teams
+                        • Demonstrated exceptional <code>project management</code> skills in
+                        coordinating cross-functional teams for various operational projects driving{' '}
+                        <span className="emphasize-text">$128.5 million more benefits</span> and{' '}
+                        <span className="emphasize-text">zero injury/incident</span> from my
+                        projects.
                       </p>
                     </Box>
                   </div>

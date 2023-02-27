@@ -83,14 +83,11 @@ const Hero = () => {
                     Currently, I'm a{' '}
                     <span className="emphasize-text">senior data scientist 👨‍🔬</span> at Honest
                     Technology, where I've developed an{' '}
-                    <span className="emphasize-text">
-                      internal machine learning research framework 🚀
-                    </span>{' '}
-                    that is composable, scalable, and easily deployable to production. In addition
-                    to my expertise in Machine Learning, I've also gained skills in{' '}
-                    <code>DevOps</code> and <code>CI/CD</code>, working with modern tooling such as{' '}
-                    <code>Terraform Cloud</code> to build cloud infrastructure as code{' '}
-                    <span className="emphasize-text">🏗️</span>.
+                    <span className="emphasize-text">machine learning research framework 🚀</span>{' '}
+                    that is composable, highly scalable, and easily deployable to production. In
+                    addition, I've also gained skills in <code>DevOps</code> and <code>CI/CD</code>,
+                    working with modern tooling such as <code>Terraform Cloud</code> to build cloud
+                    infrastructure as code <span className="emphasize-text">🏗️</span>.
                   </p>
                 </Box>
                 <Box className="d-flex flex-column align-items-center text-center">
