@@ -136,7 +136,7 @@ export const works = [
     description: (
       <>
         <p>
-          • Led the design and development of{' '}
+          Led the design and development of{' '}
           <span className="emphasize-text">algorithm-driven software </span> for production{' '}
           <code>optimization</code> in Chevron, a world-leading Oil & Gas company, using{' '}
           <code>Python</code> and <code>VBA</code>, resulting in{' '}

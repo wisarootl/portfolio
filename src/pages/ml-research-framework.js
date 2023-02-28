@@ -48,10 +48,17 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                Constructed a Python-based research framework library on top of open-source machine
-                learning tools such as <code>Scikit-learn</code>, <code>Tensorflow</code>,{' '}
-                <code>Optuna</code>, <code>Imbalanced-learn</code>, <code>XGBoost</code>,{' '}
-                <code>Seaborn</code>, and <code>Matplotlib</code>.
+                Developed a <span className="emphasize-text">highly scalable 🚀</span> and{' '}
+                <span className="emphasize-text">easily deployable 🔁</span> <code>Python</code>{' '}
+                <span className="emphasize-text">🐍</span> framework for{' '}
+                <code>machine learning</code> <span className="emphasize-text">🤖</span> research,
+                abstracting various tools, including <code>Scikit-learn</code>,{' '}
+                <code>TensorFlow</code>, <code>Optuna</code>, <code>Imbalanced-learn</code>,{' '}
+                <code>XGBoost</code>, <code>Seaborn</code>, <code>Matplotlib</code>, and others.
+                Includes <span className="emphasize-text">✅ composable</span> core ML components
+                for <code>preprocessing</code>, <code>(un)supervised learning</code>,{' '}
+                <code>deep learning</code>, and <code>recommendation systems</code>, plus robust
+                error handling capabilities in production.
               </p>
             </Col>
           </Row>
@@ -172,7 +179,7 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      Core ML components support
+                      Composable core ML components
                     </Title>
                     <Text variant="small">
                       includes support for essential machine learning components such as train-test
@@ -216,9 +223,10 @@ const WorkSingle = () => {
               <Title variant="cardLg">04. Problems</Title>
               <p>
                 In typical machine learning processes, developers may need to use several different
-                libraries and tools, such as Scikit-learn, Imbalanced-learn, XGBoost, and
-                Tensorflow, to complete various tasks. This can make the development process
-                time-consuming and complex.
+                libraries and tools, such as <code>Scikit-learn</code>,{' '}
+                <code>Imbalanced-learn</code>, <code>XGBoost</code>, and <code>Tensorflow</code>, to
+                complete various tasks. This can make the development process time-consuming and
+                complex.
               </p>
             </Col>
           </Row>
@@ -226,8 +234,8 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">05. Actions</Title>
               <p>
-                • Implemented a composable software design to streamline the research process and
-                enable easy scaling of machine learning pipelines.
+                • Implemented a composable <code>software design</code> to streamline the research
+                process and enable easy scaling of machine learning pipelines.
               </p>
               <p>
                 • Facilitated deployment of replicated machine learning pipelines from research
@@ -236,10 +244,12 @@ const WorkSingle = () => {
               <p>• Delivered outstanding results with a user-friendly and efficient framework.</p>
               <p>
                 • Included a wide range of components for core machine-learning tasks, including
-                train-test split, imputation, encoding, upsampling, resampling, and
-                cross-validation, as well as components for supervised learning, unsupervised
-                learning, deep learning, neural networks, recommendation systems, and natural
-                language processing.
+                train-test split, <code>imputation</code>, <code>encoding</code>,{' '}
+                <code>upsampling</code>, <code>resampling</code>, and <code>cross-validation</code>,
+                as well as components for <code>supervised learning</code>,{' '}
+                <code>unsupervised learning</code>, <code>deep learning</code>,{' '}
+                <code>neural networks</code>,<code>recommendation systems</code>, and{' '}
+                <code>natural language processing</code>.
               </p>
               <p>
                 • Composed the framework with specially crafted components to handle potential

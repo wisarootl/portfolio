@@ -99,7 +99,7 @@ const ProfileCard = styled(Box)`
   .profile-card-date p {
     text-align: left;
 
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       text-align: right;
     }
   }
@@ -166,7 +166,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Senior Data Scientist
                           </Title>
@@ -175,7 +175,7 @@ const Profile = () => {
                             data-driven fintech start-up
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        <div className="col-12 col-md-4 profile-card-date">
                           <p>Jul 2022 – present</p>
                         </div>
                       </div>
@@ -189,10 +189,10 @@ const Profile = () => {
                         <span className="emphasize-text">easily deployable</span>{' '}
                         <code>Python</code> framework for <code>machine learning</code> research,
                         abstracting various tools, including <code>Scikit-learn</code>,{' '}
-                        <code>TensorFlow</code>, <code>Optuna</code>,<code>Imbalanced-learn</code>,{' '}
+                        <code>TensorFlow</code>, <code>Optuna</code>, <code>Imbalanced-learn</code>,{' '}
                         <code>XGBoost</code>, <code>Seaborn</code>, <code>Matplotlib</code>, and
                         others. Includes <span className="emphasize-text">composable</span> core ML
-                        components for <code>preprocessing</code>,
+                        components for <code>preprocessing</code>,{' '}
                         <code>(un)supervised learning</code>, <code>deep learning</code>, and{' '}
                         <code>recommendation systems</code>, plus robust error handling capabilities
                         in production.
@@ -212,7 +212,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Software Engineer
                           </Title>
@@ -222,7 +222,7 @@ const Profile = () => {
                             </span>
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        <div className="col-12 col-md-4 profile-card-date">
                           <p>2022 – 2022</p>
                         </div>
                       </div>
@@ -249,7 +249,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Petroleum Engineer
                           </Title>
@@ -258,7 +258,7 @@ const Profile = () => {
                             and gas company
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        <div className="col-12 col-md-4 profile-card-date">
                           <p>Jul 2017 – Apr 2022</p>
                         </div>
                       </div>
@@ -311,7 +311,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Petroleum Engineer Intern
                           </Title>
@@ -319,7 +319,7 @@ const Profile = () => {
                             <span className="emphasize-text">Chevron</span>
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        <div className="col-12 col-md-4 profile-card-date">
                           <p>2015 – 2016</p>
                         </div>
                       </div>
@@ -338,7 +338,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Research Assistant
                           </Title>
@@ -347,7 +347,7 @@ const Profile = () => {
                             petrochemical company in Thailand
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        <div className="col-12 col-md-4 profile-card-date">
                           <p>2012 – 2014</p>
                         </div>
                       </div>
@@ -381,7 +381,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             M.Sc. in Computer Science
                           </Title>
@@ -392,7 +392,7 @@ const Profile = () => {
                           </Text>
                         </div>
                         {/* todo */}
-                        {/* <div className="col-12 col-sm-4 profile-card-date">
+                        {/* <div className="col-12 col-md-4 profile-card-date">
                           <p>2020 – 2022</p>
                         </div> */}
                       </div>
@@ -412,7 +412,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             M.Eng. in Petrolrum Engineering
                           </Title>
@@ -422,7 +422,7 @@ const Profile = () => {
                             (Merit scholarship from Chevron)
                           </Text>
                         </div>
-                        <div className="col-12 col-sm-4 profile-card-date">
+                        <div className="col-12 col-md-4 profile-card-date">
                           <p>2014 – 2016</p>
                         </div>
                       </div>
@@ -441,7 +441,7 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-sm-8 profile-card-heading">
+                        <div className="col-12 col-md-8 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             B.Sc. in Chemical Engineering
                           </Title>
@@ -452,7 +452,7 @@ const Profile = () => {
                             <sup>st</sup> Hons, Top 1 of the class)
                           </Text>
                         </div>
-                        {/* <div className="col-12 col-sm-4 profile-card-date">
+                        {/* <div className="col-12 col-md-4 profile-card-date">
                           <p>2008 – 2012</p>
                         </div> */}
                       </div>

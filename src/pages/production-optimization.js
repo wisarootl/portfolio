@@ -44,12 +44,12 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                • Led the design and development of{' '}
-                <span className="emphasize-text">algorithm-driven software </span> for production{' '}
+                Led the design and development of{' '}
+                <span className="emphasize-text">algorithm-driven software 💻</span> for production{' '}
                 <code>optimization</code> in Chevron, a world-leading Oil & Gas company, using{' '}
-                <code>Python</code> and <code>VBA</code>, resulting in{' '}
-                <span className="emphasize-text">15.2% higher oil production</span>,{' '}
-                <span className="emphasize-text">$15.3 million/year additional revenue</span>, and
+                <code>Python</code> <span className="emphasize-text">🐍</span> and <code>VBA</code>,
+                resulting in <span className="emphasize-text">✅15.2% higher oil production</span>,{' '}
+                <span className="emphasize-text">✅$15.3 million/year additional revenue</span>, and
                 improved workforce efficiency with reduced human error.
               </p>
             </Col>
@@ -60,7 +60,8 @@ const WorkSingle = () => {
               <p>
                 <code>Software Development</code>, <code>Python</code>, <code>Excel Macro VBA</code>
                 , <code>Database</code>, <code>UX/UI</code>, <code>Collaboration</code>,{' '}
-                <code>ETL</code>, <code>Optimization Algorithm</code>
+                <code>ETL</code>, <code>Optimization Algorithm</code>,{' '}
+                <code>Linear Programming</code>
               </p>
             </Col>
           </Row>
@@ -145,12 +146,12 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      More Achievements
+                      Fulfilled All Field Objectives
                     </Title>
                     <Text variant="small">
-                      Achieve all the goals in different aspects for gas field operation including
-                      well depletion target, oil production, gas production, low reserves loss and
-                      gas specification
+                      Achieved all goals for gas field operation, including meeting the well
+                      depletion target, optimizing oil and gas production, reducing reserves loss,
+                      and maintaining gas specification within the desired range.
                     </Text>
                   </Col>
                 </Row>
@@ -172,11 +173,12 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      $15.3 Millions More Revenue
+                      $15.3 Million More Annual Revenue
                     </Title>
                     <Text variant="small">
-                      Operation at optimized condition creating 15.2% more oil production (more
-                      profit of 15.3 million USD yearly)
+                      Attained a 15.2% increase in oil production and generated an additional
+                      revenue of $15.3 million per year by operating the field at optimized
+                      conditions.
                     </Text>
                   </Col>
                 </Row>
@@ -198,12 +200,12 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      Happier Workforces
+                      Agile Operations
                     </Title>
                     <Text variant="small">
-                      More automated framework, Less dependence on humans, Lower workload,
-                      Data-driven operation, Optimized production, Lower human error, Better company
-                      reputation
+                      Implemented a more automated framework that enabled data-driven operations,
+                      resulting in agile operations and improved workforce efficiency with reduced
+                      human error.
                     </Text>
                   </Col>
                 </Row>
@@ -213,35 +215,13 @@ const WorkSingle = () => {
           <Row className="justify-content-center mt-5 mb-4">
             <Col lg="9">
               <Title variant="cardLg">04. Problems</Title>
-              <p>• There are approximately 1,000 wells in the field. </p>
               <p>
-                • Multiple goals both short-term and long-term need to achieve and most of them are
-                conflict with each other’s such as Well Depletion target, Oil Production, Gas
-                Production, Low Reserves loss, Gas Specification
-                <br />
-                <span className="sub-bullet">
-                  • Well Depletion/Low Reserves loss Target: We must produce from wells that are
-                  nearly depleted and these wells have a low production rate. This will conflict
-                  with Oil and Gas production target
-                </span>
-                <span className="sub-bullet">
-                  • Gas specification: some gas specification needs to maintain in a range. Not too
-                  high/low. Thus, we need to produce with some specific well that may not be proper
-                  to maximize production
-                </span>
-              </p>
-              <p>
-                • The field contains many dynamic factors such as the wells' production rate, the
-                wells' condition, activities in the field that will affect wells' operation and
-                day-to-day operation issues in the field. they all are dynamic and challenging for
-                operators to actively select the wells for the operation to maintain optimized
-                conditions all the time.{' '}
-              </p>
-              <p>
-                • We use humans to manually operate the wells and select the wells to open or close.
-                This results in sub- optimization. Lower production. Not achieve depletion target.
-                Workload to the operator, human error, inconsistent operation due to different
-                operators, inadequate adaptation with condition change.
+                Operating a gas field with around 1,000 wells presents various challenges, including
+                conflicting goals such as maintaining gas specifications while balancing depletion
+                targets, and dealing with dynamically changing conditions. These challenges are
+                compounded by a manual operation process that leads to sub-optimization, lower
+                production, increased operator workload, human error, inconsistent operation, and
+                inadequate adaptation to changing conditions.
               </p>
             </Col>
           </Row>
@@ -249,29 +229,30 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">05. Actions</Title>
               <p>
-                • Develop an in-house application that has algorithms to rank the wells to operate
-                in different situations
+                • Develop an in-house application with <code>optimization algorithms</code> based on{' '}
+                <code>linear programming</code> to prioritize well operation in different
+                situations.
               </p>
               <p>
-                • Discuss with Petroleum Engineer team/team lead to assess all the goals we have to
-                achieve. Design optimization algorithm to rank priority for all the wells with
-                different situations such as high-water situation, lacking gas production, maximize
-                oil production.
+                • Collaborate with the Petroleum Engineering team to identify all the goals and
+                requirements, and then translate them into objective functions and constraints.
+                These will be used by the optimization algorithm to prioritize well operation in
+                different scenarios, such as excessive water production, low gas production, and
+                maximum oil production.
               </p>
               <p>
-                • Design database and ETL (Extract-Transform-Load) to ensure that the application
-                can handle data streams seamlessly with good UI/UX. The application is also designed
-                to be a dashboard for wells monitoring.
+                • Design and implement a <code>database</code> along with an <code>ETL</code>{' '}
+                (Extract-Transform-Load) process to ensure that the application can handle data
+                streams seamlessly, and provide a user-friendly dashboard for well monitoring.
               </p>
               <p>
-                • Discuss with operators as they are the main users to understand pain points and
-                develop applications to serve their needs.
+                • Consult with operators, the main users of the application, to identify pain points
+                and develop features that address their needs.
               </p>
               <p>
-                • Actively communicate with the petroleum engineering team who will plan for long
-                term and big picture in the field and the operator team who solve the day-to-day
-                issues. Balance their need to maximize profit/reputation for the company and achieve
-                all the goals in both the short-term and long-term.
+                • Communicate regularly with the Petroleum Engineering and operator teams to balance
+                short-term and long-term goals, maximizing profit and company reputation while
+                achieving all objectives.
               </p>
             </Col>
           </Row>
