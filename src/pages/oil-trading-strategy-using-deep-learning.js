@@ -10,6 +10,7 @@ import imgWorkCover from '../assets/img/portfolio/deep-learning-for-trading.jpg'
 import imgResult from '../assets/img/portfolio/oil-trading-result.png'
 import { device, breakpoints } from '../utils'
 
+import { FaExternalLinkAlt } from 'react-icons/fa'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { RiStockFill } from 'react-icons/ri'
 
@@ -44,12 +45,29 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                • Researched focus on <span className="emphasize-text">time series</span>{' '}
-                forecasting using deep learning model for crude oil trading strategy. <br />•
-                Proposed model can get the highest ROI which is{' '}
-                <span className="emphasize-text">10% annualized return</span> from 2015 to 2020 with
-                minimal drawdown along the test periods. While other strategies including Buy & Hold
-                and traditional technical indicator gives ann. ROI between -100% to 2.8% only.
+                • This research focuses on developing a <code>time series</code>{' '}
+                <span className="emphasize-text">📈</span> forecasting model using{' '}
+                <code>deep learning</code> <span className="emphasize-text">🤖</span> techniques for
+                a crude oil trading strategy.
+              </p>
+              <p>
+                • The proposed model achieves a remarkable{' '}
+                <span className="emphasize-text">✅17.8% annualized return</span> on investment
+                (ROI) from 2015 to 2020, with{' '}
+                <span className="emphasize-text">✅the highest Sharpe ratio of 0.62</span>. In
+                contrast, other strategies such as Buy & Hold and traditional technical indicators
+                yield annualized ROI between -12.0% to 7.4% and Sharpe ratio between -0.15 to 0.55
+                only.
+              </p>
+              <p>
+                •{' '}
+                <a
+                  href="http://www.jait.us/index.php?m=content&c=index&a=show&catid=222&id=1278"
+                  target="_blank"
+                >
+                  Published 🔥 in Journal of Advances in Information Technology (Lertthaweedech et
+                  al., 2022) <FaExternalLinkAlt className="link-icon" />
+                </a>
               </p>
             </Col>
           </Row>
@@ -58,9 +76,11 @@ const WorkSingle = () => {
               <Title variant="cardLg">02. Skills</Title>
               <p>
                 <code>Data Science</code>, <code>Python</code>, <code>Machine Learning</code>,{' '}
-                <code>Deep Learning</code>, <code>Neural Network</code>,{' '}
+                <code>Deep Learning</code>, <code>Time Series</code>, <code>Neural Network</code>,{' '}
                 <code>Artificial Intelligent</code>, <code>Finance</code>, <code>Publication</code>,{' '}
-                <code>Tensorflow</code>, <code>Keras</code>, <code>LSTM</code>, <code>CNN</code>
+                <code>Tensorflow</code>, <code>Keras</code>,{' '}
+                <code>Long Short-Term Memory (LSTM)</code>,{' '}
+                <code>Convolutional Neural Network (CNN)</code>
               </p>
             </Col>
           </Row>
@@ -145,11 +165,13 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      10% Annualized ROI
+                      17.8% Annualized ROI
                     </Title>
                     <Text variant="small">
-                      <code>CNN-LSTM</code> could enhance ROI for crude oil trading to 10 %
-                      annualized ROI which is the highest comparing to traditional strategies.
+                      Using the proposed <code>LSTM-CNN</code> model, our research found that a
+                      crude oil trading strategy can achieve an annualized ROI of 17.8%. This is the
+                      highest ROI compared to traditional strategies, demonstrating the
+                      effectiveness of deep learning models in time series forecasting for trading.
                     </Text>
                   </Col>
                 </Row>
@@ -160,43 +182,66 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">04. Motivation</Title>
               <p>
-                • Develop deep learning model that can provide a better trading signal than
-                traditional technical indicator with a higher return on investment in the long run
+                The motivation of this research is to create a deep learning model that can offer
+                superior trading signals compared to traditional technical indicators and generate
+                higher long-term return on investment.
               </p>
             </Col>
           </Row>
           <Row className="justify-content-center mt-5 mb-4">
             <Col lg="9">
               <Title variant="cardLg">05. Actions</Title>
-              <p>• Pull OHLCV data of WTI crude oil price from Yahoo finance.</p>
+              <p>• Obtained the OHLCV data of WTI crude oil price from Yahoo finance.</p>
               <p>
-                • Pre-process data including labeling, technical indicator generation, train-test
-                split, data normalization and data transformation
+                • Conducted data pre-processing, which included labeling, generating technical
+                indicators, splitting data into train and test sets, and normalizing and
+                transforming data.
               </p>
               <p>
-                • Research on regression deep learning model using <code>CNN-LSTM</code>{' '}
-                architecture to provide a trading strategy
+                • Researched various deep learning models such as <code>CNN</code>,{' '}
+                <code>LSTM</code>, <code>CNN-LSTM</code> and <code>LSTM-CNN</code>
+                architectures to provide a trading signal and compared the results with traditional
+                strategies such as RSI, MACD, SMA, Stochastics, and Buy&Hold.
               </p>
             </Col>
           </Row>
           <Row className="justify-content-center align-items-center d-flex mt-5 mb-4">
             <Col lg="6" className="mb-5">
               <img src={imgResult} alt="" className="img-fluid w-100" />
-              <p className="text-center">
-                Figure 1 Trading backtest results from strategy by <code>LSTM-CNN</code> model and
-                other traditional strategies
-              </p>
+              <p className="text-center">Figure 1: ROI of all trading strategies</p>
             </Col>
           </Row>
           <Row className="justify-content-center mt-5 mb-4">
             <Col lg="9">
               <Title variant="cardLg">06. Results</Title>
               <p>
-                • <code>CNN-LSTM</code> could achieve the highest ROI which is 10% annualized return
-                from 2015 to 2020. Also, the model can maintain the portfolio value at the top rank
-                with minimal drawdown along the test period. In the meanwhile, the Buy&Hold strategy
-                gets only -1.4% ann. ROI. The other strategy from the traditional technical
-                indicators including RSI, MA, Stochastics, MACD gets ann. ROI between -100% to 2.8%
+                The results showed that the combination of both <code>CNN</code>
+                and <code>LSTM</code> layers, either in <code>CNN-LSTM</code> or{' '}
+                <code>LSTM-CNN</code> order, outperformed the single CNN or LSTM models and
+                traditional trading strategies such as buy and hold, RSI, Stochastics, MACD, and
+                SMA. The <code>LSTM-CNN</code> model provided{' '}
+                <span className="emphasize-text">
+                  the highest annualized ROI at 17.8% and Sharpe ratio at 0.62
+                </span>
+                . These findings suggest that the combination of <code>CNN</code> and{' '}
+                <code>LSTM</code> layers could enhance both prediction and trading performance for
+                crude oil price prediction.
+              </p>
+            </Col>
+          </Row>
+          <Row className="justify-content-center mt-5 mb-4">
+            <Col lg="9">
+              <Title variant="cardLg">07. Publication</Title>
+              <p>
+                <a
+                  href="http://www.jait.us/index.php?m=content&c=index&a=show&catid=222&id=1278"
+                  target="_blank"
+                >
+                  W. Lertthaweedech, P. Kantavat and B. Kijsirikul, "Effective Crude Oil Trading
+                  Techniques Using Long Short-Term Memory and Convolution Neural Networks," in
+                  Journal of Advances in Information Technology, vol. 13, no. 6, pp. 645-651, Dec.
+                  2022, doi: 10.12720/jait.13.6.645-651. <FaExternalLinkAlt className="link-icon" />
+                </a>
               </p>
             </Col>
           </Row>

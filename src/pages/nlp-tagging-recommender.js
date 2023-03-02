@@ -46,11 +46,14 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                • Researched focus on <code>NLP</code> to apply{' '}
-                <span className="emphasize-text">deep learning model in tagging recommender</span>{' '}
-                for Pantip.com, The most famous discussion website in Thailand. <br />• The model
-                can achieve <span className="emphasize-text">F1 scores of 0.55</span> for different
-                144 tags.
+                • Researched focus on <code>NLP</code> <span className="emphasize-text">🔤</span> to
+                apply{' '}
+                <span className="emphasize-text">
+                  deep learning 🤖 model in tagging recommender
+                </span>{' '}
+                for Pantip.com, the most famous discussion website in Thailand. <br />• The model
+                can achieve <span className="emphasize-text">✅F1 scores of 0.55</span> for 144
+                unique tags.
               </p>
             </Col>
           </Row>
@@ -59,12 +62,13 @@ const WorkSingle = () => {
               <Title variant="cardLg">02. Skills</Title>
               <p>
                 <code>Data Science</code>, <code>Python</code>,{' '}
-                <code>Natural Language Procession (NLP)</code>, <code>Machine Learning</code>,{' '}
+                <code>Natural Language Processing (NLP)</code>, <code>Machine Learning</code>,{' '}
                 <code>Deep Learning</code>, <code>Neural Network</code>,{' '}
                 <code>Artificial Intelligent</code>, <code>Web Scraping</code>,{' '}
                 <code>Beautiful Soup</code>, <code>HTML</code>, <code>Tensorflow</code>,{' '}
-                <code>Keras</code>, <code>PythaiNLP</code>, <code>SKlearn</code>, <code>LSTM</code>,{' '}
-                <code>CNN</code>
+                <code>Keras</code>, <code>PythaiNLP</code>, <code>Scikit-learn (SKlearn)</code>,{' '}
+                <code>Long Short-Term Memory (LSTM)</code>,{' '}
+                <code>Convolutional Neural Networks (CNN)</code>
               </p>
             </Col>
           </Row>
@@ -152,9 +156,10 @@ const WorkSingle = () => {
                       Beat 0.55 F1 Scores
                     </Title>
                     <Text variant="small">
-                      • <code>CNN-LSTM</code> gives 0.50 of F1 scores and <code>Multi-CNN</code>{' '}
-                      gives 0.55 F1 scores.
-                      <br />• Suggest using <code>Multi-CNN</code> model due to higher F1 scores
+                      The <code>CNN-LSTM</code> model achieved an F1 score of 0.50, while the{' '}
+                      <code>Multi-CNN</code> model achieved 0.55 for the 144 unique tags. Based on
+                      this finding, we suggest using the <code>Multi-CNN</code> model due to its
+                      higher F1 score.
                     </Text>
                   </Col>
                 </Row>
@@ -164,18 +169,31 @@ const WorkSingle = () => {
           <Row className="justify-content-center mt-5 mb-4">
             <Col lg="9">
               <Title variant="cardLg">04. Motivation</Title>
-              <p>• Apply knowledge in NLP to develop tagging recommender</p>
+              <p>
+                The main motivation for this project was to apply knowledge in natural language
+                processing (NLP) and deep learning to develop a tagging recommender for a popular
+                discussion website in Thailand. This recommender aims to improve the user experience
+                by suggesting relevant tags for new discussion topics.
+              </p>
             </Col>
           </Row>
           <Row className="justify-content-center mt-5 mb-4">
             <Col lg="9">
               <Title variant="cardLg">05. Actions</Title>
               <p>• Web scraping 10,000 topics from pantip.com</p>
-              <p>• Pre-process data including cleaning data, labeling, tokenization.</p>
               <p>
-                • Proposed 2 deep learning models including <code>LSTM-CNN</code> and{' '}
-                <code>Multi-CNN</code>. Vary threshold to identify the highest F1 score. Compare
-                results of 2 models
+                • The scraped data was then pre-processed to clean it, label it, and tokenize it to
+                prepare it for use in deep learning models.
+              </p>
+              <p>
+                • Two deep learning models, <code>LSTM-CNN</code> and <code>Multi-CNN</code>, were
+                proposed to develop the tagging recommender. The architecture design of both models
+                is shown in Figure 1 for <code>LSTM-CNN</code> and Figure 2 for{' '}
+                <code>Multi-CNN</code>.
+              </p>
+              <p>
+                • The threshold of the multi-classification was varied to identify the highest F1
+                score, and the results of both models were compared.
               </p>
             </Col>
           </Row>
@@ -183,7 +201,7 @@ const WorkSingle = () => {
             <Col lg="6" className="mb-5">
               <img src={imgModel1} alt="" className="img-fluid w-100" />
               <p className="text-center">
-                Figure 1 Architecture of <code>LSTM-CNN</code> model
+                Figure 1: Architecture of <code>LSTM-CNN</code> model
               </p>
             </Col>
           </Row>
@@ -191,7 +209,7 @@ const WorkSingle = () => {
             <Col lg="6" className="mb-5">
               <img src={imgModel2} alt="" className="img-fluid w-100" />
               <p className="text-center">
-                Figure 2 Architecture of <code>Multi-CNN</code> model
+                Figure 2: Architecture of <code>Multi-CNN</code> model
               </p>
             </Col>
           </Row>
@@ -199,22 +217,19 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">06. Results</Title>
               <p>
-                • <code>CNN-LSTM</code> gives 0.50 of F1 scores and <code>Multi-CNN</code> gives
-                0.55 F1 scores.
-              </p>
-              <p>
-                • Suggest using <code>Multi-CNN</code> model due to higher F1 scores
-              </p>
-              <p>
-                • Incorrect tags are in the yellow highlight which is still in reasonable relation
-                with the content.
+                The <code>Multi-CNN</code> model achieved an{' '}
+                <span className="emphasize-text">F1 score of 0.55</span>, which was higher than the{' '}
+                <code>CNN-LSTM</code> model's F1 score of 0.50. Based on this result, we suggest
+                using the <code>Multi-CNN</code> model. Figure 3 shows example prediction results
+                from both models, highlighting incorrect tags in yellow, which are still in
+                reasonable relation to the content.
               </p>
             </Col>
           </Row>
           <Row className="justify-content-center align-items-center d-flex mt-5 mb-4">
             <Col lg="9" className="mb-5">
               <img src={imgResult} alt="" className="img-fluid w-100" />
-              <p className="text-center">Figure 3 Example prediction results from both models</p>
+              <p className="text-center">Figure 3: Example prediction results from both models</p>
             </Col>
           </Row>
           <Row className="justify-content-center mt-5 mb-4">

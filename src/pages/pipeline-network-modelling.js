@@ -11,7 +11,8 @@ import { device, breakpoints } from '../utils'
 
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { BiDollar } from 'react-icons/bi'
-import { FaTrophy, FaThumbsUp } from 'react-icons/fa'
+import { FaThumbsUp } from 'react-icons/fa'
+import { HiLightBulb } from 'react-icons/hi'
 
 const WorkSingle = () => {
   return (
@@ -35,7 +36,7 @@ const WorkSingle = () => {
             <Col lg="9">
               <Text variant="tag">Software Development</Text>
               <Title variant="secSm" className="my-4">
-                Application for Pipeline Network Modelling
+                Automated Pipeline Network Modeling Software
               </Title>
             </Col>
           </Row>
@@ -43,11 +44,12 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                • Developed an in-house <span className="emphasize-text">software application</span>{' '}
-                for Chevron, a world-leading Oil & Gas company, to automatically generate a pipeline
-                network model for Gas field in the simulator.
-                <br />• Researched optimized pipeline network scenarios saving investment cost for{' '}
-                <span className="emphasize-text">49.8 million USD</span>.
+                Led the development of a{' '}
+                <span className="emphasize-text">software application 🏭</span> using{' '}
+                <code>Python</code> <span className="emphasize-text">🐍</span> and <code>VBA</code>{' '}
+                for Chevron, a world-leading Oil & Gas company, that automated pipeline network
+                modeling,{' '}
+                <span className="emphasize-text">✅cutting investment costs by $49.8 million</span>.
               </p>
             </Col>
           </Row>
@@ -56,7 +58,7 @@ const WorkSingle = () => {
               <Title variant="cardLg">02. Skills</Title>
               <p>
                 <code>Software Development</code>, <code>Python</code>, <code>Excel Macro VBA</code>
-                , <code>Data Structure</code>, <code>Database</code>
+                , <code>Data Structure</code>, <code>Database</code>, <code>Search Algorithms</code>
               </p>
             </Col>
           </Row>
@@ -125,7 +127,7 @@ const WorkSingle = () => {
               }
             `}
           >
-            <Col lg="6" className="achievements-card">
+            <Col lg="4" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
                   <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
@@ -141,17 +143,18 @@ const WorkSingle = () => {
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      49.8 MUSD Less Investment
+                      $49.8 million Less Investment
                     </Title>
                     <Text variant="small">
-                      Saving investment cost of 49.8 million USD for optimized pipeline
-                      installation.
+                      Researched for multiple pipeline network scenarios through the software to
+                      determine the most optimal solution, resulting in a significant reduction in
+                      investment costs.
                     </Text>
                   </Col>
                 </Row>
               </Col>
             </Col>
-            <Col lg="6" className="achievements-card">
+            <Col lg="4" className="achievements-card">
               <Col className="col-12 h-100 achievements-card2">
                 <Row>
                   <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
@@ -170,8 +173,36 @@ const WorkSingle = () => {
                       Less Workload
                     </Title>
                     <Text variant="small">
-                      The software that leads to a new framework that is more automated,
-                      user-friendly, more effective, and optimal investment in the future.
+                      Streamlined pipeline network modeling, creating a more efficient and automated
+                      research framework. The new framework offers optimized investment
+                      opportunities and has drastically reduced team workload for the research team.
+                    </Text>
+                  </Col>
+                </Row>
+              </Col>
+            </Col>
+            <Col lg="4" className="achievements-card">
+              <Col className="col-12 h-100 achievements-card2">
+                <Row>
+                  <Col className="col-12 d-flex achievements-icon" lg="12" sm="3">
+                    <div className="achievements-icon2">
+                      <span
+                        css={`
+                          color: #e8ad11;
+                        `}
+                      >
+                        <HiLightBulb />
+                      </span>
+                    </div>
+                  </Col>
+                  <Col className="col-12 achievements-desc" lg="12" sm="9">
+                    <Title variant="cardSm" className="mt-3">
+                      Enhanced Design
+                    </Title>
+                    <Text variant="small">
+                      Optimized pipeline network scenarios researched through the software resulted
+                      in a more efficient and effective pipeline notwork design, improving
+                      operational efficiency and reducing maintenance requirements.
                     </Text>
                   </Col>
                 </Row>
@@ -182,10 +213,21 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">04. Problems</Title>
               <p>
-                • Difficulties for big data to import/export between excel and petroleum simulation
-                software. It was handled manually. Thus, it is ineffective and not updated
-                information. Not suitable for research with various pipeline conditions. Not optimal
-                design of pipeline installation.
+                At Chevron, we use specialized petroleum simulation software to model complex
+                pipeline systems in the oil and gas industry. This software is crucial for providing
+                a detailed understanding of the behavior of fluids and gases within pipelines,
+                allowing for accurate predictions and simulations of various pipeline scenarios.
+              </p>
+              <p>
+                However, we encountered{' '}
+                <span className="emphasize-text">
+                  challenges when transferring big amounts of pipeline network information
+                </span>{' '}
+                stored in an Excel file to the specialized petroleum simulation software. The
+                transfer process of this data was manual and, hence, it was inefficient and prone to
+                errors, resulting in outdated information that was not suitable for research with
+                various pipeline conditions. This also hindered our ability to optimize pipeline
+                installation design.
               </p>
             </Col>
           </Row>
@@ -193,18 +235,18 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">05. Actions</Title>
               <p>
-                • Develop an in-house application to automatically import/export data between excel
-                and petroleum simulation software.
+                • Developed an in-house application that automates the process of data transferring
+                between Excel and the specialized petroleum simulation software.
               </p>
               <p>
-                • The connection between excel and the software requires a very specific programming
-                language that is not available on google. Rare specialists. They only are available
-                in manual and some simple example software from previous work in the company. I have
-                to learn almost all thing myself from scratch.
+                • The connection between Excel and the software requires a specific technology that
+                is not commonly available on the internet. I had to rely on documentation to learn
+                this programming language from scratch
               </p>
               <p>
-                • Researched for optimized pipeline network scenarios and utilized python to
-                visualize data for the research as it can handle big data faster.
+                • Conducted research to identify optimized pipeline network scenarios and utilized
+                Python to visualize and analyze large amounts of data for the research, as it is
+                more efficient at handling big data.
               </p>
             </Col>
           </Row>

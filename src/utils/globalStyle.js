@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const globalStyle = createGlobalStyle`
   body {
@@ -43,6 +43,15 @@ const globalStyle = createGlobalStyle`
     input[type="number"] {
       -moz-appearance: textfield; /* Firefox */
     }
-`;
+  
+    
 
-export default globalStyle;
+  .link-icon {
+    font-size: 0.8em;
+    color: ${({ theme }) => theme.colors.frontShade};
+    position: relative;
+    bottom: 2px;
+  }
+`
+
+export default globalStyle

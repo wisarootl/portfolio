@@ -268,15 +268,15 @@ const Profile = () => {
                     <div className="col logo-bottom"></div>
                     <Box className="col description-col" color="text">
                       <p>
-                        • Led the design and development of{' '}
-                        <span className="emphasize-text">algorithm-driven software </span> for
-                        production <code>optimization</code> using <code>Python</code> and{' '}
-                        <code>VBA</code>, resulting in{' '}
-                        <span className="emphasize-text">15.2% higher oil production</span>,{' '}
+                        • Designed and developed{' '}
+                        <span className="emphasize-text">algorithm-driven software</span> using{' '}
+                        <code>Python</code>, <code>VBA</code>, and <code>linear programming</code>{' '}
+                        for production <code>optimization</code>, resulting in a{' '}
+                        <span className="emphasize-text">15.2% increase in oil production</span>,{' '}
                         <span className="emphasize-text">
-                          $15.3 million/year additional revenue
+                          $15.3 million/year in additional revenue
                         </span>
-                        , and improved workforce efficiency with reduced human error.
+                        , and improved workforce efficiency with reduced errors.
                       </p>
                       <p>
                         • Led the development of a{' '}

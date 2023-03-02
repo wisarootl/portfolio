@@ -4,9 +4,9 @@ import imgT2 from '../assets/img/portfolio/pipiline-network-modeling.png'
 import imgT3 from '../assets/img/portfolio/natural-language-processing-nlp.jpg'
 import imgT4 from '../assets/img/portfolio/deep-learning-for-trading.jpg'
 import imgT5 from '../assets/img/portfolio/leetcode.png'
-import imgT6 from '../assets/img/portfolio/face-recognition.png'
 import imgT7 from '../assets/img/portfolio/portfolio-web-site.png'
 import imgT8 from '../assets/img/portfolio/jobfair-software-backend.jpg'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 export const works = [
   {
@@ -27,8 +27,8 @@ export const works = [
       <>
         <p>
           • Demo backend project for online job fair registration. This project is an assignment of{' '}
-          <span className="emphasize-text">Software Development Practice Class</span> (2110503) at
-          department of Computer Engineering, Chulalongkorn University.
+          <span className="emphasize-text">Software Development Practice Class</span> at
+          Chulalongkorn University.
         </p>
       </>
     )
@@ -40,22 +40,41 @@ export const works = [
       `Python`,
       `Machine Learning`,
       `Deep Learning`,
+      `Time Series`,
       `Neural Network`,
       `Artificial Intelligent`,
       `Finance`,
-      `Publication`
+      `Publication`,
+      `Tensorflow`,
+      `Keras`,
+      `Long Short-Term Memory (LSTM)`,
+      `Convolutional Neural Network (CNN)`
     ],
     thumbnail: imgT4,
     link: '/oil-trading-strategy-using-deep-learning',
     description: (
       <>
         <p>
-          • Researched focus on <span className="emphasize-text">time series</span> forecasting
-          using deep learning model for crude oil trading strategy. <br />• Proposed model can get
-          the highest ROI which is <span className="emphasize-text">10% annualized return</span>{' '}
-          during 2015 to 2020 with minimal drawdown along the test periods. While other strategies
-          including Buy & Hold and traditional technical indicator gives ann. ROI between -100% to
-          2.8% only.
+          • This research focuses on developing a <code>time series</code> forecasting model using{' '}
+          <code>deep learning</code> techniques for a crude oil trading strategy.
+        </p>
+        <p>
+          • The proposed model achieves a remarkable{' '}
+          <span className="emphasize-text">17.8% annualized return</span> on investment (ROI) from
+          2015 to 2020, with{' '}
+          <span className="emphasize-text">the highest Sharpe ratio of 0.62</span>. In contrast,
+          other strategies such as Buy & Hold and traditional technical indicators yield annualized
+          ROI between -12.0% to 7.4% and Sharpe ratio between -0.15 to 0.55 only.
+        </p>
+        <p>
+          •{' '}
+          <a
+            href="http://www.jait.us/index.php?m=content&c=index&a=show&catid=222&id=1278"
+            target="_blank"
+          >
+            Published 🔥 in Journal of Advances in Information Technology (Lertthaweedech et al.,
+            2022) <FaExternalLinkAlt className="link-icon" />
+          </a>
         </p>
       </>
     )
@@ -69,16 +88,25 @@ export const works = [
       `Machine Learning`,
       `Deep Learning`,
       `Neural Network`,
-      `Artificial Intelligent`
+      `Artificial Intelligent`,
+      `Web Scraping`,
+      `Beautiful Soup`,
+      `HTML`,
+      `Tensorflow`,
+      `Keras`,
+      `PythaiNLP`,
+      `Scikit-learn (SKlearn)`,
+      `Long Short-Term Memory (LSTM)`,
+      `Convolutional Neural Networks (CNN)`
     ],
     thumbnail: imgT3,
     link: '/nlp-tagging-recommender',
     description: (
       <p>
         • Researched focus on <code>NLP</code> to apply{' '}
-        <span className="emphasize-text">deep learning model in tagging recommender</span>
-        for Pantip.com, The most famous discussio website in Thailand. <br />• The model can achieve{' '}
-        <span className="emphasize-text">F1 scores of 0.55</span> for different 144 tags.
+        <span className="emphasize-text">deep learning model in tagging recommender</span> for
+        Pantip.com, The most famous discussio website in Thailand. <br />• The model can achieve{' '}
+        <span className="emphasize-text">F1 scores of 0.55</span> for 144 unique tags.
       </p>
     )
   },
@@ -98,125 +126,81 @@ export const works = [
     description: (
       <>
         <p>
-          Continuously solving programming questions to sharpen my <code>Algorithms</code>,{' '}
-          <code>Data Structure</code> and <code>Coding</code> skills.
+          Improved my <code>algorithmic</code>, <code>data structure</code>, and <code>coding</code>{' '}
+          skills by solving programming questions on Leetcode. This practice has enhanced my ability
+          to communicate complex programming concepts and develop a systematic approach to{' '}
+          <code>problem-solving</code>.
         </p>
       </>
     )
   },
   {
-    title: `Application for Pipeline Network Modelling`,
+    title: `Automated Pipeline Network Modeling Software`,
     categories: [`Software Development`, `Python`, `Excel Macro VBA`, `Data Structure`, `Database`],
     thumbnail: imgT2,
     link: '/pipeline-network-modelling',
     description: (
       <>
         <p>
-          • Developed an in-house <span className="emphasize-text">software application</span> for
-          Chevron, a world-leading Oil & Gas company, to automatically generate a pipeline network
-          model for gas fields in the simulator.
-          <br />• Researched optimized pipeline network scenarios saving investment costs for{' '}
-          <span className="emphasize-text">49.8 million USD</span>.
+          Led the development of a <span className="emphasize-text">software application</span>{' '}
+          using <code>Python</code> and <code>VBA</code> for Chevron, a world-leading Oil & Gas
+          company, that automated pipeline network modeling,{' '}
+          <span className="emphasize-text">cutting investment costs by $49.8 million</span>.
         </p>
       </>
     )
   },
   {
-    title: `Application for Production Optimization`,
+    title: `Optimization Application for Gas Field Operations`,
     categories: [
       `Software Development`,
+      `Python`,
       `Excel Macro VBA`,
       `Database`,
       `UX/UI`,
       `Collaboration`,
-      `ETL`
+      `ETL`,
+      `Optimization Algorithm`,
+      `Linear Programming`
     ],
     thumbnail: imgT1,
     link: '/production-optimization',
     description: (
       <>
         <p>
-          Led the design and development of{' '}
-          <span className="emphasize-text">algorithm-driven software </span> for production{' '}
-          <code>optimization</code> in Chevron, a world-leading Oil & Gas company, using{' '}
-          <code>Python</code> and <code>VBA</code>, resulting in{' '}
-          <span className="emphasize-text">15.2% higher oil production</span>,{' '}
-          <span className="emphasize-text">$15.3 million/year additional revenue</span>, and
-          improved workforce efficiency with reduced human error.
+          Designed and developed <span className="emphasize-text">algorithm-driven software</span>{' '}
+          using <code>Python</code>, <code>VBA</code>, and <code>linear programming</code> for
+          production <code>optimization</code> at Chevron, a world-leading Oil & Gas company,
+          resulting in a <span className="emphasize-text">15.2% increase in oil production</span>,{' '}
+          <span className="emphasize-text">$15.3 million/year in additional revenue</span>, and
+          improved workforce efficiency with reduced errors.
         </p>
       </>
     )
   },
-  // todo
-  // {
-  //   title: `Face Recognition AI`,
-  //   categories: [
-  //     `Web Development`,
-  //     `Frontend`,
-  //     `Backend`,
-  //     `Database`,
-  //     `Javascript`,
-  //     `SQL`,
-  //     `React`,
-  //     `HTML`,
-  //     `CSS`,
-  //     `Node.js`
-  //   ],
-  //   thumbnail: imgT6,
-  //   link: 'https://face-recognition-ai-frontend.herokuapp.com/',
-  //   description: (
-  //     <>
-  //       <p>
-  //         Developed a demo website for face recognition. The relevant skills including{' '}
-  //         <code>Frontend</code>, <code>React</code>, <code>Javascript</code>, <code>HTML</code>,{' '}
-  //         <code>CSS</code>, <code>Backend</code>, <code>Node.js</code>, <code>Express.js</code>,{' '}
-  //         <code>Clarifai (ML API)</code>, <code>Database</code>, <code>SQL</code>,{' '}
-  //         <code>PostgeSQL</code>
-  //         <br />
-  //       </p>
-  //       <p className="text-center port-tag">
-  //         [
-  //         <a href="https://face-recognition-ai-frontend.herokuapp.com/" target="_blank">
-  //           See Live
-  //         </a>
-  //         ] &nbsp;&nbsp;[
-  //         <a href="https://github.com/wisarootl/face-recognition-ai-frontend" target="_blank">
-  //           Source Code : Frontend
-  //         </a>
-  //         ] &nbsp;&nbsp;[
-  //         <a href="https://github.com/wisarootl/face-recognition-ai-backend" target="_blank">
-  //           Source Code : Backend
-  //         </a>
-  //         ]
-  //       </p>
-  //     </>
-  //   )
-  // },
   {
     title: `This Portfolio Website`,
-    categories: [`Web Development`, `Frontend`, `Javascript`, `React`, `HTML`, `CSS`, `SCSS`],
+    categories: [
+      `Web Development`,
+      `Frontend`,
+      `Javascript`,
+      `React`,
+      `HTML`,
+      `CSS`,
+      `SCSS`,
+      `UX/UI`
+    ],
     thumbnail: imgT7,
     link: '/',
     description: (
       <>
         <p>
-          • Developed this website to serve as a portfolio showcase.
-          <br />• The relevant skills including <code>Frontend</code>, <code>React</code>,{' '}
-          <code>Javascript</code>, <code>HTML</code>, <code>CSS</code>, <code>SCSS</code>,{' '}
-          <code>UX/UI</code>
+          Created this website to showcase my portfolio, featuring a clean design and easy
+          navigation using web development skills, including <code>JavaScript</code>,{' '}
+          <code>React</code>, <code>HTML</code>, <code>CSS</code>, and <code>Bootstrap</code>, to
+          build a responsive and visually appealing website.
         </p>
       </>
     )
   }
-  // {
-  //   title: `Leetcode Practice`,
-  //   categories: [`Training`, `Algorithm`, `Data Sturcture`],
-  //   thumbnail: imgT5,
-  //   link: undefined,
-  //   description: (
-  //     <>
-  //       <p>test</p>
-  //     </>
-  //   )
-  // }
 ]

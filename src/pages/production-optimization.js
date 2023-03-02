@@ -36,7 +36,7 @@ const WorkSingle = () => {
             <Col lg="9">
               <Text variant="tag">Software Development</Text>
               <Title variant="secSm" className="my-4">
-                Application for Production Optimization
+                Optimization Application for Gas Field Operations
               </Title>
             </Col>
           </Row>
@@ -44,13 +44,14 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                Led the design and development of{' '}
-                <span className="emphasize-text">algorithm-driven software 💻</span> for production{' '}
-                <code>optimization</code> in Chevron, a world-leading Oil & Gas company, using{' '}
-                <code>Python</code> <span className="emphasize-text">🐍</span> and <code>VBA</code>,
-                resulting in <span className="emphasize-text">✅15.2% higher oil production</span>,{' '}
-                <span className="emphasize-text">✅$15.3 million/year additional revenue</span>, and
-                improved workforce efficiency with reduced human error.
+                Designed and developed{' '}
+                <span className="emphasize-text">algorithm-driven software 💻</span> using{' '}
+                <code>Python</code> <span className="emphasize-text">🐍</span>, <code>VBA</code>,
+                and <code>linear programming</code> for production <code>optimization</code> at
+                Chevron, a world-leading Oil & Gas company, resulting in a{' '}
+                <span className="emphasize-text">✅15.2% increase in oil production</span>,{' '}
+                <span className="emphasize-text">✅$15.3 million/year in additional revenue</span>,
+                and improved workforce efficiency with reduced errors.
               </p>
             </Col>
           </Row>
