@@ -4,31 +4,37 @@ import imgT2 from '../assets/img/portfolio/pipiline-network-modeling.png'
 import imgT3 from '../assets/img/portfolio/natural-language-processing-nlp.jpg'
 import imgT4 from '../assets/img/portfolio/deep-learning-for-trading.jpg'
 import imgT5 from '../assets/img/portfolio/leetcode.png'
+import imgT6 from '../assets/img/portfolio/ml-research-framework.png'
 import imgT7 from '../assets/img/portfolio/portfolio-web-site.png'
 import imgT8 from '../assets/img/portfolio/jobfair-software-backend.jpg'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 export const works = [
   {
-    title: `Online Job Fair Registration Software [Backend]`,
+    title: `Machine Learning Research Framework`,
     categories: [
       `Software Development`,
-      `Backend`,
-      `Node.js`,
-      `Database`,
-      `API`,
-      `MongoDB`,
-      `SQL`,
-      `Cyber Security`
+      `Python`,
+      `Design Pattern`,
+      `Software Design`,
+      `Functional Programming`,
+      `Machine Learning`
     ],
-    thumbnail: imgT8,
-    link: 'https://github.com/wisarootl/online-job-fair-registration',
+    thumbnail: imgT6,
+    link: '/ml-research-framework',
     description: (
       <>
         <p>
-          • Demo backend project for online job fair registration. This project is an assignment of{' '}
-          <span className="emphasize-text">Software Development Practice Class</span> at
-          Chulalongkorn University.
+          Developed a <span className="emphasize-text">highly scalable</span> and{' '}
+          <span className="emphasize-text">easily deployable</span> <code>Python</code> framework
+          for <code>machine learning</code> research, abstracting various tools, including{' '}
+          <code>Scikit-learn</code>, <code>TensorFlow</code>, <code>Optuna</code>,{' '}
+          <code>Imbalanced-learn</code>, <code>XGBoost</code>, <code>Seaborn</code>,{' '}
+          <code>Matplotlib</code>, and others. Includes{' '}
+          <span className="emphasize-text">composable</span> core ML components for{' '}
+          <code>preprocessing</code>, <code>(un)supervised learning</code>,{' '}
+          <code>deep learning</code>, and <code>recommendation systems</code>, plus robust error
+          handling capabilities in production.
         </p>
       </>
     )
@@ -55,16 +61,10 @@ export const works = [
     description: (
       <>
         <p>
-          • This research focuses on developing a <code>time series</code> forecasting model using{' '}
-          <code>deep learning</code> techniques for a crude oil trading strategy.
-        </p>
-        <p>
-          • The proposed model achieves a remarkable{' '}
-          <span className="emphasize-text">17.8% annualized return</span> on investment (ROI) from
-          2015 to 2020, with{' '}
-          <span className="emphasize-text">the highest Sharpe ratio of 0.62</span>. In contrast,
-          other strategies such as Buy & Hold and traditional technical indicators yield annualized
-          ROI between -12.0% to 7.4% and Sharpe ratio between -0.15 to 0.55 only.
+          • Conducted research on <code>time series</code> forecasting models using{' '}
+          <code>deep learning</code> techniques for a crude oil trading strategy, and developed a
+          model that achieved a remarkable{' '}
+          <span className="emphasize-text">17.8% annualized return on investment</span>.
         </p>
         <p>
           •{' '}
@@ -72,8 +72,8 @@ export const works = [
             href="http://www.jait.us/index.php?m=content&c=index&a=show&catid=222&id=1278"
             target="_blank"
           >
-            Published 🔥 in Journal of Advances in Information Technology (Lertthaweedech et al.,
-            2022) <FaExternalLinkAlt className="link-icon" />
+            Published 🔥 the research in Journal of Advances in Information Technology
+            (Lertthaweedech et al., 2022) <FaExternalLinkAlt className="link-icon" />
           </a>
         </p>
       </>
@@ -111,6 +111,30 @@ export const works = [
     )
   },
   {
+    title: `Online Job Fair Registration Software [Backend]`,
+    categories: [
+      `Software Development`,
+      `Backend`,
+      `Node.js`,
+      `Database`,
+      `API`,
+      `MongoDB`,
+      `SQL`,
+      `Cyber Security`
+    ],
+    thumbnail: imgT8,
+    link: 'https://github.com/wisarootl/online-job-fair-registration',
+    description: (
+      <>
+        <p>
+          • Demo backend project for online job fair registration. This project is an assignment of{' '}
+          <span className="emphasize-text">Software Development Practice Class</span> at
+          Chulalongkorn University.
+        </p>
+      </>
+    )
+  },
+  {
     title: `Leetcode Practice`,
     categories: [
       `Training`,
@@ -143,8 +167,8 @@ export const works = [
       <>
         <p>
           Led the development of a <span className="emphasize-text">software application</span>{' '}
-          using <code>Python</code> and <code>VBA</code> for Chevron, a world-leading Oil & Gas
-          company, that automated pipeline network modeling,{' '}
+          using <code>Python</code> and <code>VBA</code> to enable <code>scalable</code> pipeline
+          network modeling for Chevron, a world-leading Oil & Gas company,{' '}
           <span className="emphasize-text">cutting investment costs by $49.8 million</span>.
         </p>
       </>
@@ -196,7 +220,7 @@ export const works = [
       <>
         <p>
           Created this website to showcase my portfolio, featuring a clean design and easy
-          navigation using web development skills, including <code>JavaScript</code>,{' '}
+          navigation using various web development skills, including <code>JavaScript</code>,{' '}
           <code>React</code>, <code>HTML</code>, <code>CSS</code>, and <code>Bootstrap</code>, to
           build a responsive and visually appealing website.
         </p>

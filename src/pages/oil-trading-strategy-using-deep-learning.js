@@ -45,19 +45,11 @@ const WorkSingle = () => {
             <Col lg="9">
               <Title variant="cardLg">01. Brief</Title>
               <p>
-                • This research focuses on developing a <code>time series</code>{' '}
-                <span className="emphasize-text">📈</span> forecasting model using{' '}
+                • Conducted research on <code>time series</code>{' '}
+                <span className="emphasize-text">📈</span> forecasting models using{' '}
                 <code>deep learning</code> <span className="emphasize-text">🤖</span> techniques for
-                a crude oil trading strategy.
-              </p>
-              <p>
-                • The proposed model achieves a remarkable{' '}
-                <span className="emphasize-text">✅17.8% annualized return</span> on investment
-                (ROI) from 2015 to 2020, with{' '}
-                <span className="emphasize-text">✅the highest Sharpe ratio of 0.62</span>. In
-                contrast, other strategies such as Buy & Hold and traditional technical indicators
-                yield annualized ROI between -12.0% to 7.4% and Sharpe ratio between -0.15 to 0.55
-                only.
+                a crude oil trading strategy, and developed a model that achieved a remarkable{' '}
+                <span className="emphasize-text">✅17.8% annualized return on investment</span>.
               </p>
               <p>
                 •{' '}
@@ -65,8 +57,8 @@ const WorkSingle = () => {
                   href="http://www.jait.us/index.php?m=content&c=index&a=show&catid=222&id=1278"
                   target="_blank"
                 >
-                  Published 🔥 in Journal of Advances in Information Technology (Lertthaweedech et
-                  al., 2022) <FaExternalLinkAlt className="link-icon" />
+                  Published 🔥 the research in Journal of Advances in Information Technology
+                  (Lertthaweedech et al., 2022) <FaExternalLinkAlt className="link-icon" />
                 </a>
               </p>
             </Col>

@@ -7,25 +7,44 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 import { Element } from 'react-scroll'
 
 import honestLogo from '../../assets/img/profile/honest.png'
-import qtftLogo from '../../assets/img/profile/qtft.png'
 import chevronLogo from '../../assets/img/profile/chevron.png'
 import pttgcLogo from '../../assets/img/profile/pttgc.png'
 import chulaLogo from '../../assets/img/profile/chula.png'
 
 import honestLogoDark from '../../assets/img/profile/honest-dark.png'
-import qtftLogoDark from '../../assets/img/profile/qtft-dark.png'
 import chevronLogoDark from '../../assets/img/profile/chevron-dark.png'
 import pttgcLogoDark from '../../assets/img/profile/pttgc-dark.png'
 import chulaLogoDark from '../../assets/img/profile/chula-dark.png'
 
 import GlobalContext from '../../context/GlobalContext'
-import mlExpertCert from '../../assets/cert/mlexpert.pdf'
-import algoexpertCert from '../../assets/cert/algoexpert.pdf'
-import datasciDatacampCert from '../../assets/cert/data_scientist_python.pdf'
-import theCompleteWebDevZTMCert from '../../assets/cert/complete_web_dev_ztm.pdf'
-import toefl from '../../assets/cert/TOEFL_2020.pdf'
-import toeic from '../../assets/cert/TOEIC_2020.pdf'
 import { device } from '../../utils'
+
+// cert.
+import mlexpert_2022 from '../../assets/cert/2022_mlexpert.pdf'
+import algoexpert_2022 from '../../assets/cert/2022_algoexpert.pdf'
+import data_scientist_python_2020 from '../../assets/cert/2020_data_scientist_python.pdf'
+import complete_web_dev_ztm_2022 from '../../assets/cert/2022_complete_web_dev_ztm.pdf'
+import toefl from '../../assets/cert/2020_TOEFL.pdf'
+import toeic from '../../assets/cert/2020_TOEIC.pdf'
+import git_github_2022 from '../../assets/cert/2022_git_github.pdf'
+import python_oop_2022 from '../../assets/cert/2022_python_oop.pdf'
+import programming_expert from '../../assets/cert/2022_programming_expert.pdf'
+import functional_programming_2022 from '../../assets/cert/2022_functional_programming.pdf'
+import design_patterns_2022 from '../../assets/cert/2022_design_patterns.pdf'
+import system_design_2022 from '../../assets/cert/2022_system_design.pdf'
+import mlds_bootcamp_2022 from '../../assets/cert/2022_mlds_bootcamp.pdf'
+import hyperparameter_optimization_2022 from '../../assets/cert/2022_hyperparameter_optimization.pdf'
+import feature_selection_2022 from '../../assets/cert/2022_feature_selection.pdf'
+import feature_engineering_2022 from '../../assets/cert/2022_feature_engineering.pdf'
+import docker_kubernetes_2022 from '../../assets/cert/2022_docker_kubernetes.pdf'
+import devops_terraform_2022 from '../../assets/cert/2022_devops_terraform.pdf'
+import pyspark_2022 from '../../assets/cert/2022_pyspark.pdf'
+import clean_code_2022 from '../../assets/cert/2022_clean_code.pdf'
+import google_cloud_digital_leader_training_2022 from '../../assets/cert/2022_google_cloud_digital_leader_training.pdf'
+import database_engineering_2022 from '../../assets/cert/2022_database_engineering.pdf'
+import sql_and_databases_2022 from '../../assets/cert/2022_sql_and_databases.pdf'
+import mlops_2022 from '../../assets/cert/2022_mlops.pdf'
+import cs50x_2023 from '../../assets/cert/2023_cs50x.pdf'
 
 const ProfileCard = styled(Box)`
   margin-top: 0.5rem;
@@ -172,7 +191,7 @@ const Profile = () => {
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
                             <span className="emphasize-text">Honest Technology</span> : a
-                            data-driven fintech start-up
+                            data-driven neobank start-up
                           </Text>
                         </div>
                         <div className="col-12 col-md-4 profile-card-date">
@@ -195,48 +214,14 @@ const Profile = () => {
                         components for <code>preprocessing</code>,{' '}
                         <code>(un)supervised learning</code>, <code>deep learning</code>, and{' '}
                         <code>recommendation systems</code>, plus robust error handling capabilities
-                        in production.
+                        in production.{' '}
+                        <Link to="/ml-research-framework" color="text" target="_blank">
+                          <FaExternalLinkAlt className="link-icon" />
+                        </Link>
                       </p>
                     </Box>
                   </div>
                 </ProfileCard>
-                {/* <hr />
-                <ProfileCard className="row">
-                  <div className="row logo-position-row w-100">
-                    <div className="col logo">
-                      <img
-                        src={!gContext.theme.bodyDark ? qtftLogo : qtftLogoDark}
-                        alt=""
-                        className="w-100"
-                      />
-                    </div>
-                    <div className="col p-0">
-                      <div className="row">
-                        <div className="col-12 col-md-8 profile-card-heading">
-                          <Title variant="cardSm" className="profile-card-title">
-                            Software Engineer
-                          </Title>
-                          <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">
-                              Quantum Technology Foundation Thailand
-                            </span>
-                          </Text>
-                        </div>
-                        <div className="col-12 col-md-4 profile-card-date">
-                          <p>2022 – 2022</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row description-row w-100">
-                    <div className="col logo-bottom"></div>
-                    <Box className="col description-col" color="text">
-                      <p>
-                        • Research on Aritifitial Intelligence and Mathematicl Optimization Model
-                      </p>
-                    </Box>
-                  </div>
-                </ProfileCard> */}
                 <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
@@ -276,17 +261,23 @@ const Profile = () => {
                         <span className="emphasize-text">
                           $15.3 million/year in additional revenue
                         </span>
-                        , and improved workforce efficiency with reduced errors.
+                        , and improved workforce efficiency with reduced errors.{' '}
+                        <Link to="/production-optimization" color="text" target="_blank">
+                          <FaExternalLinkAlt className="link-icon" />
+                        </Link>
                       </p>
                       <p>
                         • Led the development of a{' '}
-                        <span className="emphasize-text">software application </span> using{' '}
-                        <code>Python</code> and <code>VBA</code> that automated pipeline network
-                        modeling,{' '}
+                        <span className="emphasize-text">software application</span> using{' '}
+                        <code>Python</code> and <code>VBA</code> to enable <code>scalable</code>{' '}
+                        pipeline network modeling,{' '}
                         <span className="emphasize-text">
                           cutting investment costs by $49.8 million
                         </span>
-                        .
+                        .{' '}
+                        <Link to="/pipeline-network-modelling" color="text" target="_blank">
+                          <FaExternalLinkAlt className="link-icon" />
+                        </Link>
                       </p>
                       <p>
                         • Demonstrated exceptional <code>project management</code> skills in
@@ -298,62 +289,6 @@ const Profile = () => {
                     </Box>
                   </div>
                 </ProfileCard>
-                {/* todo */}
-                {/* <hr /> */}
-                {/* <ProfileCard className="row">
-                  <div className="row logo-position-row w-100">
-                    <div className="col logo">
-                      <img
-                        src={!gContext.theme.bodyDark ? chevronLogo : chevronLogoDark}
-                        alt=""
-                        className="w-100"
-                      />
-                    </div>
-                    <div className="col p-0">
-                      <div className="row">
-                        <div className="col-12 col-md-8 profile-card-heading">
-                          <Title variant="cardSm" className="profile-card-title">
-                            Petroleum Engineer Intern
-                          </Title>
-                          <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chevron</span>
-                          </Text>
-                        </div>
-                        <div className="col-12 col-md-4 profile-card-date">
-                          <p>2015 – 2016</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </ProfileCard>
-                <hr /> */}
-                {/* <ProfileCard className="row">
-                  <div className="row logo-position-row w-100">
-                    <div className="col logo">
-                      <img
-                        src={!gContext.theme.bodyDark ? pttgcLogo : pttgcLogoDark}
-                        alt=""
-                        className="w-100"
-                      />
-                    </div>
-                    <div className="col p-0">
-                      <div className="row">
-                        <div className="col-12 col-md-8 profile-card-heading">
-                          <Title variant="cardSm" className="profile-card-title">
-                            Research Assistant
-                          </Title>
-                          <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">PTT Global Chemical</span> : a leading
-                            petrochemical company in Thailand
-                          </Text>
-                        </div>
-                        <div className="col-12 col-md-4 profile-card-date">
-                          <p>2012 – 2014</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </ProfileCard> */}
               </Board>
             </Row>
           </Element>
@@ -391,7 +326,6 @@ const Profile = () => {
                             (Merit scholarship from Chevron)
                           </Text>
                         </div>
-                        {/* todo */}
                         {/* <div className="col-12 col-md-4 profile-card-date">
                           <p>2020 – 2022</p>
                         </div> */}
@@ -399,36 +333,6 @@ const Profile = () => {
                     </div>
                   </div>
                 </ProfileCard>
-                {/* todo */}
-                {/* <hr />
-                <ProfileCard className="row">
-                  <div className="row logo-position-row w-100">
-                    <div className="col logo">
-                      <img
-                        src={!gContext.theme.bodyDark ? chulaLogo : chulaLogoDark}
-                        alt=""
-                        className="w-100"
-                      />
-                    </div>
-                    <div className="col p-0">
-                      <div className="row">
-                        <div className="col-12 col-md-8 profile-card-heading">
-                          <Title variant="cardSm" className="profile-card-title">
-                            M.Eng. in Petrolrum Engineering
-                          </Title>
-                          <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chulalongkorn Univerisity</span>{' '}
-                            <br className="d-flex d-md-none" />
-                            (Merit scholarship from Chevron)
-                          </Text>
-                        </div>
-                        <div className="col-12 col-md-4 profile-card-date">
-                          <p>2014 – 2016</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </ProfileCard> */}
                 <hr />
                 <ProfileCard className="row">
                   <div className="row logo-position-row w-100">
@@ -478,35 +382,31 @@ const Profile = () => {
                 <ProfileCard className="row">
                   <div className="col padding-dynamic">
                     <p>
-                      • Proficient in <code>Python</code> (<code>Tensorflow</code>,{' '}
-                      <code>Keras</code>, <code>Scikit-Learn</code>, <code>Pandas</code>,{' '}
-                      <code>Numpy</code>, <code>Matplotlib</code>), <code>Deep Learning</code>,{' '}
-                      <code>Artificial Intelligent</code>, <code>Machine Learning</code>,{' '}
-                      <code>Tree-based model</code>, <code>NLP</code> and <code>Time Series</code>
+                      • Data Science : <code>Python💪</code>, <code>Tensorflow</code>,{' '}
+                      <code>Scikit-Learn</code>, <code>XGBoost</code>,{' '}
+                      <code>Artificial Intelligence</code>, <code>Machine Learning💪</code>,{' '}
+                      <code>(Un)Supervised Learning</code>, <code>Tree-Based Model</code>,{' '}
+                      <code>Time Series</code>, <code>NLP</code>, <code>Recommender Systems</code>,{' '}
+                      <code>Neural Network</code>, <code>Deep Learning</code>,{' '}
+                      <code>Optimization</code>, <code>(Integer/Mixed) Linear Programming</code>,{' '}
+                      <code>Matplotlib</code>
                     </p>
                     <p>
-                      • Fluent in <code>English</code> (
-                      <a href={toefl} target="_blank">
-                        <span className="emphasize-text">TOEFL ITP: 560/677</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>
-                      ,{' '}
-                      <a href={toeic} target="_blank">
-                        <span className="emphasize-text">TOEIC: 925/990</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>
-                      )
+                      • Software Development : <code>Javascript</code>, <code>C</code>,{' '}
+                      <code>Go</code>, <code>SQL</code>, <code>NoSQL</code>, <code>Git</code>,{' '}
+                      <code>Design Pattern</code>, <code>Functional Programming</code>,{' '}
+                      <code>OOP</code>, <code>CI/CD</code>, <code>Docker</code>,{' '}
+                      <code>Github Actions</code>, <code>HTML</code>, <code>CSS</code>,{' '}
+                      <code>React</code>, <code>Node.js</code>
                     </p>
                     <p>
-                      • Good <code>project management</code> and <code>team working</code> skills
-                      with experience to manage different kinds of projects in Oil & Gas field
-                      operations including infill development projects, asset retirement projects,
-                      and resources management.
+                      • Other Expertise : <code>Finance</code>, <code>Credit Card</code>,{' '}
+                      <code>Risk Scoring</code>, <code>Statistics</code>,{' '}
+                      <code>Financial Analysis</code>, <code>Oil&Gas Production</code>
                     </p>
                     <p>
-                      • Other computer skills e.g. <code>Javascript</code>, <code>SQL</code>,{' '}
-                      <code>React</code>, <code>Node.js</code>, <code>HTML</code>, <code>CSS</code>,{' '}
-                      <code>VBA</code> and <code>R</code>
+                      • <code>Project Management</code>, <code>Thai (Native)</code>,{' '}
+                      <code>English (Professional)</code>
                     </p>
                   </div>
                 </ProfileCard>
@@ -529,63 +429,115 @@ const Profile = () => {
                 <ProfileCard className="row">
                   <div className="col padding-dynamic">
                     <p>
+                      <Link href={cs50x_2023} target="_blank">
+                        CS50x
+                      </Link>{' '}
+                      by Harvard University •{' '}
+                      <Link href={mlops_2022} target="_blank">
+                        MLOps Specialization
+                      </Link>{' '}
+                      by Deeplearning.ai •{' '}
+                      <Link href={sql_and_databases_2022} target="_blank">
+                        SQL and Databases Bootcamp
+                      </Link>{' '}
                       •{' '}
-                      <a href={mlExpertCert} target="_blank">
-                        <span className="emphasize-text">Machine Learning Expert</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>{' '}
-                      from <span className="emphasize-text">Algoexpert.io</span> (2022) : Machine
-                      Leraning Crash Course including <code>Supervised Learning</code>,{' '}
-                      <code>Unsupervised Learning</code>, <code>Deep Learning</code> and large-scale
-                      implementation
+                      <Link href={database_engineering_2022} target="_blank">
+                        Fundamentals of Database Engineering
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={google_cloud_digital_leader_training_2022} target="_blank">
+                        Google Cloud Digital Leader Training
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={clean_code_2022} target="_blank">
+                        Clean Code
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={pyspark_2022} target="_blank">
+                        PySpark
+                      </Link>{' '}
+                      (Spark with Python) •{' '}
+                      <Link href={devops_terraform_2022} target="_blank">
+                        DevOps: Infrastructure As Code With Terraform
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={docker_kubernetes_2022} target="_blank">
+                        Docker & Kubernetes
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={feature_engineering_2022} target="_blank">
+                        Feature Engineering
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={feature_selection_2022} target="_blank">
+                        Feature Selection
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={hyperparameter_optimization_2022} target="_blank">
+                        Hyperparameter Optimization
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={mlds_bootcamp_2022} target="_blank">
+                        Machine Learning & Data Science Bootcamp
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={system_design_2022} target="_blank">
+                        System Design
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={design_patterns_2022} target="_blank">
+                        Design Patterns
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={functional_programming_2022} target="_blank">
+                        Functional Programming
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={programming_expert} target="_blank">
+                        Programming Expert
+                      </Link>{' '}
+                      (Python and Golang) •{' '}
+                      <Link href={python_oop_2022} target="_blank">
+                        Python OOP{' '}
+                      </Link>
+                      •{' '}
+                      <Link href={git_github_2022} target="_blank">
+                        Git & Github
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={mlexpert_2022} target="_blank">
+                        Machine Learning Expert
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={complete_web_dev_ztm_2022} target="_blank">
+                        The Complete Web Developer
+                      </Link>{' '}
+                      •{' '}
+                      <Link href={algoexpert_2022} target="_blank">
+                        Algoexpert
+                      </Link>{' '}
+                      (Algorithm, Data Structure) •{' '}
+                      <Link href={data_scientist_python_2020} target="_blank">
+                        Data Scientist with Python Track
+                      </Link>{' '}
+                      by Data Camp
+                    </p>
+
+                    <p>
+                      <br />
                     </p>
                     <p>
+                      <Link href="https://basno.com/cy8buily" target="_blank">
+                        Chartered Financial Analyst I
+                      </Link>{' '}
                       •{' '}
-                      <a href={theCompleteWebDevZTMCert} target="_blank">
-                        <span className="emphasize-text">The Complete Web Developer</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>{' '}
-                      from <span className="emphasize-text">Zero to Mastery</span> (2022) : 38 hrs.
-                      practical training for <code>Full Stack</code> web development including{' '}
-                      <code>HTML</code>, <code>CSS</code>, <code>Responsive Design</code>,{' '}
-                      <code>Javascript</code>, <code>React</code>, <code>Git</code>,{' '}
-                      <code>Node.js</code>, <code>Express.js</code>, <code>NPM</code>,{' '}
-                      <code>PostgresSQL</code>, <code>SQL</code>, <code>Security</code>,{' '}
-                      <code>Deployment</code>
-                    </p>
-                    <p>
+                      <Link href={toefl} target="_blank">
+                        TOEFL ITP (560/677)
+                      </Link>{' '}
                       •{' '}
-                      <a href={algoexpertCert} target="_blank">
-                        <span className="emphasize-text">Algoexpert</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>{' '}
-                      (2022) : solved problems related to <code>Algorithms</code> and{' '}
-                      <code>Data Structure</code> for 200+ questions. In addition, I am continuously
-                      solving this kind of questions on leetcode.com to sharpen my{' '}
-                      <code>Algorithms</code>, <code>Data Structure</code>,{' '}
-                      <code>Problem Solving</code> and <code>Coding</code> skills.
-                    </p>
-                    <p>
-                      • Passed{' '}
-                      <a href="https://basno.com/cy8buily" target="_blank">
-                        <span className="emphasize-text">CFA I</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>{' '}
-                      (2021) : Chartered Financial Analyst I program is exam that tests the
-                      knowledge in <code>Finance</code> including <code>Statistics</code>,{' '}
-                      <code>Quantitative Finance</code>, <code>Economics</code>,{' '}
-                      <code>Portfolio Management</code>, <code>Equity Investment</code>,{' '}
-                      <code>Bond Investment</code>, <code>Derivatives Investment</code>,{' '}
-                      <code>Financial Reporting and Analysis</code>
-                    </p>
-                    <p>
-                      •{' '}
-                      <a href={datasciDatacampCert} target="_blank">
-                        <span className="emphasize-text">Data Scientist with Python Track</span>{' '}
-                        <FaExternalLinkAlt className="link-icon" />
-                      </a>{' '}
-                      from <span className="emphasize-text">Data Camp</span> (2020) : 88 hrs.{' '}
-                      <code>Python</code> training course for <code>Data Science</code>
+                      <Link href={toeic} target="_blank">
+                        TOEIC (925/990)
+                      </Link>
                     </p>
                   </div>
                 </ProfileCard>

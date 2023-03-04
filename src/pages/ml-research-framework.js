@@ -6,7 +6,7 @@ import { Element } from 'react-scroll'
 
 import { Section, Button, Title, Text, Box } from '../components/Core'
 import Contact from '../sections/landing1/Contact'
-import imgWorkCover from '../assets/img/portfolio/well-list-production-optimization.png'
+import imgWorkCover from '../assets/img/portfolio/ml-research-framework.png'
 import { device, breakpoints } from '../utils'
 
 import { HiArrowNarrowLeft } from 'react-icons/hi'

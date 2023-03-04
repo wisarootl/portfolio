@@ -12,7 +12,7 @@ import { device, breakpoints } from '../utils'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
 import { BiDollar } from 'react-icons/bi'
 import { FaThumbsUp } from 'react-icons/fa'
-import { HiLightBulb } from 'react-icons/hi'
+import { IoIosRocket } from 'react-icons/io'
 
 const WorkSingle = () => {
   return (
@@ -47,8 +47,8 @@ const WorkSingle = () => {
                 Led the development of a{' '}
                 <span className="emphasize-text">software application 🏭</span> using{' '}
                 <code>Python</code> <span className="emphasize-text">🐍</span> and <code>VBA</code>{' '}
-                for Chevron, a world-leading Oil & Gas company, that automated pipeline network
-                modeling,{' '}
+                to enable <code>scalable</code> pipeline network modeling for Chevron, a
+                world-leading Oil & Gas company,{' '}
                 <span className="emphasize-text">✅cutting investment costs by $49.8 million</span>.
               </p>
             </Col>
@@ -173,7 +173,7 @@ const WorkSingle = () => {
                       Less Workload
                     </Title>
                     <Text variant="small">
-                      Streamlined pipeline network modeling, creating a more efficient and automated
+                      Streamlined pipeline network modeling, creating a more efficient and scalable
                       research framework. The new framework offers optimized investment
                       opportunities and has drastically reduced team workload for the research team.
                     </Text>
@@ -191,18 +191,19 @@ const WorkSingle = () => {
                           color: #e8ad11;
                         `}
                       >
-                        <HiLightBulb />
+                        <IoIosRocket />
                       </span>
                     </div>
                   </Col>
                   <Col className="col-12 achievements-desc" lg="12" sm="9">
                     <Title variant="cardSm" className="mt-3">
-                      Enhanced Design
+                      Scalable Research
                     </Title>
                     <Text variant="small">
-                      Optimized pipeline network scenarios researched through the software resulted
-                      in a more efficient and effective pipeline notwork design, improving
-                      operational efficiency and reducing maintenance requirements.
+                      Successfully identified the most optimal pipeline network scenario through
+                      scalable research framework, resulting in operational efficiency, reduced
+                      maintenance requirements, and significant investment cost savings
+                      <br />
                     </Text>
                   </Col>
                 </Row>
@@ -244,9 +245,9 @@ const WorkSingle = () => {
                 this programming language from scratch
               </p>
               <p>
-                • Conducted research to identify optimized pipeline network scenarios and utilized
-                Python to visualize and analyze large amounts of data for the research, as it is
-                more efficient at handling big data.
+                • Utilized a scalable research framework to explore a vast number of pipeline
+                network scenarios, identifying the most optimal one through the use of Python for
+                visualization and analysis of large amounts of data.
               </p>
             </Col>
           </Row>
