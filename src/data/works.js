@@ -29,12 +29,12 @@ export const works = [
           <span className="emphasize-text">easily deployable</span> <code>Python</code> framework
           for <code>machine learning</code> research, abstracting various tools, including{' '}
           <code>Scikit-learn</code>, <code>TensorFlow</code>, <code>Optuna</code>,{' '}
-          <code>Imbalanced-learn</code>, <code>XGBoost</code>, <code>Seaborn</code>,{' '}
-          <code>Matplotlib</code>, and others. Includes{' '}
+          <code>Im&shy;balanced-learn</code>, <code>XGBoost</code>, <code>Seaborn</code>,{' '}
+          <code>Mat&shy;plotlib</code>, and others. Includes{' '}
           <span className="emphasize-text">composable</span> core ML components for{' '}
-          <code>preprocessing</code>, <code>(un)supervised learning</code>,{' '}
-          <code>deep learning</code>, and <code>recommendation systems</code>, plus robust error
-          handling capabilities in production.
+          <code>pre&shy;processing</code>, <code>(un)supervised learning</code>,{' '}
+          <code>deep learning</code>, and <code>recommend&shy;ation systems</code>, plus robust
+          error handling capabilities in production.
         </p>
       </>
     )
@@ -64,7 +64,7 @@ export const works = [
           • Conducted research on <code>time series</code> forecasting models using{' '}
           <code>deep learning</code> techniques for a crude oil trading strategy, and developed a
           model that achieved a remarkable{' '}
-          <span className="emphasize-text">17.8% annualized return on investment</span>.
+          <span className="emphasize-text">17.8% annualized return on invest&shy;ment</span>.
         </p>
         <p>
           •{' '}
@@ -72,7 +72,7 @@ export const works = [
             href="http://www.jait.us/index.php?m=content&c=index&a=show&catid=222&id=1278"
             target="_blank"
           >
-            Published 🔥 the research in Journal of Advances in Information Technology
+            Published 🔥 the research in Journal of Advances in Information Tech&shy;nology
             (Lertthaweedech et al., 2022) <FaExternalLinkAlt className="link-icon" />
           </a>
         </p>
@@ -168,7 +168,7 @@ export const works = [
         <p>
           Led the development of a <span className="emphasize-text">software application</span>{' '}
           using <code>Python</code> and <code>VBA</code> to enable <code>scalable</code> pipeline
-          network modeling for Chevron, a world-leading Oil & Gas company,{' '}
+          network modeling for Chevron, a world&shy;-&shy;leading Oil & Gas company,{' '}
           <span className="emphasize-text">cutting investment costs by $49.8 million</span>.
         </p>
       </>

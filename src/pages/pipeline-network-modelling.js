@@ -202,7 +202,7 @@ const WorkSingle = () => {
                     <Text variant="small">
                       Successfully identified the most optimal pipeline network scenario through
                       scalable research framework, resulting in operational efficiency, reduced
-                      maintenance requirements, and significant investment cost savings
+                      maintenance require&shy;ments, and significant investment cost savings
                       <br />
                     </Text>
                   </Col>

@@ -183,7 +183,7 @@ const WorkSingle = () => {
                     </Title>
                     <Text variant="small">
                       includes support for essential machine learning components such as train-test
-                      split, imputation, encoding, upsampling, resampling, cross-validation,
+                      split, imputation, encoding, upsampling, resampl&shy;ing, cross-validation,
                       supervised learning, unsupervised learning, deep learning, neural networks,
                       recommendation systems, and natural language processing.
                     </Text>

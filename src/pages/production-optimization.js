@@ -152,7 +152,7 @@ const WorkSingle = () => {
                     <Text variant="small">
                       Achieved all goals for gas field operation, including meeting the well
                       depletion target, optimizing oil and gas production, reducing reserves loss,
-                      and maintaining gas specification within the desired range.
+                      and maintaining gas spec&shy;ification within the desired range.
                     </Text>
                   </Col>
                 </Row>
@@ -205,8 +205,8 @@ const WorkSingle = () => {
                     </Title>
                     <Text variant="small">
                       Implemented a more automated framework that enabled data-driven operations,
-                      resulting in agile operations and improved workforce efficiency with reduced
-                      human error.
+                      result&shy;ing in agile operations and improved work&shy;force efficiency with
+                      reduced human error.
                     </Text>
                   </Col>
                 </Row>
