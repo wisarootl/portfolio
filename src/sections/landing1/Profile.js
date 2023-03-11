@@ -219,6 +219,20 @@ const Profile = () => {
                           <FaExternalLinkAlt className="link-icon" />
                         </Link>
                       </p>
+                      <p>
+                        • Cultivated <span class="emphasize-text">secure</span>,{' '}
+                        <span class="emphasize-text">scalable</span>,{' '}
+                        <span class="emphasize-text">maintainable</span> and{' '}
+                        <span class="emphasize-text">reliable</span> codebases through adherence to
+                        strict guidelines for <code>infrastructure as code</code>,{' '}
+                        <code>continuous integration/deployment</code>,{' '}
+                        <code>unit&shy;/&shy;integral testing</code>,{' '}
+                        <code>software development&shy;/&shy;coding best practices</code> and{' '}
+                        <code>security</code>, using modern tools such as{' '}
+                        <code>Terraform Cloud</code>, <code>CI/CD pipelines</code>,{' '}
+                        <code>GitHub Actions</code>, <code>code analysis</code> and{' '}
+                        <code>security&shy;/&shy;vulnerability tools</code>.
+                      </p>
                     </Box>
                   </div>
                 </ProfileCard>
@@ -532,12 +546,13 @@ const Profile = () => {
                       </Link>{' '}
                       •{' '}
                       <Link href={toefl} target="_blank">
-                        TOEFL ITP (560/677)
+                        TOEFL ITP
                       </Link>{' '}
-                      •{' '}
+                      (560/677) •{' '}
                       <Link href={toeic} target="_blank">
-                        TOEIC (925/990)
-                      </Link>
+                        TOEIC
+                      </Link>{' '}
+                      (925/990)
                     </p>
                   </div>
                 </ProfileCard>
