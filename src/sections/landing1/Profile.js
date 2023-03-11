@@ -191,7 +191,8 @@ const Profile = () => {
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
                             <span className="emphasize-text">Honest Technology</span> : a
-                            data-driven neobank start-up
+                            data-driven neobank start-up with top-tier tech standards, advanced
+                            AI/ML and DevOps practices.
                           </Text>
                         </div>
                         <div className="col-12 col-md-4 profile-card-date">
