@@ -185,18 +185,27 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-md-8 profile-card-heading">
+                        <div className="col-12 col-xl-7 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Senior Data Scientist
                           </Title>
+                        </div>
+                        <div className="col-12 col-xl-5 d-none d-xl-block profile-card-date">
+                          <p>{/*Somewhere | */}Jul 2022 – present</p>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-12 profile-card-heading">
                           <Text variant="small" color="text" className="profile-card-organization">
                             <span className="emphasize-text">Honest Technology</span> : a
                             data-driven neobank start-up with top-tier tech standards, advanced
                             AI/ML and DevOps practices.
                           </Text>
                         </div>
-                        <div className="col-12 col-md-4 profile-card-date">
-                          <p>Jul 2022 – present</p>
+                      </div>
+                      <div className="row">
+                        <div className="col-12 d-xl-none profile-card-heading">
+                          <p>{/*Somewhere | */}Jul 2022 – present</p>
                         </div>
                       </div>
                     </div>
@@ -249,17 +258,26 @@ const Profile = () => {
                     </div>
                     <div className="col p-0">
                       <div className="row">
-                        <div className="col-12 col-md-8 profile-card-heading">
+                        <div className="col-12 col-xl-7 profile-card-heading">
                           <Title variant="cardSm" className="profile-card-title">
                             Petroleum Engineer
                           </Title>
+                        </div>
+                        <div className="col-12 col-xl-5 d-none d-xl-block profile-card-date">
+                          <p>{/*Somewhere | */}Jul 2017 – Apr 2022</p>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-12 profile-card-heading">
                           <Text variant="small" color="text" className="profile-card-organization">
                             <span className="emphasize-text">Chevron</span> : a world-leading oil
                             and gas company
                           </Text>
                         </div>
-                        <div className="col-12 col-md-4 profile-card-date">
-                          <p>Jul 2017 – Apr 2022</p>
+                      </div>
+                      <div className="row">
+                        <div className="col-12 d-xl-none profile-card-heading">
+                          <p>{/*Somewhere | */}Jul 2017 – Apr 2022</p>
                         </div>
                       </div>
                     </div>
