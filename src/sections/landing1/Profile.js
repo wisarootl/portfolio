@@ -561,7 +561,7 @@ const Profile = () => {
                     </p>
                     <p>
                       <Link href="https://basno.com/cy8buily" target="_blank">
-                        Chartered Financial Analyst I
+                        Chartered Financial Analyst (CFA) I
                       </Link>{' '}
                       •{' '}
                       <Link href={toefl} target="_blank">
