@@ -45,6 +45,7 @@ import database_engineering_2022 from '../../assets/cert/2022_database_engineeri
 import sql_and_databases_2022 from '../../assets/cert/2022_sql_and_databases.pdf'
 import mlops_2022 from '../../assets/cert/2022_mlops.pdf'
 import cs50x_2023 from '../../assets/cert/2023_cs50x.pdf'
+import frontend_expert_2023 from '../../assets/cert/2023_frontend_expert.pdf'
 
 const ProfileCard = styled(Box)`
   margin-top: 0.5rem;
@@ -546,8 +547,12 @@ const Profile = () => {
                         The Complete Web Developer
                       </Link>{' '}
                       •{' '}
+                      <Link href={frontend_expert_2023} target="_blank">
+                        FrontendExpert
+                      </Link>{' '}
+                      •{' '}
                       <Link href={algoexpert_2022} target="_blank">
-                        Algoexpert
+                        AlgoExpert
                       </Link>{' '}
                       (Algorithm, Data Structure) •{' '}
                       <Link href={data_scientist_python_2020} target="_blank">
