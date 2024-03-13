@@ -46,6 +46,7 @@ import sql_and_databases_2022 from '../../assets/cert/2022_sql_and_databases.pdf
 import mlops_2022 from '../../assets/cert/2022_mlops.pdf'
 import cs50x_2023 from '../../assets/cert/2023_cs50x.pdf'
 import frontend_expert_2023 from '../../assets/cert/2023_frontend_expert.pdf'
+import mls_2023 from '../../assets/cert/2023_machine_learning_specialization.pdf'
 
 const ProfileCard = styled(Box)`
   margin-top: 0.5rem;
@@ -215,29 +216,60 @@ const Profile = () => {
                     <div className="col logo-bottom"></div>
                     <Box className="col description-col" color="text">
                       <p>
-                        • Developed a <span className="emphasize-text">highly scalable</span> and{' '}
-                        <span className="emphasize-text">easily deployable</span>{' '}
-                        <code>Python</code> framework for <code>machine learning</code> research,
-                        abstracting various tools, including <code>Scikit-learn</code>,{' '}
-                        <code>TensorFlow</code>, <code>Optuna</code>, <code>Imbalanced-learn</code>,{' '}
-                        <code>XGBoost</code>, <code>Seaborn</code>, <code>Matplotlib</code>, and
-                        others. Includes <span className="emphasize-text">composable</span> core ML
-                        components for <code>preprocessing</code>,{' '}
-                        <code>(un)supervised learning</code>, <code>deep learning</code>, and{' '}
-                        <code>recommendation systems</code>, plus robust error handling capabilities
-                        in production.{' '}
-                        <Link to="/ml-research-framework" color="text" target="_blank">
-                          <FaExternalLinkAlt className="link-icon" />
-                        </Link>
+                        • Served as a <span class="emphasize-text">full-stack data scientist</span>{' '}
+                        to design, build, and research{' '}
+                        <span class="emphasize-text">end-to-end</span> batch processing{' '}
+                        <span class="emphasize-text">machine learning pipelines</span>, which
+                        included data cleaning, preprocessing, model research, validation,
+                        deployment, and monitoring.
                       </p>
                       <p>
-                        • Cultivated <span class="emphasize-text">secure</span>,{' '}
-                        <span class="emphasize-text">scalable</span>,{' '}
+                        • Initiated advanced labeling techniques (<code>statistics</code>,
+                        <code>Markov chain</code>, <code>soft labeling</code>, and
+                        <code>active learning</code>) to synthesize default labels for credit
+                        <code>risk model</code>, facilitating faster convergence in small and
+                        short-duration datasets. This expedited model launching by achieving a
+                        notable <span class="emphasize-text">7% improvement in AUC</span> during the
+                        early launch phase, crucial for the company's fundraising success and{' '}
+                        <span class="emphasize-text">securing a $20 million investment</span>.
+                      </p>
+                      <p>
+                        • Conducted interviews, actively contributing to the <code>hiring</code>{' '}
+                        process fostering <span class="emphasize-text">team growth</span> with
+                        stability and high performance.
+                      </p>
+                      <p>
+                        • Developed a <span class="emphasize-text">highly scalable</span> and{' '}
+                        <span class="emphasize-text">easily deployable</span> <code>Python</code>{' '}
+                        framework for <code>machine learning</code> research, abstracting various
+                        tools, including <code>Scikit-learn</code>, <code>TensorFlow</code>,{' '}
+                        <code>Optuna</code>, <code>Imbalanced-learn</code>, <code>XGBoost</code>,{' '}
+                        <code>Seaborn</code>, <code>Matplotlib</code>, and others. Includes{' '}
+                        <span class="emphasize-text">composable</span> core ML components for{' '}
+                        <code>preprocessing</code>, <code>(un)supervised learning</code>,
+                        <code>deep learning</code>, and <code>recommendation systems</code>, plus
+                        robust error handling capabilities in production. Streamlining research and
+                        deployment, it achieves estimated{' '}
+                        <span class="emphasize-text">time savings of over 50%</span>, with a
+                        flawless deployment record—
+                        <span class="emphasize-text">zero P1 reported incidents</span> in
+                        production.
+                        <a
+                          href="https://wisarootl.github.io/portfolio/ml-research-framework"
+                          target="_blank"
+                        >
+                          <i class="fa-solid fa-up-right-from-square link-icon"></i>
+                        </a>
+                      </p>
+                      <p>
+                        • Cultivated
+                        <span class="emphasize-text">secure</span>,
+                        <span class="emphasize-text">scalable</span>,
                         <span class="emphasize-text">maintainable</span> and{' '}
                         <span class="emphasize-text">reliable</span> codebases through adherence to
                         strict guidelines for <code>infrastructure as code</code>,{' '}
-                        <code>continuous integration/deployment</code>,{' '}
-                        <code>unit&shy;/&shy;integral testing</code>,{' '}
+                        <code>continuous integration&shy;/&shy;deployment</code>,{' '}
+                        <code>unit/integral testing</code>,{' '}
                         <code>software development&shy;/&shy;coding best practices</code> and{' '}
                         <code>security</code>, using modern tools such as{' '}
                         <code>Terraform Cloud</code>, <code>CI/CD pipelines</code>,{' '}
@@ -355,7 +387,7 @@ const Profile = () => {
                             M.Sc. in Computer Science
                           </Title>
                           <Text variant="small" color="text" className="profile-card-organization">
-                            <span className="emphasize-text">Chulalongkorn Univerisity</span>{' '}
+                            <span className="emphasize-text">Chulalongkorn University</span>{' '}
                             <br className="d-flex d-md-none" />
                             (Merit scholarship from Chevron)
                           </Text>
@@ -426,12 +458,13 @@ const Profile = () => {
                       <code>Matplotlib</code>
                     </p>
                     <p>
-                      • Software Development : <code>Javascript</code>, <code>C</code>,{' '}
-                      <code>Go</code>, <code>SQL</code>, <code>NoSQL</code>, <code>Git</code>,{' '}
-                      <code>Design Pattern</code>, <code>Functional Programming</code>,{' '}
-                      <code>OOP</code>, <code>CI/CD</code>, <code>Docker</code>,{' '}
-                      <code>Github Actions</code>, <code>HTML</code>, <code>CSS</code>,{' '}
-                      <code>React</code>, <code>Node.js</code>
+                      • Software Development : <code>Google Cloud Platform (GCP)</code>,{' '}
+                      <code>GCS</code>,<code>BigQuery</code>, <code>Javascript</code>,{' '}
+                      <code>VBA</code>, <code>C</code>,<code>Go</code>, <code>SQL</code>,{' '}
+                      <code>NoSQL</code>, <code>Git</code>,<code>Design Pattern</code>,{' '}
+                      <code>Functional Programming</code>, <code>OOP</code>,<code>CI/CD</code>,{' '}
+                      <code>Docker</code>, <code>Github Actions</code>,<code>HTML</code>,{' '}
+                      <code>CSS</code>, <code>React</code>, <code>Node.js</code>
                     </p>
                     <p>
                       • Other Expertise : <code>Finance</code>, <code>Credit Card</code>,{' '}
@@ -463,6 +496,10 @@ const Profile = () => {
                 <ProfileCard className="row">
                   <div className="col padding-dynamic">
                     <p>
+                      <Link href={mls_2023} target="_blank">
+                        Machine Learning Specialization
+                      </Link>{' '}
+                      by Stanford University •
                       <Link href={cs50x_2023} target="_blank">
                         CS50x
                       </Link>{' '}

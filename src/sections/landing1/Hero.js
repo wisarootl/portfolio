@@ -64,30 +64,23 @@ const Hero = () => {
                   mb="2.5rem"
                 >
                   <p>
-                    I'm a <span className="emphasize-text">👨‍💻</span> technology enthusiast with{' '}
-                    {year - 2005} years of coding experience, including{' '}
-                    <span className="emphasize-text">{year - 2017} years of experience</span>{' '}
-                    specializing in <code>Python</code> <span className="emphasize-text">🐍</span>.
-                    I also have expertise in <code>Machine Learning</code>{' '}
-                    <span className="emphasize-text">🤖</span>, and <code>Data Science</code> for{' '}
-                    <code>Time Series</code> and <code>NLP</code>. I hold a{' '}
-                    <span className="emphasize-text">🎓</span>{' '}
-                    <span className="emphasize-text">M.Sc. in Computer Science</span> from
-                    Chulalongkorn University and possess skills in software and web development,
-                    including technologies such as <code>Javascript</code>, <code>SQL</code>,{' '}
-                    <code>CSS</code>, <code>HTML</code>, <code>Frontend</code>, <code>Backend</code>
-                    , <code>Database</code>, <code>Node.js</code>, <code>React</code>, and{' '}
-                    <code>MongoDB</code>.
-                  </p>
-                  <p>
-                    Currently, I'm a{' '}
-                    <span className="emphasize-text">senior data scientist 👨‍🔬</span> at Honest
-                    Technology, where I've developed a <code>Python</code>{' '}
-                    <span className="emphasize-text">🐍</span> framework for ML research that is
-                    composable, highly scalable, and easily deployable to production. In addition,
-                    I've also gained skills in <code>DevOps</code> and <code>CI/CD</code>, working
-                    with modern tooling such as <code>Terraform Cloud</code> to build cloud
-                    infrastructure as code <span className="emphasize-text">🏗️</span>.
+                    I am a Senior Data Scientist with{' '}
+                    <span class="emphasize-text">
+                      <span class="python-experience">{year - 2017}</span> years
+                    </span>{' '}
+                    of expertise in <code>Python</code>, <code>Machine Learning</code>, and{' '}
+                    <code>Data Science</code>, holding an{' '}
+                    <span class="emphasize-text">
+                      M.Sc. in Computer Science from Chulalongkorn University
+                    </span>
+                    . My proven track records at Honest Technology include expediting{' '}
+                    <code>credit risk model</code> launching—a critical contribution to the
+                    company's $20 million fundraising success. I have played a key role in the{' '}
+                    <code>hiring</code> process and team growth, implemented a highly efficient{' '}
+                    <code>Python</code> framework resulting in over 50% time savings, and cultivated
+                    high-quality codebases using modern <code>DevOps</code> tools. Additionally, I
+                    possess solid fundamental <code>finance</code> knowledge from passing{' '}
+                    <span class="emphasize-text">CFA I</span>.
                   </p>
                 </Box>
                 <Box className="d-flex flex-column align-items-center text-center">
