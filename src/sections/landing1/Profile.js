@@ -114,7 +114,7 @@ const ProfileCard = styled(Box)`
   }
 
   .profile-card-heading p {
-    text-align: left;
+    display: inline;
   }
 
   .profile-card-date p {
@@ -188,7 +188,7 @@ const Profile = () => {
                     <div className="col p-0">
                       <div className="row">
                         <div className="col-12 col-xl-7 profile-card-heading">
-                          <Title variant="cardSm" className="profile-card-title">
+                          <Title variant="cardSm" className="profile-card-title d-inline">
                             Senior Data Scientist
                           </Title>
                         </div>
@@ -292,9 +292,14 @@ const Profile = () => {
                     <div className="col p-0">
                       <div className="row">
                         <div className="col-12 col-xl-7 profile-card-heading">
-                          <Title variant="cardSm" className="profile-card-title">
-                            Petroleum Engineer
+                          <Title variant="cardSm" className="profile-card-title d-inline">
+                            Production Engineer
                           </Title>
+                          <p>
+                            {' '}
+                            (with <span className="emphasize-text d-inline">Data Science</span>{' '}
+                            experience)
+                          </p>
                         </div>
                         <div className="col-12 col-xl-5 d-none d-xl-block profile-card-date">
                           <p>{/*Somewhere | */}Jul 2017 – Apr 2022</p>
